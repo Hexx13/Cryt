@@ -28,17 +28,9 @@ class Customer
         return $this->passwordAdd;
     }
 
-    public function setPicAdd($picAdd) {
-        $this->picAdd = $picAdd;
-    }
-    public function getPicAdd(){
-        return $this->picAdd;
-    }
-
     public function displayStuff(){
         echo "E-mail" . $this->getEmailAdd();
         echo "Name" . $this->getNameAdd();
         echo "Password" . $this->getPasswordAdd();
-        echo "Profile Picture" . $this->getPicAdd();
     }
 }
