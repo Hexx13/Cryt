@@ -3,10 +3,10 @@
 
 class Receipt{
 
-    public function emailCust($emailAdd, $receipt){
+    public function emailCust($emailAdd, $printReceipt){
 
     }
     public function printReceipt(){
-
     }
+
 }
