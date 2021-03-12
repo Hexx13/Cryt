@@ -3,8 +3,8 @@
 
 class Account
 {
-    public $picture;
-    public $ID;
+    public $profilePicturePath;
+    public $accountID;
     public $username;
     public function setID($ID){
         $this->ID = $ID;
