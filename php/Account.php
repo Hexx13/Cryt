@@ -7,6 +7,10 @@ class Account
     private $username;
     private $password;
 
+    public function createAccountID(){
+
+    }
+
     public function getAccountID()
     {
         return $this->accountID;
