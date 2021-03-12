@@ -16,4 +16,13 @@ class Customer extends Account
     {
         $this->profilePicturePath = $profilePicturePath;
     }
+    public function getEmailAddress()
+    {
+        return $this->emailAddress;
+    }
+    public function setEmailAddress($emailAddress)
+    {
+        $this->emailAddress = $emailAddress;
+    }
+
 }
