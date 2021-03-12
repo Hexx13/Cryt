@@ -46,4 +46,12 @@ class Game
     {
         $this->sale = $sale;
     }
+    public function getFilePath()
+    {
+        return $this->filePath;
+    }
+    public function setFilePath($filePath)
+    {
+        $this->filePath = $filePath;
+    }
 }
