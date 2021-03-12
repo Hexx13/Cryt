@@ -9,4 +9,8 @@ class Game
     public $price;
     public $sale;
     public $filePath;
+
+    public function getGameID(){
+        return $this->gameID;
+    }
 }
