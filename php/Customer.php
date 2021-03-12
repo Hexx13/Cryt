@@ -1,7 +1,7 @@
 <?php
 //test
 
-class Customer
+class Customer extends Account
 {
     public $emailAdd;
     public $nameAdd;
