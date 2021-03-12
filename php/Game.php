@@ -6,7 +6,7 @@ class Game
     private $gameID;
     private $name;
     private $description;
-    private $price;
+    private $orginalPrice;
     private $sale;
     private $filePath;
 
@@ -32,11 +32,11 @@ class Game
     }
     public function getPrice()
     {
-        return $this->price;
+        return $this->orginalPrice;
     }
     public function setPrice($price)
     {
-        $this->price = $price;
+        $this->orginalPrice = $price;
     }
     public function getSale()
     {
