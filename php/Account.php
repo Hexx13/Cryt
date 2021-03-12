@@ -19,4 +19,12 @@ class Account
     {
         $this->username = $username;
     }
+    public function getPassword()
+    {
+        return $this->password;
+    }
+    public function setPassword($password)
+    {
+        $this->password = $password;
+    }
 }
