@@ -38,4 +38,12 @@ class Game
     {
         $this->price = $price;
     }
+    public function getSale()
+    {
+        return $this->sale;
+    }
+    public function setSale($sale)
+    {
+        $this->sale = $sale;
+    }
 }
