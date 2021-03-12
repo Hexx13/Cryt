@@ -9,6 +9,15 @@ class Customer extends Account
     private $lastName;
     private $wallet;
 
+    function __construct($firstName, $lastName, $emailAddress, $password, $username)
+    {
+        $this->$firstName;
+        $this->$lastName;
+        $this->$emailAddress;
+        $this->$password;
+        $this->$username;
+    }
+
     public $setProfilePicture;
 
     public function getProfilePicturePath()
@@ -51,4 +60,6 @@ class Customer extends Account
     {
         $this->wallet = $wallet;
     }
+
+
 }
