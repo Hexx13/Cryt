@@ -3,8 +3,10 @@
 
 class Game
 {
-    public $emailAdd;
-    public $nameAdd;
-    public $priceAdd;
-    public $saleAdd;
+    public $gameID;
+    public $name;
+    public $description;
+    public $price;
+    public $sale;
+    public $filePath;
 }
