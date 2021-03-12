@@ -10,6 +10,10 @@ class Game
     private $sale;
     private $filePath;
 
+    public function calcCurrentPrice(){
+
+    }
+
     public function getGameID(){
         return $this->gameID;
     }
