@@ -24,5 +24,13 @@ class Customer extends Account
     {
         $this->emailAddress = $emailAddress;
     }
+    public function getFirstName()
+    {
+        return $this->firstName;
+    }
+    public function setFirstName($firstName)
+    {
+        $this->firstName = $firstName;
+    }
 
 }
