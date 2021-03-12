@@ -7,6 +7,8 @@ class Customer extends Account
     private $emailAddress;
     private $firstName;
     private $lastName;
+
+
     private $wallet;
     public function getProfilePicturePath()
     {
@@ -32,5 +34,12 @@ class Customer extends Account
     {
         $this->firstName = $firstName;
     }
-
+    public function getLastName()
+    {
+        return $this->lastName;
+    }
+    public function setLastName($lastName)
+    {
+        $this->lastName = $lastName;
+    }
 }
