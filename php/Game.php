@@ -1,7 +1,7 @@
 <?php
 
 
-class Games
+class Game
 {
     public $emailAdd;
     public $nameAdd;
