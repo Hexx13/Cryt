@@ -3,5 +3,7 @@
 
 class TopUp
 {
+    public $amount;
+
 
 }
