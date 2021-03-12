@@ -1,7 +1,11 @@
 <?php
 //test
 
-class Customer
+class Customer extends Account
 {
-
+    private $profilePicturePath;
+    private $emailAddress;
+    private $firstName;
+    private $lastName;
+    private $wallet;
 }
