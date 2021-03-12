@@ -9,6 +9,8 @@ class Customer extends Account
     private $lastName;
     private $wallet;
 
+    public $setProfilePicture;
+
     public function getProfilePicturePath()
     {
         return $this->profilePicturePath;
