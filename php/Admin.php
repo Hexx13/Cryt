@@ -3,5 +3,7 @@
 
 class Admin
 {
+    private $isAdmin;
+
 
 }
