@@ -9,4 +9,9 @@ class Receipt
     {
         return $this->details;
     }
+    function __construct($customer, $transaction)
+    {
+        $this->$customer;
+        $this->$transaction;
+    }
 }
