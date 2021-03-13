@@ -3,5 +3,5 @@
 
 class Library
 {
-
+    private $games = array();
 }
