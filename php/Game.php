@@ -1,8 +1,14 @@
 <?php
 
+$doomer = new Game();
+
+$doomer->setPrice(10.00);
+$doomer->setSale(70);
+echo $doomer->calcCurrentPrice();
 
 class Game
 {
+
     private $gameID;
     private $name;
     private $description;
@@ -11,7 +17,8 @@ class Game
     private $filePath;
 
     public function calcCurrentPrice(){
-
+        $discount = ($this->orginalPrice/100) * $this->sale;
+        return ($this->orginalPrice - $discount);
     }
 
     public function getGameID(){
