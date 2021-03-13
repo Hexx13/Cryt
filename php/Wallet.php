@@ -3,19 +3,19 @@
 
 class Wallet
 {
-public $card_Details;
-public $balance;
-public $wallet_ID;
+    private $balance;
+    private $walletID;
 
-    public function Validate($card_Details)
+    public function getBalance()
     {
-
+        return $this->balance;
     }
-
-    public function display_Balance($Balance)
+    public function setBalance($balance)
     {
-
+        $this->balance = $balance;
     }
-
-
+    public function getWalletID()
+    {
+        return $this->walletID;
+    }
 }
