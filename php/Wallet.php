@@ -14,4 +14,8 @@ class Wallet
     {
         $this->balance = $balance;
     }
+    public function getWalletID()
+    {
+        return $this->walletID;
+    }
 }
