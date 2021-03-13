@@ -14,4 +14,7 @@ class Receipt
         $this->$customer;
         $this->$transaction;
     }
+    public function print_receipt(){
+
+    }
 }
