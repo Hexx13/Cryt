@@ -1,36 +1,65 @@
 <?php
 //test
 
-class Customer
+class Customer extends Account
 {
-    public $emailAdd;
-    public $nameAdd;
-    public $passwordAdd;
+    private $profilePicturePath;
+    private $emailAddress;
+    private $firstName;
+    private $lastName;
+    private $wallet;
 
-    public function setEmailAdd($emailAdd) {
-        $this->emailAdd = $emailAdd;
-    }
-    public function getEmailAdd(){
-        return $this->emailAdd;
-    }
-
-    public function setNameAdd($nameAdd) {
-        $this->nameAdd = $nameAdd;
-    }
-    public function getNameAdd(){
-        return $this->nameAdd;
+    function __construct($firstName, $lastName, $emailAddress, $password, $username)
+    {
+        $this->$firstName;
+        $this->$lastName;
+        $this->$emailAddress;
+        $this->$password;
+        $this->$username;
     }
 
-    public function setPasswordAdd($passwordAdd) {
-        $this->passwordAdd = $passwordAdd;
+    public $setProfilePicture;
+
+    public function getProfilePicturePath()
+    {
+        return $this->profilePicturePath;
     }
-    public function getPasswordAdd(){
-        return $this->passwordAdd;
+    public function setProfilePicturePath($profilePicturePath)
+    {
+        $this->profilePicturePath = $profilePicturePath;
+    }
+    public function getEmailAddress()
+    {
+        return $this->emailAddress;
+    }
+    public function setEmailAddress($emailAddress)
+    {
+        $this->emailAddress = $emailAddress;
+    }
+    public function getFirstName()
+    {
+        return $this->firstName;
+    }
+    public function setFirstName($firstName)
+    {
+        $this->firstName = $firstName;
+    }
+    public function getLastName()
+    {
+        return $this->lastName;
+    }
+    public function setLastName($lastName)
+    {
+        $this->lastName = $lastName;
+    }
+    public function getWallet()
+    {
+        return $this->wallet;
+    }
+    public function setWallet($wallet)
+    {
+        $this->wallet = $wallet;
     }
 
-    public function displayStuff(){
-        echo "E-mail" . $this->getEmailAdd();
-        echo "Name" . $this->getNameAdd();
-        echo "Password" . $this->getPasswordAdd();
-    }
+
 }
