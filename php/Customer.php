@@ -9,14 +9,11 @@ class Customer extends Account
     private $lastName;
     private $wallet;
 
-    function __construct($firstName, $lastName, $emailAddress, $password, $username)
-    {
-        $this->$firstName;
-        $this->$lastName;
-        $this->$emailAddress;
-        $this->$password;
-        $this->$username;
+
+    public function createAccountDB($firstName, $lastName, $emailAddress, $password, $username){
+
     }
+
 
     public $setProfilePicture;
 
