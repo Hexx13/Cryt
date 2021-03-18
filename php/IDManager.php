@@ -3,7 +3,7 @@
 class IDManager
 {
 
-    private function generateID($PrimaryKey){
+    private function generateID($primaryKey, $table){
         define ('dbuser', 'root');
         define ('dbpass', 'password');
         define('dbserver', 'localhost');
