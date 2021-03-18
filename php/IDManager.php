@@ -8,12 +8,12 @@ class IDManager
         define ('dbpass', 'password');
         define('dbserver', 'localhost');
         define('dbname', 'mydb');
-//make connection
+        //make connection
         $link = mysqli_connect(dbserver,
             dbuser,
             dbpass,
             dbname);
-//check connection
+        //check connection
         if (mysqli_connect_errno()) {
             printf("Connect failed: %s\n", mysqli_connect_error());
             exit();
