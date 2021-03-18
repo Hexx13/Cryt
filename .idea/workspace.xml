@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a0bcdd1-7d4c-4f14-9a64-1fbd830bc636" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/php/IDManager.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Account.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/Account.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/Customer.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
+    <list default="true" id="9a0bcdd1-7d4c-4f14-9a64-1fbd830bc636" name="Default Changelist" comment="Changes">
+      <change beforePath="$PROJECT_DIR$/php/IDManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/IDManager.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,8 +37,16 @@
       <option name="presentableId" value="Default" />
       <updated>1615922585860</updated>
       <workItem from="1615922586945" duration="4719000" />
-      <workItem from="1616078293964" duration="2649000" />
+      <workItem from="1616078293964" duration="2982000" />
     </task>
+    <task id="LOCAL-00001" summary="Changes">
+      <created>1616080968692</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1616080968692</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -58,6 +62,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
