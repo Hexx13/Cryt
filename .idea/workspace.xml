@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a0bcdd1-7d4c-4f14-9a64-1fbd830bc636" name="Default Changelist" comment="replaced query parameters">
+    <list default="true" id="9a0bcdd1-7d4c-4f14-9a64-1fbd830bc636" name="Default Changelist" comment="made generate public">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/IDManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/IDManager.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +68,14 @@
       <option name="project" value="LOCAL" />
       <updated>1616082276708</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="made generate public">
+      <created>1616084040807</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1616084040807</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,7 +97,8 @@
     <MESSAGE value="Changes" />
     <MESSAGE value="added table to parameters" />
     <MESSAGE value="replaced query parameters" />
-    <option name="LAST_COMMIT_MESSAGE" value="replaced query parameters" />
+    <MESSAGE value="made generate public" />
+    <option name="LAST_COMMIT_MESSAGE" value="made generate public" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
