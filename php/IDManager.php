@@ -19,9 +19,8 @@ class IDManager
             exit();
         }
 
-
-        echo"<mydb>";
-        $LastID = $link->query("SELECT account_ID FROM account ORDER BY account_ID DESC LIMIT 1");
+        //echo"<mydb>";
+        $LastID = $link->query("SELECT $primaryKey FROM $table ORDER BY account_ID DESC LIMIT 1");
         while($ID = $LastID->fetch_assoc()) {
             $id =  $ID["account_ID"];
         }
