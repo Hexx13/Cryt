@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a0bcdd1-7d4c-4f14-9a64-1fbd830bc636" name="Default Changelist" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/php/IDManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/IDManager.php" afterDir="false" />
+    <list default="true" id="9a0bcdd1-7d4c-4f14-9a64-1fbd830bc636" name="Default Changelist" comment="replaced query parameters">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +46,28 @@
       <option name="project" value="LOCAL" />
       <updated>1616080968692</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changes">
+      <created>1616082128685</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616082128685</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added table to parameters">
+      <created>1616082181516</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616082181516</updated>
+    </task>
+    <task id="LOCAL-00004" summary="replaced query parameters">
+      <created>1616082276708</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1616082276708</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -66,7 +87,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
+    <MESSAGE value="added table to parameters" />
+    <MESSAGE value="replaced query parameters" />
+    <option name="LAST_COMMIT_MESSAGE" value="replaced query parameters" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
