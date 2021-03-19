@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="9a0bcdd1-7d4c-4f14-9a64-1fbd830bc636" name="Default Changelist" comment="Changes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mysql/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/ib_buffer_pool" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mysql/ib_logfile0" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/ib_logfile0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/ibdata1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/mysql/mysqld.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/mysqld.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/Garbage.php" beforeDir="false" />
-=======
     <list default="true" id="9a0bcdd1-7d4c-4f14-9a64-1fbd830bc636" name="Default Changelist" comment="made new function for get last Id and moved it old portion from generate ID">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
->>>>>>> 0fdbed07c25f37c4281534057bfa35e0c72dd583
-      <change beforePath="$PROJECT_DIR$/php/IDManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/IDManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/Customer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,11 +40,7 @@
       <updated>1615922585860</updated>
       <workItem from="1615922586945" duration="4719000" />
       <workItem from="1616078293964" duration="2982000" />
-<<<<<<< HEAD
-      <workItem from="1616157420813" duration="5156000" />
-=======
-      <workItem from="1616163149967" duration="355000" />
->>>>>>> 0fdbed07c25f37c4281534057bfa35e0c72dd583
+      <workItem from="1616163149967" duration="1275000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1616080968692</created>

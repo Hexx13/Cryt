@@ -10,6 +10,10 @@ class Customer extends Account
     private $wallet;
 
 
+    // figure out user session "session_start();"
+    //https://www.tutorialrepublic.com/php-tutorial/php-sessions.php
+    //https://www.php.net/manual/en/reserved.variables.session.php
+
     public function createAccountDB($firstName, $lastName, $emailAddress, $password, $username){
         define ('dbuser', 'root');
         define ('dbpass', 'password');
