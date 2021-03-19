@@ -15,7 +15,17 @@ class Customer extends Account
     //https://www.php.net/manual/en/reserved.variables.session.php
 
     public function createAccountDB($firstName, $lastName, $emailAddress, $password, $username){
+        define ('dbuser', 'root');
+        define ('dbpass', 'password');
+        define('dbserver', 'localhost');
+        define('dbname', 'mydb');
+//make connection
+        $link = mysqli_connect(dbserver,
+            dbuser,
+            dbpass,
+            dbname);
 
+        $sql = "Insert into game Values ($name,$pass,null,$email,$firstname,$lastname,$ID+1)";
     }
 
 
