@@ -3,15 +3,11 @@
 
 class Transaction
 {
-public $transaction_ID;
-public $transaction_Total;
+    private $transactionID;
+    private $gameList = array();
+    private $total;
 
-    public function Confirm_Transaction()
-    {
-
-    }
-    public function Cancel_Transaction()
-    {
+    public function addToList(){
 
     }
 }
