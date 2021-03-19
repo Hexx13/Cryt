@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="9a0bcdd1-7d4c-4f14-9a64-1fbd830bc636" name="Default Changelist" comment="Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/mysql/ib_buffer_pool" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/ib_buffer_pool" afterDir="false" />
@@ -8,6 +9,10 @@
       <change beforePath="$PROJECT_DIR$/data/mysql/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/ibdata1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/mysql/mysqld.log" beforeDir="false" afterPath="$PROJECT_DIR$/data/mysql/mysqld.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/php/Garbage.php" beforeDir="false" />
+=======
+    <list default="true" id="9a0bcdd1-7d4c-4f14-9a64-1fbd830bc636" name="Default Changelist" comment="made new function for get last Id and moved it old portion from generate ID">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> 0fdbed07c25f37c4281534057bfa35e0c72dd583
       <change beforePath="$PROJECT_DIR$/php/IDManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/IDManager.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +49,11 @@
       <updated>1615922585860</updated>
       <workItem from="1615922586945" duration="4719000" />
       <workItem from="1616078293964" duration="2982000" />
+<<<<<<< HEAD
       <workItem from="1616157420813" duration="5156000" />
+=======
+      <workItem from="1616163149967" duration="355000" />
+>>>>>>> 0fdbed07c25f37c4281534057bfa35e0c72dd583
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1616080968692</created>
@@ -53,7 +62,42 @@
       <option name="project" value="LOCAL" />
       <updated>1616080968692</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Changes">
+      <created>1616082128685</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1616082128685</updated>
+    </task>
+    <task id="LOCAL-00003" summary="added table to parameters">
+      <created>1616082181516</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1616082181516</updated>
+    </task>
+    <task id="LOCAL-00004" summary="replaced query parameters">
+      <created>1616082276708</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1616082276708</updated>
+    </task>
+    <task id="LOCAL-00005" summary="made generate public">
+      <created>1616084040807</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1616084040807</updated>
+    </task>
+    <task id="LOCAL-00006" summary="made new function for get last Id and moved it old portion from generate ID">
+      <created>1616084923375</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1616084923375</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -73,7 +117,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes" />
+    <MESSAGE value="added table to parameters" />
+    <MESSAGE value="replaced query parameters" />
+    <MESSAGE value="made generate public" />
+    <MESSAGE value="made new function for get last Id and moved it old portion from generate ID" />
+    <option name="LAST_COMMIT_MESSAGE" value="made new function for get last Id and moved it old portion from generate ID" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
