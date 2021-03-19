@@ -31,6 +31,6 @@ class IDManager
 
     public function generateID($primaryKey, $table)
     {
-        $this->getLastID($primaryKey, $table);
+        return $this->getLastID($primaryKey, $table) + 1;
     }
 }

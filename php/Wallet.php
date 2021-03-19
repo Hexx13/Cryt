@@ -1,6 +1,6 @@
 <?php
 
-
+include "IDManager.php";
 class Wallet
 {
     private $balance;

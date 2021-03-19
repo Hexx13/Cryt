@@ -1,6 +1,7 @@
 <?php
 //test
 include "IDManager.php";
+include "Account.php";
 class Customer extends Account
 {
     private $profilePicturePath;
@@ -26,7 +27,9 @@ class Customer extends Account
             dbname);
         $manager=new IDManager();
         $id = $manager ->generateID('account_ID', 'account');
-        $link->query("Insert into game Values ($username,$password ,null,$emailAddress,$firstName,$lastName,$id)");
+
+        $link->query("Insert into wallet Values($manager ->generateID('wallet_ID', 'wallet'), 0.00);
+                            Insert into account Values ($username,$password ,null,$emailAddress,$firstName,$lastName,$id)");
     }
 
 
