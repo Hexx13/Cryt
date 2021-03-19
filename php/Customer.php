@@ -1,6 +1,6 @@
 <?php
 //test
-
+include "IDManager.php";
 class Customer extends Account
 {
     private $profilePicturePath;
@@ -20,8 +20,9 @@ class Customer extends Account
             dbuser,
             dbpass,
             dbname);
-
-        $sql = "Insert into game Values ($name,$pass,null,$email,$firstname,$lastname,$ID+1)";
+        $manager=new IDManager();
+        $id = $manager ->generateID('account_ID', 'account');
+        $link->query("Insert into game Values ($username,$password ,null,$emailAddress,$firstName,$lastName,$id)");
     }
 
 
