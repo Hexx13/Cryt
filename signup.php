@@ -26,6 +26,7 @@
 
         <input type="submit" value="Submit">
     </form>
+
     <footer class="footer">
         <div class="footLeft">
             <div class="footLeftTop">
