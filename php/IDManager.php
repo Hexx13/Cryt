@@ -2,8 +2,7 @@
 
 class IDManager
 {
-
-    public function generateID($primaryKey, $table){
+    public function getLastID($primaryKey, $table){
         define ('dbuser', 'root');
         define ('dbpass', 'password');
         define('dbserver', 'localhost');
@@ -25,11 +24,10 @@ class IDManager
             $id =  $ID["account_ID"];
         }
 
-
-
         return $id;
     }
-
-
+    public function generateID($primaryKey, $table){
+        $this->getLastID($primaryKey, $table);
+    }
 
 }
