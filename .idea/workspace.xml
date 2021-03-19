@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="9a0bcdd1-7d4c-4f14-9a64-1fbd830bc636" name="Default Changelist" comment="Created loginAccount function in Account">
       <change afterPath="$PROJECT_DIR$/TopUp.php" afterDir="false" />
+=======
+    <list default="true" id="9a0bcdd1-7d4c-4f14-9a64-1fbd830bc636" name="Default Changelist" comment="made new function for get last Id and moved it old portion from generate ID">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/Customer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/signup.php" beforeDir="false" afterPath="$PROJECT_DIR$/signup.php" afterDir="false" />
+>>>>>>> e93affbb948eeb6ab25d1149ef94881a2b3854ac
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +45,12 @@
       <updated>1615922585860</updated>
       <workItem from="1615922586945" duration="4719000" />
       <workItem from="1616078293964" duration="2982000" />
+<<<<<<< HEAD
       <workItem from="1616163149967" duration="355000" />
       <workItem from="1616163840269" duration="733000" />
+=======
+      <workItem from="1616163149967" duration="1275000" />
+>>>>>>> e93affbb948eeb6ab25d1149ef94881a2b3854ac
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1616080968692</created>
@@ -83,6 +94,7 @@
       <option name="project" value="LOCAL" />
       <updated>1616084923375</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00007" summary="Made Login">
       <created>1616163995678</created>
       <option name="number" value="00007" />
@@ -105,6 +117,9 @@
       <updated>1616164259322</updated>
     </task>
     <option name="localTasksCounter" value="10" />
+=======
+    <option name="localTasksCounter" value="7" />
+>>>>>>> e93affbb948eeb6ab25d1149ef94881a2b3854ac
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,10 +143,14 @@
     <MESSAGE value="replaced query parameters" />
     <MESSAGE value="made generate public" />
     <MESSAGE value="made new function for get last Id and moved it old portion from generate ID" />
+<<<<<<< HEAD
     <MESSAGE value="Made Login" />
     <MESSAGE value="Added form to Login.php" />
     <MESSAGE value="Created loginAccount function in Account" />
     <option name="LAST_COMMIT_MESSAGE" value="Created loginAccount function in Account" />
+=======
+    <option name="LAST_COMMIT_MESSAGE" value="made new function for get last Id and moved it old portion from generate ID" />
+>>>>>>> e93affbb948eeb6ab25d1149ef94881a2b3854ac
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
