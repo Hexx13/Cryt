@@ -3,19 +3,15 @@
 
 class TopUp
 {
-public $top_Amount;
-    public function Cancel_Top_Up()
+    public $amount;
+    public function setAmount($amount)
     {
-
-    }
-    public function Validate()
-    {
-
-    }
-    public function Display_top_Up_Amount()
-    {
-
+        $this->amount = $amount;
     }
 
+    public function getAmount()
+    {
+        return $this->amount;
+    }
 
 }
