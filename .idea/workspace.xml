@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a0bcdd1-7d4c-4f14-9a64-1fbd830bc636" name="Default Changelist" comment="made new function for get last Id and moved it old portion from generate ID">
+    <list default="true" id="9a0bcdd1-7d4c-4f14-9a64-1fbd830bc636" name="Default Changelist" comment="Added form to Login.php">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/IDManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/IDManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/Account.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/Account.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +40,7 @@
       <workItem from="1615922586945" duration="4719000" />
       <workItem from="1616078293964" duration="2982000" />
       <workItem from="1616163149967" duration="355000" />
+      <workItem from="1616163840269" duration="399000" />
     </task>
     <task id="LOCAL-00001" summary="Changes">
       <created>1616080968692</created>
@@ -83,7 +84,21 @@
       <option name="project" value="LOCAL" />
       <updated>1616084923375</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Made Login">
+      <created>1616163995678</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1616163995678</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added form to Login.php">
+      <created>1616164161319</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1616164161319</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,7 +122,9 @@
     <MESSAGE value="replaced query parameters" />
     <MESSAGE value="made generate public" />
     <MESSAGE value="made new function for get last Id and moved it old portion from generate ID" />
-    <option name="LAST_COMMIT_MESSAGE" value="made new function for get last Id and moved it old portion from generate ID" />
+    <MESSAGE value="Made Login" />
+    <MESSAGE value="Added form to Login.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added form to Login.php" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
