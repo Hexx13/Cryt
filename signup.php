@@ -7,7 +7,7 @@
 <body>
 
 <main>
-    <form action="php/Customer.php" method="createAccountDB">
+    <form action="php/Customer.php" method="post">
 
         <label for="username">Username: </label>
         <input type="text" name="username"><br>
