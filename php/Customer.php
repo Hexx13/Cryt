@@ -25,11 +25,25 @@ class Customer extends Account
             dbuser,
             dbpass,
             dbname);
+
+        // Check connection
+        if($link === false){
+            die("CANNOT CONNECT OH NO OH NO"
+                . mysqli_connect_error());
+        }
+
+
+
         $manager=new IDManager();
         $id = $manager ->generateID('account_ID', 'account');
 
-        $link->query("Insert into wallet Values($manager ->generateID('wallet_ID', 'wallet'), 0.00);
-                            Insert into account Values ($username,$password ,null,$emailAddress,$firstName,$lastName,$id)");
+        $query = "Insert into wallet Values($manager ->generateID('wallet_ID', 'wallet'), 0.00);
+                            Insert into account Values ($username,$password ,null,$emailAddress,$firstName,$lastName,$id)";
+
+        if(mysqli_query($link, $query)){
+            echo "<h3>Data stored hopefully"."check php my admin to be sure"."</h3>";
+        }
+
     }
 
 
