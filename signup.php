@@ -32,7 +32,7 @@
 
 
 <main>
-    <form action="php/Customer.php" method="post">
+    <form action="signedup.php" method="post">
 
         <label for="username">Username: </label>
         <input type="text" name="username"><br>

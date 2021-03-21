@@ -5,15 +5,12 @@ class IDManager
 {
     public function getLastID($primaryKey, $table)
     {
-        define('dbuser', 'root');
-        define('dbpass', 'password');
-        define('dbserver', 'localhost');
-        define('dbname', 'mydb');
+        $id = 0;
         //make connection
-        $link = mysqli_connect(dbserver,
-            dbuser,
-            dbpass,
-            dbname);
+        $link = mysqli_connect("localhost",
+            "root",
+            "password",
+            "mydb");
         //check connection
         if (mysqli_connect_errno()) {
             printf("Connect failed: %s\n", mysqli_connect_error());
@@ -21,9 +18,9 @@ class IDManager
         }
 
         //echo"<mydb>";
-        $LastID = $link->query("SELECT $primaryKey FROM $table ORDER BY account_ID DESC LIMIT 1");
+        $LastID = $link->query("SELECT $primaryKey FROM $table ORDER BY $primaryKey DESC LIMIT 1");
         while ($ID = $LastID->fetch_assoc()) {
-            $id = $ID["account_ID"];
+            $id = $ID[$primaryKey];
         }
 
         return $id;
