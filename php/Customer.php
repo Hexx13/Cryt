@@ -25,6 +25,12 @@ class Customer extends Account
 
     public function createAccountDB()
     {
+        $manager = new IDManager();
+
+
+        //generate ids
+        $id = $manager->generateID('account_ID', 'account');
+        $walletID = $manager->generateID('wallet_ID', 'wallet');
 
         //make connection
         $link = mysqli_connect("localhost",
@@ -38,17 +44,28 @@ class Customer extends Account
                 . mysqli_connect_error());
         }
 
-        $manager = new IDManager();
-        $id = $manager->generateID('account_ID', 'account');
-        $walletID = $manager->generateID('wallet_ID', 'wallet');
-        echo $id;
-        $query = ("Insert into wallet Values($walletID, 0.00);");
-        $query .= "INSERT INTO account VALUES ($id,0 , $this->username,$this->password,null ,$this->emailAddress,$this->firstName,$this->lastName, $walletID);";
-        if ($link->multi_query($query)
-            /*mysqli_query($link, $query*/) {
-            echo "<h3>Data stored hopefully" . "check php my admin to be sure" . "</h3>";
-            echo nl2br("\n$this->firstName\n $this->lastName\n"
-                . "$this->emailAddress\n $this->username\n $id");
+        //Insert queries
+        $query = "Insert into wallet Values($walletID, 0.00);";
+        $query2 = "INSERT INTO account VALUES ($id,0,'$this->username','$this->password',null,'$this->emailAddress','$this->firstName','$this->lastName',$walletID);";
+
+
+        //Mysqli query connection
+        if (mysqli_query($link, $query)) {
+
+            // Second query
+            if (mysqli_query($link, $query2)) {
+
+                //if it works this happens
+                echo "<h3>Data stored hopefully\n" . "check php my admin to be sure" . "</h3>";
+                echo nl2br("\n$this->firstName\n $this->lastName\n"
+                    . "$this->emailAddress\n $this->username\n $id");
+
+                //if the second doesnt work this happens
+            } else {
+                echo "ERROR: OH GOD OH NO WHY aaaaaaaaaaaaaaaaaaaaa $query2. "
+                    . mysqli_error($link);
+            }
+            //if the first query doesnt work
         } else {
             echo "ERROR: OH GOD OH NO WHY REEEEEEEEEEEEEE $query. "
                 . mysqli_error($link);
