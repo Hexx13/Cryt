@@ -25,7 +25,7 @@ dbname);
 
 
 //$sql = "Insert into game Values ($name,$pass,null,$email,$firstname,$lastname,$ID+1)";
-$account = "SELECT * FROM account  LIMIT 1";
+/*$account = "SELECT * FROM account  LIMIT 1";
 $wallet = "SELECT * FROM wallet  LIMIT 1";
 $game = "SELECT * FROM game  LIMIT 1";
 $transaction= "SELECT * FROM transaction LIMIT 1";
@@ -35,6 +35,7 @@ while($row = $result->fetch_assoc()) {
     echo "ACCOUNT  ID  " . $row["account_ID"]. "  isAdmin   " . $row["isAdmin"]. "   account_username  " . $row["account_username"]. "    account_Password  " . $row["account_Password"]. "    email_Address  " .$row["email_Address"]. "    firstName  ". $row["firstName"]. "    lastName  ".$row["lastName"]. "    Wallet_wallet_ID  ".$row["Wallet_wallet_ID"]. "******* ".PHP_EOL;
 }
 ?>
+
 <br>
 <?php
 
@@ -78,6 +79,7 @@ while($row = $result5->fetch_assoc()) {
 
 
 
+*/
 
 
 
@@ -93,10 +95,8 @@ while($row = $result5->fetch_assoc()) {
 
 
 
-
-// Gets last used PK
-
-//include "php/IDManager.php";
-//$banana=new IDManager();
-//$id = $banana ->generateID('account_ID', 'account');
-//echo $id;
+ //Gets last used PK
+include "php/IDManager.php";
+$banana=new IDManager();
+$id = $banana ->generateID('account_ID', 'account');
+echo $id;

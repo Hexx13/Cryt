@@ -3,9 +3,9 @@
 
 class Account
 {
-    private $accountID;
-    private $username;
-    private $password;
+    protected $accountID;
+    protected $username;
+    protected $password;
 
     public function loginAccount($username, $password){
 
