@@ -33,7 +33,7 @@ require 'php/Layout/Header.php';
             </div>
             <?php
             foreach ($game as $gaming) {
-                echo '<div class="col-lg-4">';
+                echo '<div class="game">';
                 echo '<h2>';
                 echo $gaming;
                 echo '</h2>';
