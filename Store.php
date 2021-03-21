@@ -8,10 +8,6 @@ require 'php/Layout/Header.php';
 
 <main>
     <?php
-
-    ?>
-
-    <?php
     $game = array(
             'name' => 'beans',
             'price' => 'pog beans',
@@ -34,19 +30,19 @@ require 'php/Layout/Header.php';
                 <h2><?php echo $game['price']; ?></h2>
                 <p><?php echo $game['about'] ?></p>
             </div>
-            <?php
-            foreach ($game as $printgame) {
-                echo '<div class ="container2">';
-                echo '<div class ="row2">';
-                echo '<div class="game">';
-                echo '<h2>';
-                echo $printgame;
-                echo '</h2>';
-                echo '</div>';
-            }
-            ?>
         </div>
     </div>
+    <?php
+    foreach ($game as $printgame) {
+        echo '<div class ="container2">';
+        echo '<div class ="row2">';
+        echo '<div class="game">';
+        echo '<h2>';
+        echo $printgame;
+        echo '</h2>';
+        echo '</div>';
+    }
+    ?>
 
 </main>
 <?php
