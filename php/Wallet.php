@@ -6,7 +6,7 @@ class Wallet
     private $balance;
     private $walletID;
 
-    public function getBalance()
+    public function getBalance($walletID)
     {
         //make connection
         $link = mysqli_connect("localhost",
@@ -20,11 +20,17 @@ class Wallet
                 . mysqli_connect_error());
         }
 
-        $balanceQuery = "SELECT wallet_Balance from wallet WHERE wallet_ID= $this->walletID;";
+        $balanceQuery = "SELECT wallet_Balance from wallet WHERE wallet_ID= $walletID;";
+
+        $curBal = 0.00;
 
         if($result = $link ->query($balanceQuery)){
-            while ($fieldinfo  = $result ->fetch_field()){
+            /*while ($fieldinfo  = $result ->fetch_field()){
                 $curBal = $fieldinfo;
+            }*/
+
+            while($row = $result->fetch_assoc()) {
+                $curBal = $row["wallet_Balance"];
             }
             return $curBal;
         }

@@ -1,26 +1,34 @@
 <?php
+include "Wallet.php";
 
-
-class TopUp
+class TopUp extends Wallet
 {
-    public $amount;
+
    public $wallet_ID;
-    public function __construct($amount, $wallet_ID)
+    public function __construct($wallet_ID)
     {
-        $this->amount = $amount;
         $this->wallet_ID=$wallet_ID;
     }
 
+    public function topUp($amountToAdd, $id){
+        $curBal = $this->getBalance($id);
+        $topUpAmount = $amountToAdd + $curBal;
 
+        //make connection
+        $link = mysqli_connect("localhost",
+            "root",
+            "password",
+            "mydb");
 
-    public function setAmount($amount)
-    {
-        $this->amount = $amount;
+        // Check connection
+        if ($link === false) {
+            die("CANNOT CONNECT OH NO OH NO"
+                . mysqli_connect_error());
+        }
+
     }
 
-    public function getAmount()
-    {
-        return $this->amount;
-    }
+
+
 
 }

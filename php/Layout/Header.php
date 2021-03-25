@@ -1,4 +1,8 @@
 <html>
+<?php
+include "../Wallet.php";
+$beans = new Wallet();
+?>
 <div class="header">
     <div class="leftHead">
         <div class="logoBox"></div>
@@ -15,7 +19,7 @@
             <a class="balanceLink">
                 Balance:
                 <?php
-                echo "3.00"
+                echo $beans ->getBalance(23) //temporarily hardcoded until we figure out sessions
                 ?> €
             </a>
         </div>
