@@ -7,7 +7,7 @@
 <body>
 
 <main>
-    <form action="php/Account.php" method="loginAccount">
+    <form action="loggedIn" method="post">
 
         <label for="username">Username: </label>
         <input type="text" name="username"><br>

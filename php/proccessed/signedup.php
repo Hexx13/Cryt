@@ -1,5 +1,9 @@
+<a href="../../index.php">Back to the home page!</a>
 <?php
-include "php/Customer.php";
+
+
+
+include "../classes/Customer.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username =  $_REQUEST['username'];
@@ -8,7 +12,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $firstName = $_REQUEST['firstName'];
     $lastName = $_REQUEST['lastName'];
 
+    $customer = new Customer($password,$username, $emailAddress,$firstName,$lastName);
+    $customer->createAccountDB();
 }
 
-$customer = new Customer($password,$username, $emailAddress,$firstName,$lastName);
-$customer->createAccountDB();
+
+
+
+
