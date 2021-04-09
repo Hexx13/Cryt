@@ -25,5 +25,24 @@
     require 'php/Layout/Footer.php';
     ?>
 
+
+    <?php
+
+
+
+        include "php/classes/TopUp.php";
+
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $amount = $_REQUEST['amount'];
+            $id = $_REQUEST['id'];
+            $beans = new TopUp();
+            $beans->topUpWallet($amount, $id);
+            header('Location: /index.php');
+        }
+
+
+
+    ?>
+
 </html>
 
