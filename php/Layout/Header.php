@@ -4,14 +4,17 @@ include "php/classes/Wallet.php";
 $beans = new Wallet();
 ?>
 <div class="header">
-    <div class="leftHead">
-        <div class="logoBox"></div>
-        <div class="headerLinks">
-            <a href="Index.php">Home</a>
-            <a href="Index.php">Store</a>
-            <a href="Index.php">Library</a>
-        </div>
+    <a href="#default" class="logo">Logo go here</a>
+    <div class="header-right">
+        <a class="active" href="#Index.php">Home</a>
+        <a href="#Index.php">Store</a>
+        <a href="#Index.php">Library</a>
     </div>
+    <div class="topup">
+        <a href="#Index.php">Top Up</a>
+        <a href="#Index.php"></a>
+    </div>
+</div>
 
     <div class="headSpacer"></div>
     <div class="rightHead">
@@ -30,5 +33,5 @@ $beans = new Wallet();
         <div class="sign-upBox"></div>
         <div class="profPicBox"></div>
     </div>
-</div>
+</html>
 <br><br><br><br><br><br>
