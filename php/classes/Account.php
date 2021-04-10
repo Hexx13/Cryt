@@ -26,6 +26,7 @@ class Account
     public function login($result){
         if ($result) {
             $_SESSION["login"] = "1";
+            $_SESSION["username"] = "1";
             header("location:index.php");
         } else {
             header("location:login.php?err=1");
