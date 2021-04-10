@@ -7,9 +7,9 @@ $beans = new Wallet();
 <div class="header">
     <a href="#default" class="logo">Logo go here</a>
     <div class="header-right">
-        <a class="active" href="#Index.php">Home</a>
-        <a href="#Index.php">Store</a>
-        <a href="#Index.php">Library</a>
+        <a class="active" href="Index.php">Home</a>
+        <a href="Index.php">Store</a>
+        <a href="Index.php">Library</a>
     </div>
     <div class="topup">
         <a href="../../TopUpPage.php">  Balance:
