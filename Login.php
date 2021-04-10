@@ -37,7 +37,7 @@
         $db = new Database();
         $link = $db->getLink();
 
-        $sql = "select* from users where usname='$usname'and uspassword='$uspassword'";
+        $sql = "select* from users where account_username='$usname'and account_Password='$uspassword'";
 
         $res = mysqli_query($link, $sql);
         $result = mysqli_fetch_array($res);
