@@ -27,7 +27,7 @@ require 'php/Layout/Header.php';
         <div></div>
     </div>
     <div class="mainSideSpacer"></div>
-    <a href="logout.php"><h2><font color="red">Logout</font></h2>
+    <a href="Logout.php"><h2><font color="red">Logout</font></h2>
 
 
 
