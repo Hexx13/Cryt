@@ -20,48 +20,23 @@
     </form>
 
     <?php
-    if (isset($_REQUEST["err"]))
-        $msg = "Invalid Login Details";
+    if(isset($_REQUEST["err"]))
+        $msg="Invalid username or Password";
     ?>
     <p style="color:red;">
-        <?php if (isset($message)) {
-            echo $message;
-        } ?>
-    </p>
+        <?php if(isset($msg)) echo $msg; ?>
     <?php
+
     if (isset($_REQUEST['submit'])) {
 
         $usname = $_REQUEST['username'];
         $uspassword = $_REQUEST['password'];
 
-        //make connection
-        include_once "php/classes/Database.php";
-        $db = new Database();
-        $link = $db->getLink();
+        include_once "php/classes/Account.php";
+        $account = new Account();
+        $account->login($account->loginQuery($usname, $uspassword));
 
-        $sql = "select * from account where account_username='$usname'and account_Password='$uspassword'";
-
-        if ($res = mysqli_query($link, $sql)){
-            $result = mysqli_fetch_array($res);
-            if ($result) {
-                $_SESSION["login"] = "1";
-                header("location:index.php");
-            } else {
-
-                if (isset($_REQUEST["err"]))
-                    $msg = "Invalid Login Details";
-    ?>
-                <p style="color:red;">
-                    <?php if (isset($message)) {
-                        echo $message;
-                    }
-                }
-            } else {
-                echo "ERROR: OH GOD OH NO WHY aaaaaaaaaaaaaaaaaaaaa $sql. "
-                    . mysqli_error($link);
-            }
-        }
-
+    }
         ?>
 
     </p>
