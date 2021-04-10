@@ -27,10 +27,7 @@
 
 
     <?php
-
-
-
-        include "php/classes/TopUp.php";
+    include_once "php/classes/TopUp.php";
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $amount = $_REQUEST['amount'];
@@ -39,9 +36,6 @@
             $beans->topUpWallet($amount, $id);
             header('Location: /index.php');
         }
-
-
-
     ?>
 
 </html>

@@ -19,6 +19,15 @@
         <input type="submit" value="Submit">
     </form>
 
+    <?php
+    if(isset($_REQUEST["err"]))
+        $msg="Invalid Login Details";
+    ?>
+    <p style="color:red;">
+        <?php if(isset($message)){echo $message;} ?>
+
+    </p>
+
 </main>
 
 </body>

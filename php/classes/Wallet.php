@@ -1,6 +1,6 @@
 <?php
-include "Database.php";
-include "IDManager.php";
+include_once "Database.php";
+include_once "IDManager.php";
 class Wallet
 {
     private $balance;
@@ -9,8 +9,8 @@ class Wallet
     public function getBalance($walletID)
     {
         //make connection
-        $database = new Database();
-        $link = $database ->getLink();
+        $db = new Database();
+        $link = $db ->getLink();
 
         $balanceQuery = "SELECT wallet_Balance from wallet WHERE wallet_ID= $walletID;";
 

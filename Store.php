@@ -34,7 +34,8 @@ require 'php/Layout/Header.php';
         </div>
     </div>
     <?php
-    
+
+
     foreach ($game as $printgame) {
         echo '<div class ="container2">';
         echo '<div class ="row2">';

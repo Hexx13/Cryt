@@ -1,6 +1,4 @@
 <?php
-
-
 class Database
 {
     private $link;
@@ -25,6 +23,4 @@ class Database
         $this->createLink();
         return $this->link;
     }
-
-
 }

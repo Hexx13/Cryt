@@ -1,5 +1,5 @@
 <?php
-include "Wallet.php";
+include_once "Wallet.php";
 
 class TopUp extends Wallet
 {
@@ -8,8 +8,8 @@ class TopUp extends Wallet
         $newAmount = $amountToAdd + $curBal;
 
         //make connection
-        $database = new Database();
-        $link = $database ->getLink();
+        $databasetop = new Database();
+        $link = $databasetop ->getLink();
 
         $query = "UPDATE Wallet SET wallet_Balance=$newAmount WHERE wallet_ID=$id";
 
