@@ -34,7 +34,7 @@
 
         include_once "php/classes/Account.php";
         $account = new Account();
-        $account->login($account->loginQuery($usname, $uspassword));
+        $account->login($account->loginQuery($usname, $uspassword), $usname);
 
     }
         ?>

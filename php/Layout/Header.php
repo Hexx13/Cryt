@@ -14,7 +14,10 @@ $beans = new Wallet();
     <div class="topup">
         <a href="../../TopUpPage.php">  Balance:
             <?php
-            echo $beans ->getBalance(23) //temporarily hardcoded until we figure out sessions
+            include_once "php/classes/Account.php";
+            $account = new Account();
+
+            echo $beans ->getBalance($account->getAccountID($_SESSION["username"]));
             ?> €  Top Up</a>
     </div>
 </div>

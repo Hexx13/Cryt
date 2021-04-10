@@ -13,7 +13,7 @@ if(!isset($_SESSION["login"]))
     ?>
 
 <main>
-    <form action="php/proccessed/toppedUp.php" method="post">
+    <form action="TopUpPage.php" method="post">
 
         <label for="amount">Enter Amount: </label>
         <input type="text" name="amount"><br>
