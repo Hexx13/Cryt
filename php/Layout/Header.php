@@ -12,27 +12,12 @@ $beans = new Wallet();
         <a href="#Index.php">Library</a>
     </div>
     <div class="topup">
-        <a href="#Index.php">Top Up</a>
-        <a href="#Index.php"></a>
+        <a href="../../TopUpPage.php">  Balance:
+            <?php
+            echo $beans ->getBalance(23) //temporarily hardcoded until we figure out sessions
+            ?> €  Top Up</a>
     </div>
 </div>
 
-    <div class="headSpacer"></div>
-    <div class="rightHead">
-        <div class="balanceBox">
-            Balance:
-            <?php
-            echo $beans ->getBalance(23) //temporarily hardcoded until we figure out sessions
-            ?> €
-            Wallet id: <?php
-            echo 23 //temporarily hardcoded until we figure out sessions
-            ?>
-            <a class="balanceLink" href="../../TopUpPage.php">
-              Top Up
-            </a>
-        </div>
-        <div class="sign-upBox"></div>
-        <div class="profPicBox"></div>
-    </div>
 </html>
 <br><br><br><br><br><br>
