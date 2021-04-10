@@ -3,8 +3,7 @@
 include "php/classes/Wallet.php";
 $beans = new Wallet();
 ?>
-<link rel="Stylesheets/Headerfancy.css">
-
+<style>@import "../../Stylesheets/Headerfancy.css";</style>
 <div class="header">
     <a href="#default" class="logo">Logo go here</a>
     <div class="header-right">
