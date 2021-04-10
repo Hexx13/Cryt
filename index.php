@@ -4,6 +4,7 @@ session_start ();
 if(!isset($_SESSION["login"]))
 
     header("location:login.php");
+
 ?>
 <html lang="en">
 <head>
@@ -26,6 +27,7 @@ require 'php/Layout/Header.php';
         <div></div>
     </div>
     <div class="mainSideSpacer"></div>
+    <a href="logout.php"><h2><font color="red">Logout</font></h2>
 
 
 
