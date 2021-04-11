@@ -28,19 +28,19 @@ body {
     padding: 20px 10px;
     width: 100%;
 }
-.header .pagebutton , header > a:visited{
+.header .pagebutton , header > .pagebutton:visited{
     float: left;
     color: white;
     text-align:center;
     padding: 20px;
     text-decoration: none;
     font-size: 24px;
+    font-weight: bold;
     line-height: 25px;
     border-radius: 5px;
 }
 .header .pagebutton:hover {
-    background-color: #a8ffd5;
-    color: black;
+    color: #a8ffd5;
     transition: 0.5s;
 }
 .header.active {
