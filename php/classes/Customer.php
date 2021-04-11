@@ -1,10 +1,9 @@
 <?php
 //test
 include_once "IDManager.php";
-include_once "Account.php";
 include_once "Database.php";
 
-class Customer extends Account
+class Customer
 {
     private $profilePicturePath;
     private $emailAddress;

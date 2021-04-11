@@ -9,8 +9,8 @@ $beans = new Wallet();
     <div class="header-left">
         <img src="img/logo.png" class="logo">
         <a class="active" href="Index.php">Home</a>
-        <a href="Index.php">Store</a>
-        <a href="Index.php">Library</a>
+        <a href="Store.php">Store</a>
+        <a href="Library.php">Library</a>
     </div>
     <div class="spacer"></div>
     <div class="header-right">
