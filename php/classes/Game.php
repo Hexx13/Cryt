@@ -1,10 +1,5 @@
 <?php
 
-$doomer = new Game();
-
-$doomer->setPrice(10.00);
-$doomer->setSale(70);
-echo $doomer->calcCurrentPrice();
 
 class Game
 {
