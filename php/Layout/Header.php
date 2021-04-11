@@ -27,6 +27,9 @@ $beans = new Wallet();
 
             ?> €  Top Up</a>
     </div>
+    <div class="profile">
+        <img src="img/default_pfp.png">
+    </div>
 </div>
 
 </html>
