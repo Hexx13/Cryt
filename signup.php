@@ -7,9 +7,7 @@
 </head>
 <body>
 <?php
-
 session_start();session_destroy();
-
 ?>
 <main>
     <form action="signup.php" method="post">
