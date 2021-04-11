@@ -11,7 +11,7 @@ session_start();
 require 'php/Layout/Header.php';
 ?>
 <main>
-    <form action="php/proccessed/signup.php" method="post">
+    <form action="signup.php" method="post">
 
         <label for="username">Username: </label>
         <input type="text" name="username"><br>
@@ -47,6 +47,7 @@ require 'php/Layout/Header.php';
 
         $customer = new Customer($password,$username, $emailAddress,$firstName,$lastName);
         $customer->createAccountDB();
+        header("location:login.php");
     }
 
 
