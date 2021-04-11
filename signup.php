@@ -7,7 +7,8 @@
 </head>
 <body>
 <?php
-session_start();
+
+session_start();session_destroy();
 require 'php/Layout/Header.php';
 ?>
 <main>
