@@ -18,7 +18,7 @@
 
         <input type="submit" value="Login" name="submit">
     </form>
-
+    <a class="" href="signup.php">Sign up here</a>
     <?php
     if(isset($_REQUEST["err"]))
         $msg="Invalid username or Password";
@@ -40,6 +40,7 @@
         ?>
 
     </p>
+
 </main>
 
 </body>
