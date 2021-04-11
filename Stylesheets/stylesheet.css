@@ -103,13 +103,13 @@ input[type=text], input[type=password] {
     border: 0px solid white;
 }
 
-bannerGrad{
+.bannerGrad{
     height: 40px;
     background-color: rgb(59,47,155);
     background-image: linear-gradient(rgb(28,22,67),rgb(15,13,35));
 }
 
-button{
+.button{
     text-align: center;
     padding :15px;
     height: 30px;
@@ -118,7 +118,7 @@ button{
     font-size:25px;
     width: 180px;
 }
-discount{
+.discount{
     text-align:center;
     padding-top: 7px;
     height: 30px;
