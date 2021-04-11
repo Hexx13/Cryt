@@ -8,6 +8,8 @@ if(!isset($_SESSION["login"]))
 ?>
 <html lang="en">
 <head>
+
+
     <meta charset="UTF-8">
     <title>Cryt</title>
 </head>

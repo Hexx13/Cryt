@@ -62,10 +62,11 @@ body {
     height: 3vw;
 }
 /*center stuff */
-backgroundGrad {
-    height: 500px;
+.backgroundGrad {
+    height: 1000px;
     background-color: black; /* For browsers that do not support gradients */
     background-image: linear-gradient(rgb(27,27,51), rgb(13,10,31));
+    color:white;
 }
 
 bannerGrad{
