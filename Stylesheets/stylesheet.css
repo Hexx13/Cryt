@@ -60,7 +60,7 @@ body {
 .profile .profilePicture{
     width: 3vw;
     height: 3vw;
-    border-radius: 5px;
+    border-radius: 100%;
 }
 /*center stuff */
 backgroundGrad {
