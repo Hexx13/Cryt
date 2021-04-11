@@ -49,10 +49,18 @@ body {
 }
 
 
-.header-right, .header-left{
+.header-right, .header-left, .profile{
     padding: 7px;
 }
 
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile .profilePicture{
+    width: 3vw;
+    height: 3vw;
+}
 /*center stuff */
 #grad1 {
     height: 500px;
