@@ -62,6 +62,10 @@ body {
     height: 3vw;
     border-radius: 100%;
 }
+.profile_link:hover{
+    border: #a8ffd5;
+}
+
 /*center stuff */
 backgroundGrad {
     height: 500px;

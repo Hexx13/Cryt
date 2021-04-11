@@ -7,7 +7,7 @@ $beans = new Wallet();
 <div class="header" style="padding: 0;">
 
     <div class="header-left">
-        <a class = "profile_link" href="profile.php"><img src="img/logo.png" class="logo"></a>
+        <img src="img/logo.png" class="logo">
         <a class="active" href="Index.php">Home</a>
         <a href="Store.php">Store</a>
         <a href="Library.php">Library</a>
@@ -28,7 +28,7 @@ $beans = new Wallet();
             ?> €  Top Up</a>
     </div>
     <div class="profile">
-        <img src="img/default_pfp.png" class="profilePicture">
+        <a class = "profile_link" href="profile.php"><img src="img/default_pfp.png" class="profilePicture"></a>
     </div>
 </div>
 
