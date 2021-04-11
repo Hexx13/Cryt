@@ -65,7 +65,7 @@ require 'php/Layout/Header.php';
         }
     }
     ?>
-    <?php require "templates/header.php"; ?>
+    <?php require "Layout/header.php"; ?>
 
     <?php
     if (isset($_POST['submit'])) {
