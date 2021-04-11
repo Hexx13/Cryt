@@ -2,15 +2,23 @@ body {
     margin: 0;
     font-family: sans-serif;
 }
-.topup{
-    float: right;
+.header-right{
+    display: flex;
+    flex: 1;
     color: white;
     text-align:center;
 }
+.spacer{
+    display: flex;
+    flex: 4.2;
+}
 .header {
+
+    display: flex;
     overflow: hidden;
     background-color: #111021;
     padding: 20px 10px;
+    width: 100%;
 }
 .header a , header > a:visited{
     float: left;
@@ -18,7 +26,7 @@ body {
     text-align:center;
     padding: 20px;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 25px;
     border-radius: 5px;
 }
@@ -30,7 +38,20 @@ body {
     background-color: green;
     color: white;
 }
+.header-left{
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+.header .logo{
+    width: 3vw;
+    height: 3vw;
+}
 
+
+.header-right, .header-left{
+    padding: 7px;
+}
 
 footer{
     margin-top: 0;
