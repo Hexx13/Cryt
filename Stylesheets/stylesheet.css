@@ -81,11 +81,10 @@ body {
 }
 input[type=text], input[type=password] {
     width: 10%;
-    color: white;
+    color: #111021 ;
     margin: 8px 0;
-    background-color: rgb(28,22,67);
-    border: 2px solid white;
-    border-radius: 4px;
+    background-color: #3b2f9b;
+    border: 0px solid white;
 }
 
 bannerGrad{
