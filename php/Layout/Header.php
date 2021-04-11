@@ -7,7 +7,7 @@ $beans = new Wallet();
 <div class="header" style="padding: 0;">
 
     <div class="header-left">
-        <img src="img/logo.png" class="logo">
+        <a class = "profile_link" href="profile.php"><img src="img/logo.png" class="logo"></a>
         <a class="active" href="Index.php">Home</a>
         <a href="Store.php">Store</a>
         <a href="Library.php">Library</a>
