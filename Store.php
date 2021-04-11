@@ -12,7 +12,7 @@ require 'php/Layout/Header.php';
 ?>
 
 
-<main>
+<main class="backgroundGrad">
 
 
     <div class="container">

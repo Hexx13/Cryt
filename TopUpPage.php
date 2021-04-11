@@ -8,11 +8,12 @@ if(!isset($_SESSION["login"]))
 <html lang="en">
 <head>
 
+
+
+<main class="backgroundGrad">
     <?php
     require 'php/Layout/Header.php';
     ?>
-
-<main>
     <form action="TopUpPage.php" method="post">
 
         <label for="amount">Enter Amount: </label>
@@ -21,12 +22,12 @@ if(!isset($_SESSION["login"]))
 
         <input type="submit" value="Submit">
     </form>
-
-</main>
-
     <?php
     require 'php/Layout/Footer.php';
     ?>
+</main>
+
+
 
 
     <?php

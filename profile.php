@@ -7,17 +7,19 @@
     <title>Cryt</title>
 </head>
 <body>
-<?php
-require 'php/Layout/Header.php';
-?>
-<main>
+
+<main class="backgroundGrad">
+    <?php
+    require 'php/Layout/Header.php';
+    ?>
     <div class="backgroundGrad">
 
     </div>
+    <?php
+    require 'php/Layout/Footer.php';
+    ?>
 </main>
-<?php
-require 'php/Layout/Footer.php';
-?>
+
 </body>
 </html>
 

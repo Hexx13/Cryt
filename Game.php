@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php
-require 'php/Layout/Header.php';
-?>
 
-<main>
 
-    
+<main class="backgroundGrad">
+    <?php
+    require 'php/Layout/Header.php';
+    ?>
+
+    <?php
+    require 'php/Layout/Footer.php';
+    ?>
 </main>
 
-<?php
-require 'php/Layout/Footer.php';
-?>
+
 
 </html>

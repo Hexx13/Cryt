@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<main>
+<main class="backgroundGrad">
     <div class="backgroundGrad">
     <form action="Login.php" method="POST">
 

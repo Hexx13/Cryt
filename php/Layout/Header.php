@@ -14,7 +14,7 @@ $beans = new Wallet();
     </div>
     <div class="spacer"></div>
     <div class="header-right">
-        <a class="pagebutton" href="../../TopUpPage.php">  Balance:
+        <a class="pagebutton"  id="topupBut" " href="../../TopUpPage.php">  Balance:
             <?php
             include_once "php/classes/Account.php";
             include_once "php/classes/Wallet.php";
