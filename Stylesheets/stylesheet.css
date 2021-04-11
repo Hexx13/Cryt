@@ -20,7 +20,7 @@ body {
     padding: 20px 10px;
     width: 100%;
 }
-.header a , header > a:visited{
+.header .pagebutton , header > a:visited{
     float: left;
     color: white;
     text-align:center;
@@ -30,9 +30,10 @@ body {
     line-height: 25px;
     border-radius: 5px;
 }
-.header a:hover {
+.header .pagebutton:hover {
     background-color: #a8ffd5;
     color: black;
+    transition: 0.5s;
 }
 .header.active {
     background-color: green;
@@ -62,8 +63,13 @@ body {
     height: 3vw;
     border-radius: 100%;
 }
-.profile_link:hover{
+.profile_link > img:hover{
+    transition: 0.3s;
+    padding: 3px;
     border: #a8ffd5;
+    background-color: #a8ffd5;
+
+
 }
 
 /*center stuff */

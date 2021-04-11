@@ -8,13 +8,13 @@ $beans = new Wallet();
 
     <div class="header-left">
         <img src="img/logo.png" class="logo">
-        <a class="active" href="Index.php">Home</a>
-        <a href="Store.php">Store</a>
-        <a href="Library.php">Library</a>
+        <a class="pagebutton" href="Index.php">Home</a>
+        <a class="pagebutton" href="Store.php">Store</a>
+        <a class="pagebutton" href="Library.php">Library</a>
     </div>
     <div class="spacer"></div>
     <div class="header-right">
-        <a href="../../TopUpPage.php">  Balance:
+        <a class="pagebutton" href="../../TopUpPage.php">  Balance:
             <?php
             include_once "php/classes/Account.php";
             include_once "php/classes/Wallet.php";
