@@ -30,6 +30,18 @@ body {
     background-color: green;
     color: white;
 }
+
+
+footer{
+    margin-top: 0;
+    background-color: #111021;
+    display: flex;
+    flex-direction: row;
+    position:absolute;
+    bottom:0;
+    width:100%;
+}
+
 @media screen and (max-width: 500px) {
     .header a {
         float: none;
@@ -39,4 +51,6 @@ body {
     .header-left {
         float: left;
     }
+
+
 }

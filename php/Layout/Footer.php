@@ -1,6 +1,6 @@
 <html>
-<footer class="footer">
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<head><style>@import "../../Stylesheets/stylesheet.css";</style></head>
+<footer>
     <div class="footLeft">
         <div class="footLeftTop">
             <a href="Index.php">Contact Us</a>
