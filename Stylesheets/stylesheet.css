@@ -62,19 +62,19 @@ body {
     height: 3vw;
 }
 /*center stuff */
-#backgroundGrad {
+backgroundGrad {
     height: 500px;
     background-color: black; /* For browsers that do not support gradients */
     background-image: linear-gradient(rgb(27,27,51), rgb(13,10,31));
 }
 
-#bannerGrad{
+bannerGrad{
     height: 40px;
     background-color: rgb(59,47,155);
     background-image: linear-gradient(rgb(28,22,67),rgb(15,13,35));
 }
 
-#button{
+button{
     text-align: center;
     padding :15px;
     height: 30px;
@@ -83,7 +83,7 @@ body {
     font-size:25px;
     width: 180px;
 }
-#discount{
+discount{
     text-align:center;
     padding-top: 7px;
     height: 30px;
