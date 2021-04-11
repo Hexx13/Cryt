@@ -20,6 +20,7 @@
 
         <input type="submit" value="Login" name="submit">
     </form>
+        <a class="" href="signup.php.php">Sign up here</a>
     </div>
     <?php
     if(isset($_REQUEST["err"]))
