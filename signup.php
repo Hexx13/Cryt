@@ -9,7 +9,7 @@
 <?php
 
 session_start();session_destroy();
-require 'php/Layout/Header.php';
+
 ?>
 <main>
     <form action="signup.php" method="post">
@@ -34,8 +34,6 @@ require 'php/Layout/Header.php';
     </form>
 
     <?php
-    require 'php/Layout/Footer.php';
-
 
     include "php/classes/Customer.php";
 
@@ -50,10 +48,6 @@ require 'php/Layout/Header.php';
         $customer->createAccountDB();
         header("location:login.php");
     }
-
-
-
-
     ?>
 </main>
 
