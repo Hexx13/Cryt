@@ -1,4 +1,12 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html{height: 100%;}
 body {
+    height: 100%;
     margin: 0;
     font-family: sans-serif;
 }
@@ -72,9 +80,12 @@ body {
 
 }
 
+main{
+    height: 100%;
+}
+
 /*center stuff */
 .backgroundGrad {
-    height: 1000px;
     background-color: black; /* For browsers that do not support gradients */
     background-image: linear-gradient(rgb(27,27,51), rgb(13,10,31));
     color:white;

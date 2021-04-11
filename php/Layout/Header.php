@@ -33,4 +33,3 @@ $beans = new Wallet();
 </div>
 
 </html>
-<br><br><br><br><br><br>
