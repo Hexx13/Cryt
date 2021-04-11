@@ -73,10 +73,19 @@ body {
 }
 
 /*center stuff */
-backgroundGrad {
-    height: 500px;
+.backgroundGrad {
+    height: 1000px;
     background-color: black; /* For browsers that do not support gradients */
     background-image: linear-gradient(rgb(27,27,51), rgb(13,10,31));
+    color:white;
+}
+input[type=text], input[type=password] {
+    width: 10%;
+    color: white;
+    margin: 8px 0;
+    background-color: rgb(28,22,67);
+    border: 2px solid white;
+    border-radius: 4px;
 }
 
 bannerGrad{

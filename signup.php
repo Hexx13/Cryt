@@ -2,6 +2,7 @@
 
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="Stylesheets/stylesheet.css"/>
     <meta charset="UTF-8">
     <title>Cryt</title>
 </head>
@@ -10,6 +11,7 @@
 session_start();session_destroy();
 ?>
 <main>
+    <div class="backgroundGrad">
     <form action="signup.php" method="post">
 
         <label for="username">Username: </label>
@@ -31,6 +33,7 @@ session_start();session_destroy();
         <input type="submit" value="Submit">
     </form>
 
+        <div>
     <?php
 
     include "php/classes/Customer.php";
