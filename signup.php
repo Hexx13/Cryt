@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,6 +7,7 @@
 </head>
 <body>
 <?php
+session_start();
 require 'php/Layout/Header.php';
 ?>
 <main>
