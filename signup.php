@@ -7,7 +7,8 @@
 </head>
 <body>
 <?php
-session_start();
+
+session_start();session_destroy();
 require 'php/Layout/Header.php';
 ?>
 <main>
@@ -24,7 +25,7 @@ require 'php/Layout/Header.php';
 
 
         <label for="email">Email: </label>
-        <input type="email" name="email"><br>
+        <input type="text" name="email"><br>
 
         <label for="password">Password: </label>
         <input type="password" name="password"><br>
