@@ -23,15 +23,15 @@ require 'php/Layout/Header.php';
         </div>
     </div>
 
-    <div class="container2">
+   <!-- <div class="container2">
         <div class="row2">
             <div class = "game">
-                <h1><?php echo $game['name']; ?></h1>
-                <h2><?php echo $game['price']; ?></h2>
-                <p><?php echo $game['about'] ?></p>
+                <h1><?php /* echo $game['name']; */?></h1>
+                <h2><?php /*echo $game['price']; */?></h2>
+                <p><?php /*echo $game['about'] ?>*/ ?>
             </div>
         </div>
-    </div>
+    </div> -->
 
 //////////////////////////
     <?php
