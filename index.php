@@ -8,7 +8,7 @@ if(!isset($_SESSION["login"]))
 ?>
 <html lang="en">
 <head>
-
+    <link rel="stylesheet" type="text/css" href="Stylesheets/stylesheet.css"/>
 
     <meta charset="UTF-8">
     <title>Cryt</title>
@@ -18,6 +18,8 @@ if(!isset($_SESSION["login"]))
 require 'php/Layout/Header.php';
 ?>
 <main>
+    <div class="backgroundGrad">
+
 
     <div class="mainSideSpacer"></div>
     <div class="mainCenter">
@@ -30,7 +32,7 @@ require 'php/Layout/Header.php';
     </div>
     <div class="mainSideSpacer"></div>
     <a href="Logout.php"><h2><font color="red">Logout</font></h2>
-
+    </div>
 
 
 </main>

@@ -2,6 +2,7 @@
 <?php session_start(); ?>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="Stylesheets/stylesheet.css"/>
     <meta charset="UTF-8">
     <title>Cryt</title>
 </head>
@@ -10,8 +11,9 @@
 require 'php/Layout/Header.php';
 ?>
 <main>
+    <div class="backgroundGrad">
 
-
+    </div>
 </main>
 <?php
 require 'php/Layout/Footer.php';

@@ -6,7 +6,7 @@ if(!isset($_SESSION["login"]))
     header("location:login.php");
 ?>
 <html lang="en">
-
+<link rel="stylesheet" type="text/css" href="Stylesheets/stylesheet.css"/>
 <?php
 require 'php/Layout/Header.php';
 ?>
