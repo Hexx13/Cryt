@@ -49,10 +49,17 @@ body {
 }
 
 
-.header-right, .header-left{
+.header-right, .header-left, .profile{
     padding: 7px;
 }
-
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile .profilePicture{
+    width: 3vw;
+    height: 3vw;
+}
 footer{
     margin-top: 0;
     background-color: #111021;
@@ -67,6 +74,9 @@ footer{
 footer > a, footer a:visited{
     color: #a8ffd5;
 }
+
+
+
 @media screen and (max-width: 500px) {
     .header a {
         float: none;
