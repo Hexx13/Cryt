@@ -75,7 +75,7 @@ body {
 }
 input[type=text], input[type=password] {
     width: 10%;
- 
+    color: white;
     margin: 8px 0;
     background-color: rgb(28,22,67);
     border: 2px solid white;
