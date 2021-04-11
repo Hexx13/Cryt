@@ -13,13 +13,7 @@ require 'php/Layout/Header.php';
 
 
 <main>
-    <?php
-    $game = array(
-            'name' => 'beans',
-            'price' => 'pog beans',
-            'about' => 'Egins beans',
-    );
-    ?>
+
 
     <div class="container">
         <div class="row">

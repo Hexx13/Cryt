@@ -7,15 +7,9 @@ class IDManager
     {
         $id = 0;
         //make connection
-        $link = mysqli_connect("localhost",
-            "root",
-            "password",
-            "mydb");
-        //check connection
-        if (mysqli_connect_errno()) {
-            printf("Connect failed: %s\n", mysqli_connect_error());
-            exit();
-        }
+        include_once "php/classes/Database.php";
+        $db = new Database();
+        $link = $db->getLink();
 
         //echo"<mydb>";
         $LastID = $link->query("SELECT $primaryKey FROM $table ORDER BY $primaryKey DESC LIMIT 1");
