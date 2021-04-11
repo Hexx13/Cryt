@@ -53,6 +53,17 @@ body {
     padding: 7px;
 }
 
+/*center stuff */
+#grad1 {
+    height: 500px;
+    background-color: black; /* For browsers that do not support gradients */
+    background-image: linear-gradient(rgb(27,27,51), rgb(13,10,31));
+}
+
+
+
+
+
 footer{
     margin-top: 0;
     background-color: #111021;
@@ -67,6 +78,7 @@ footer{
 footer > a, footer a:visited{
     color: #a8ffd5;
 }
+
 @media screen and (max-width: 500px) {
     .header a {
         float: none;
