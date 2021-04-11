@@ -18,8 +18,6 @@ if(!isset($_SESSION["login"]))
         <label for="amount">Enter Amount: </label>
         <input type="text" name="amount"><br>
 
-        <label for="amount">Enter wallet id: </label>
-        <input type="text" name="id"><br>
 
         <input type="submit" value="Submit">
     </form>
@@ -32,13 +30,18 @@ if(!isset($_SESSION["login"]))
 
 
     <?php
+    include_once "php/classes/Account.php";
+    include_once "php/classes/Wallet.php";
     include_once "php/classes/TopUp.php";
 
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $amount = $_REQUEST['amount'];
-            $id = $_REQUEST['id'];
             $beans = new TopUp();
-            $beans->topUpWallet($amount, $id);
+            $account = new Account();
+            $wallet = new Wallet();
+            $accountID = $account->getAccountID($_SESSION["username"]);
+            $walletID = $wallet->getWalletID($accountID);
+            $beans->topUpWallet($amount, $walletID);
             header('Location: /index.php');
         }
     ?>

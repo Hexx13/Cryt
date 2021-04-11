@@ -44,7 +44,8 @@ class Account
 
         if ($res = mysqli_query($link, $sql)){
             // this bad figure out  how get the actual id value from the  result
-            return mysqli_fetch_array($res);
+            $arr = mysqli_fetch_array($res);
+            return $arr["account_ID"];
         }else{
             echo "ERROR: OH GOD OH NO WHY aaaaaaaaaaaaaaaaaaaaa $sql. "
                 . mysqli_error($link);
