@@ -6,7 +6,6 @@
             <a href="Index.php">Contact Us</a>
             <a href="Index.php">Upload your Game</a>
             <a href="Index.php">Join our team</a>
-            <a href="Index.php">Blog</a>
         </div>
         <div class="footLeftBot">
             <div>
@@ -15,7 +14,7 @@
                 <a>Cookies</a>
             </div>
             <div>
-                <p>Blah Blah Copyright lorem ipsum dolor </p>
+                <h2><font color="white">Copyright by Blanch ye pal</font></h2>
             </div>
         </div>
     </div>
