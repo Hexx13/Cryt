@@ -24,20 +24,13 @@ if (!isset($_SESSION["login"]))
         <div class="gameSpacerSide"></div>
             <div class = "gameContainer">
                 <?PHP foreach($gameArray as $game){ ?>
-                    <div claSS="gameBoxDesign">
+                    <a claSS="gameBoxDesign">
                         <h2><?PHP echo $game['game_Name']?></h2>
                         <?PHP
                         echo $game['game_Desc'];
-                        echo "<br>";
                         echo $game['game_Price'];
-                        echo "<br>";
-                        $path = $game['game_File_Path'];
-                        echo "<a href='$path'> banana</a>";
-
-                        echo "<br>";
-                        echo "<br>";
                         ?>
-                    </div>
+                    </a>
                     <!-- add path for images for ez shane slideshow -->
                 <?PHP } ?>
 
