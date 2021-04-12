@@ -168,6 +168,7 @@ footer > a, footer a:visited{
     padding: 10px;
     height: 200px;
     width: 25%;
+    min-height: 0;
 
 }
 
