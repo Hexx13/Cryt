@@ -33,102 +33,50 @@ require 'php/Layout/Header.php';
         </div>
     </div> -->
 
-//////////////////////////
-    <?php
+    <form action="signup.php" method="post">
 
-    /**
-     * Function to query information based on
-     * a parameter: in this case, location.
-     *
-     */
+        <label for="gameName">Username: </label>
+        <input type="text" name="gameName"><br>
 
-    if (isset($_POST['submit'])) {
-        try {
-            require "../config.php";
-            require "../common.php";
+        <label for="gameDesc">First name:</label>
+        <input type="text" name="gameDesc"><br>
 
-            $connection = new PDO($dsn, $username, $password, $options);
+        <label for="gamePrice">Last name:</label>
+        <input type="text" name="gamePrice"><br>
 
-            $sql = "SELECT *
-    FROM users
-    WHERE location = :location";
 
-            $location = $_POST['location'];
+        <label for="gameFilePath">Email: </label>
+        <input type="text" name="gameFilePath"><br>
 
-            $statement = $connection->prepare($sql);
-            $statement->bindParam(':location', $location, PDO::PARAM_STR);
-            $statement->execute();
+        <label for="gameAuthor">Password: </label>
+        <input type="password" name="gameAuthor"><br>
 
-            $result = $statement->fetchAll();
-        } catch(PDOException $error) {
-            echo $sql . "<br>" . $error->getMessage();
-        }
-    }
-    ?>
-    <?php require "Layout/header.php"; ?>
+        <label for="gameID">Password: </label>
+        <input type="password" name="password"><br>
 
-    <?php
-    if (isset($_POST['submit'])) {
-        if ($result && $statement->rowCount() > 0) { ?>
-            <h2>Results</h2>
-
-            <table>
-                <thead>
-                <tr>
-                    <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email Address</th>
-                    <th>Age</th>
-                    <th>Location</th>
-                    <th>Date</th>
-                </tr>
-                </thead>
-                <tbody>
-                <?php foreach ($result as $row) { ?>
-                    <tr>
-                        <td><?php echo escape($row["id"]); ?></td>
-                        <td><?php echo escape($row["firstname"]); ?></td>
-                        <td><?php echo escape($row["lastname"]); ?></td>
-                        <td><?php echo escape($row["email"]); ?></td>
-                        <td><?php echo escape($row["age"]); ?></td>
-                        <td><?php echo escape($row["location"]); ?></td>
-                        <td><?php echo escape($row["date"]); ?> </td>
-                    </tr>
-                <?php } ?>
-                </tbody>
-            </table>
-        <?php } else { ?>
-            > No results found for <?php echo escape($_POST['location']); ?>.
-        <?php }
-    } ?>
-
-    <h2>Find user based on location</h2>
-
-    <form method="post">
-        <label for="location">Location</label>
-        <input type="text" id="location" name="location">
-        <input type="submit" name="submit" value="View Results">
+        <input type="submit" value="Submit">
     </form>
 
-    <a href="index.php">Back to home</a>
+    <div>
+        <?php
 
-    <?php require "templates/footer.php"; ?>
-    ///////////////////////////////
+        include "php/classes/Customer.php";
+
+        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+            $username =  $_REQUEST['username'];
+            $password = $_REQUEST['password'];
+            $emailAddress = $_REQUEST['email'];
+            $firstName = $_REQUEST['firstName'];
+            $lastName = $_REQUEST['lastName'];
+
+            $customer = new Customer($password,$username, $emailAddress,$firstName,$lastName);
+            $customer->createAccountDB();
+            header("location:login.php");
+        }
+        ?>
 
 
 
-
-   <?php  /*foreach ($game as $printgame) {
-        echo '<div class ="container2">';
-        echo '<div class ="row2">';
-        echo '<div class="game">';
-        echo '<h2>';
-        echo $printgame;
-        echo '</h2>';
-        echo '</div>';
-    }
-   */ ?>
 
 
 
