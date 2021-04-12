@@ -14,6 +14,8 @@
     ?>
     <div class="backgroundGrad">
 
+        <a href="Logout.php"><h2><font color="white"><font size="2">Logout</font></font></h2>
+
     </div>
     <?php
     require 'php/Layout/Footer.php';
