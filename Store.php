@@ -48,10 +48,10 @@ require 'php/Layout/Header.php';
         <input type="text" name="gameFilePath"><br>
 
         <label for="gameAuthor">Game Author: </label>
-        <input type="password" name="gameAuthor"><br>
+        <input type="text" name="gameAuthor"><br>
 
         <label for="gameID">Game ID: </label>
-        <input type="password" name="password"><br>
+        <input type="text" name="GameID"><br>
 
         <input type="submit" value="Submit">
     </form>
