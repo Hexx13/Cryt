@@ -24,10 +24,8 @@ if (!isset($_SESSION["login"]))
         <div class="gameSpacerSide"></div>
             <div class = "gameContainer">
                 <?PHP foreach($gameArray as $game){ ?>
-                    <a claSS="gameBoxDesign">
-                        <h2><?PHP echo $game['game_Name']?></h2>
-                        <?PHP
-                        echo $game['game_Desc'];
+                    <a class="gameBoxDesign">
+                        <?PHP echo $game['game_Name'];
                         echo $game['game_Price'];
                         ?>
                     </a>
