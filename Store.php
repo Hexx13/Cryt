@@ -35,23 +35,22 @@ require 'php/Layout/Header.php';
 
     <form action="signup.php" method="post">
 
-        <label for="gameName">Username: </label>
+        <label for="gameName">Game Name: </label>
         <input type="text" name="gameName"><br>
 
-        <label for="gameDesc">First name:</label>
+        <label for="gameDesc">Game Description:</label>
         <input type="text" name="gameDesc"><br>
 
-        <label for="gamePrice">Last name:</label>
+        <label for="gamePrice">Game Price:</label>
         <input type="text" name="gamePrice"><br>
 
-
-        <label for="gameFilePath">Email: </label>
+        <label for="gameFilePath">Game File Path: </label>
         <input type="text" name="gameFilePath"><br>
 
-        <label for="gameAuthor">Password: </label>
+        <label for="gameAuthor">Game Author: </label>
         <input type="password" name="gameAuthor"><br>
 
-        <label for="gameID">Password: </label>
+        <label for="gameID">Game ID: </label>
         <input type="password" name="password"><br>
 
         <input type="submit" value="Submit">
