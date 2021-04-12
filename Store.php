@@ -20,13 +20,13 @@ if (!isset($_SESSION["login"]))
 
     ?>
 
-    <div>
-        <div>
-        <?PHP foreach($gameArray as $game){ ?>
-            <div>
-                <h2><?PHP echo $game['game_Name']?></h2>
 
-                <div>
+        <div class = "gameContainer">
+        <?PHP foreach($gameArray as $game){ ?>
+
+
+                <div claSS="gameBoxDesign">
+                    <h2><?PHP echo $game['game_Name']?></h2>
                 <?PHP
                 echo $game['game_Desc'];
                 echo "<br>";
@@ -40,11 +40,9 @@ if (!isset($_SESSION["login"]))
                 ?>
                 </div>
                 <!-- add path for images for ez shane slideshow -->
-            ?>
-            </div>
 
 
-        </div>
+
         <?PHP } ?>
 
 
