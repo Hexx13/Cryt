@@ -159,3 +159,13 @@ footer > a, footer a:visited{
 
 
 }
+
+.gameBoxDesign{
+   border-style: solid;
+    border-color: crimson;
+}
+
+.gameContainer{
+    display: flex;
+    flex-direction: row;
+}
