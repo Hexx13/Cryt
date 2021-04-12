@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php
+include_once "php/classes/Game.php";
 session_start ();
 if(!isset($_SESSION["login"]))
 
@@ -24,8 +25,10 @@ require 'php/Layout/Header.php';
     </div>
 
 
+<?php
+$gamers = new Game();
 
-
+var_dump($gamers->getGameArray()); ?>
 
 
 

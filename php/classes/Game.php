@@ -18,7 +18,7 @@ class Game
     }
 
 
-    public function getGameArray($accountID)
+    public function getGameArray()
     {
         //make connection
         include_once "php/classes/Database.php";

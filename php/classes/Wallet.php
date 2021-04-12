@@ -36,7 +36,6 @@ class Wallet
         $sql = "select Wallet_wallet_ID from account where account_ID='$accountID'";
 
         if ($res = mysqli_query($link, $sql)){
-            // this bad figure out  how get the actual id value from the  result
             $arr = mysqli_fetch_array($res);
             return $arr["Wallet_wallet_ID"];
         }else{
