@@ -32,13 +32,15 @@ if (!isset($_SESSION["login"]))
                 echo "<br>";
                 echo $game['game_Price'];
                 echo "<br>";
-                echo $game['game_File_Path'];
+                $path = $game['game_File_Path'];
+                echo "<a href='$path'> banana</a>";
+
                 echo "<br>";
                 echo "<br>";
                 ?>
                 </div>
                 <!-- add path for images for ez shane slideshow -->
-
+            ?>
             </div>
 
 
