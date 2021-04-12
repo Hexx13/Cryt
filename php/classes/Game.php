@@ -28,7 +28,7 @@ class Game
         $sql = "select * from game";
 
         if ($res = mysqli_query($link, $sql)) {
-            return mysqli_fetch_array($res);
+            return mysqli_fetch_all($res, $mode = MYSQLI_ASSOC);
 
         } else {
             echo "ERROR: OH JOD OH NO WHY XAXAXAXAXXAXAXA $sql ." . mysqli_error($link);
