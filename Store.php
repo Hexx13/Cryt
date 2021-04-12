@@ -9,50 +9,52 @@ if (!isset($_SESSION["login"]))
 <html lang="en">
 <link rel="stylesheet" type="text/css" href="Stylesheets/stylesheet.css"/>
 
-<main class="backgroundGrad">
+<body>
+    <main class="backgroundGrad">
 
-    <?php
-    require 'php/Layout/Header.php';
+        <?php
+        require 'php/Layout/Header.php';
 
-    $gamers = new Game();
+        $gamers = new Game();
 
-    $gameArray = $gamers->getGameArray();
+        $gameArray = $gamers->getGameArray();
 
-    ?>
+        ?>
 
 
         <div class = "gameContainer">
-        <?PHP foreach($gameArray as $game){ ?>
+            <?PHP foreach($gameArray as $game){ ?>
 
 
                 <div claSS="gameBoxDesign">
                     <h2><?PHP echo $game['game_Name']?></h2>
-                <?PHP
-                echo $game['game_Desc'];
-                echo "<br>";
-                echo $game['game_Price'];
-                echo "<br>";
-                $path = $game['game_File_Path'];
-                echo "<a href='$path'> banana</a>";
+                    <?PHP
+                    echo $game['game_Desc'];
+                    echo "<br>";
+                    echo $game['game_Price'];
+                    echo "<br>";
+                    $path = $game['game_File_Path'];
+                    echo "<a href='$path'> banana</a>";
 
-                echo "<br>";
-                echo "<br>";
-                ?>
+                    echo "<br>";
+                    echo "<br>";
+                    ?>
                 </div>
                 <!-- add path for images for ez shane slideshow -->
 
 
 
-        <?PHP } ?>
+            <?PHP } ?>
 
 
-    </div>
+        </div>
 
 
-    <?php
-    require 'php/Layout/Footer.php';
-    ?>
+        <?php
+        require 'php/Layout/Footer.php';
+        ?>
 
-</main>
+    </main>
+</body>
 
 </html>
