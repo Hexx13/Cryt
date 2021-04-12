@@ -20,31 +20,35 @@ if (!isset($_SESSION["login"]))
 
     ?>
 
-        <div class = "gameContainer">
+    <div>
+        <div>
         <?PHP foreach($gameArray as $game){ ?>
+            <div>
+                <h2><?PHP echo $game['game_Name']?></h2>
 
-
-                <div class="gameBoxDesign">
-                    <h2><?PHP echo $game['game_Name']?></h2>
+                <div>
                 <?PHP
-
                 echo $game['game_Desc'];
                 echo "<br>";
                 echo $game['game_Price'];
                 echo "<br>";
-                echo $game['game_File_Path'];
+                $path = $game['game_File_Path'];
+                echo "<a href='$path'> banana</a>";
+
                 echo "<br>";
                 echo "<br>";
                 ?>
                 </div>
                 <!-- add path for images for ez shane slideshow -->
+            ?>
+            </div>
 
 
         </div>
         <?PHP } ?>
 
 
-
+    </div>
 
 
     <?php
