@@ -9,8 +9,8 @@ if(!isset($_SESSION["login"]))
 <head>
 
 
+<body class="backgroundGrad">
 
-<main class="backgroundGrad">
     <?php
     require 'php/Layout/Header.php';
     ?>
@@ -25,8 +25,6 @@ if(!isset($_SESSION["login"]))
     <?php
     require 'php/Layout/Footer.php';
     ?>
-</main>
-
 
 
 
@@ -46,6 +44,6 @@ if(!isset($_SESSION["login"]))
             header('Location: /index.php');
         }
     ?>
-
+</body>>
 </html>
 

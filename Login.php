@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
     <title>Cryt</title>
 </head>
-<body>
+<body class="backgroundGrad">
 
-<main class="backgroundGrad">
+
     <div class="backgroundGrad">
     <form action="Login.php" method="POST">
 
@@ -43,7 +43,5 @@
         ?>
 
     </p>
-</main>
-
 </body>
 </html>

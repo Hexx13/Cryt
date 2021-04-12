@@ -6,12 +6,11 @@
     <meta charset="UTF-8">
     <title>Cryt</title>
 </head>
-<body>
+<body class="backgroundGrad">
 <?php
 session_start();session_destroy();
 ?>
-<main>
-    <div class="backgroundGrad">
+
     <form action="signup.php" method="post">
 
         <label for="username">Username: </label>
@@ -50,7 +49,7 @@ session_start();session_destroy();
         header("location:login.php");
     }
     ?>
-</main>
+
 
 </body>
 </html>

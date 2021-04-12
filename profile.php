@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
     <title>Cryt</title>
 </head>
-<body>
+<body class="backgroundGrad">
 
-<main class="backgroundGrad">
+
     <?php
     require 'php/Layout/Header.php';
     ?>
@@ -20,7 +20,7 @@
     <?php
     require 'php/Layout/Footer.php';
     ?>
-</main>
+
 
 </body>
 </html>

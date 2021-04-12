@@ -9,8 +9,8 @@ if (!isset($_SESSION["login"]))
 <html lang="en">
 <link rel="stylesheet" type="text/css" href="Stylesheets/stylesheet.css"/>
 
-<body>
-    <main class="backgroundGrad">
+<body class="backgroundGrad">
+
 
         <?php
         require 'php/Layout/Header.php';
@@ -20,12 +20,10 @@ if (!isset($_SESSION["login"]))
         $gameArray = $gamers->getGameArray();
 
         ?>
-
-
+    <div class="mainContainerGame">
+        <div class="gameSpacerSide"></div>
         <div class = "gameContainer">
             <?PHP foreach($gameArray as $game){ ?>
-
-
                 <div claSS="gameBoxDesign">
                     <h2><?PHP echo $game['game_Name']?></h2>
                     <?PHP
@@ -48,13 +46,12 @@ if (!isset($_SESSION["login"]))
 
 
         </div>
-
+        <div class="gameSpacerSide"></div>
 
         <?php
         require 'php/Layout/Footer.php';
         ?>
 
-    </main>
 </body>
 
 </html>
