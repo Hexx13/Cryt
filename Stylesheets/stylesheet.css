@@ -128,10 +128,7 @@ input[type=text], input[type=password] {
 
 
 footer{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+
     background-color: #111021;
     display: flex;
     flex-direction: row;
@@ -161,8 +158,8 @@ footer > a, footer a:visited{
     border-color: crimson;
     flex-wrap: wrap;
     margin: 10px;
-    height: 30%;
-    width: 40%;
+    height: 300px;
+    width: 30%;
     min-width: 250px;
 
 }
