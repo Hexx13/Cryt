@@ -29,7 +29,9 @@ $beans = new Wallet();
     </div>
     <div class="profile">
         <a class = "profile_link" href="profile.php"><img src="img/default_pfp.png" class="profilePicture"></a>
+
     </div>
+    <a href="Logout.php"><h2><font color="red"><font size="2">Logout</font></h2>
 </div>
 
 </html>
