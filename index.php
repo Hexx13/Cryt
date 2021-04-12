@@ -30,8 +30,6 @@ if(!isset($_SESSION["login"]))
         <div></div>
     </div>
     <div class="mainSideSpacer"></div>
-    <a href="Logout.php"><h2><font color="red">Logout</font></h2>
-
         <?php
         require 'php/Layout/Footer.php';
         ?>
