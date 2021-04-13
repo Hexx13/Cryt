@@ -104,6 +104,12 @@ input[type=text], input[type=password] {
 .space{
     width:25%;
 }
+.container{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .bannerGrad{
     width:50%;
     display: flex;

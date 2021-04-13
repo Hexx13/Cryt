@@ -7,6 +7,7 @@
     <title>Cryt</title>
 </head>
 <body class="backgroundGrad">
+<div class="container">
   <div class="bannerGrad">
     <div class="space">
     </div>
@@ -51,7 +52,7 @@
 
     </p>
      </div>
-
+     </div>
     </div>
-</body>
+</div>
 </html>
