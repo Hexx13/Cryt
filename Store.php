@@ -28,7 +28,7 @@ $gameArray = $gamers->getGameArray();
 
                 <div class="storePageBoxTitle"> <?PHP echo $game['game_Name']; ?> </div>
                 <div class="storePriceParent">
-                    <div class="storePageBoxPrice"><?PHP echo $game['game_Price']; ?></div>
+                    <p class="storePageBoxPrice"><?PHP echo $game['game_Price']; ?></p>
                 </div>
             </a>
             <!-- add path for images for ez shane slideshow -->
