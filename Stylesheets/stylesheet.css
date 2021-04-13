@@ -177,8 +177,7 @@ footer > a, footer a:visited{
 }
 /*Store page shite*/
 .gameBoxDesign{
-   border-style: solid;
-    border-color: crimson;
+    box-shadow: 10px 10px #111021;
     flex-wrap: wrap;
     margin: 10px;
     height: 300px;
