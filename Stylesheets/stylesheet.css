@@ -199,8 +199,6 @@ footer > a, footer a:visited{
     margin: 10px;
     height: 270px;
     width: 480px;
-
-
 }
 .gameContainer{
     flex: 3;
@@ -230,4 +228,10 @@ footer > a, footer a:visited{
     flex-direction: column-reverse;
     height: 240px;
 
+}
+.imageIndex{
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
