@@ -9,7 +9,7 @@ if(!isset($_SESSION["login"]))
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="Stylesheets/stylesheet.css"/>
-
+    <script src="JavaScript/slideshow.js"></script>
     <meta charset="UTF-8">
     <title>Cryt</title>
 </head>
@@ -19,17 +19,22 @@ if(!isset($_SESSION["login"]))
     <?php
     require 'php/Layout/Header.php';
     ?>
-
-    <div class="mainSideSpacer"></div>
-    <div class="mainCenter">
-        <div class="topBanner">
-            <div class="slideShowBack">
-
-            </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="img/default_pfp.png" style="width:100%">
         </div>
-        <div></div>
+        <div class="mySlides fade">
+            <img src="img/logo.png" style="width:100%">
+        </div>
     </div>
-    <div class="mainSideSpacer"></div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
         <?php
         require 'php/Layout/Footer.php';
         ?>

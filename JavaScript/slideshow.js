@@ -1,4 +1,4 @@
-var slides = 0;
+var slideIndex = 0;
 slidey();
 
 function slidey(){
