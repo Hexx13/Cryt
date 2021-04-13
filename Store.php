@@ -24,7 +24,8 @@ if (!isset($_SESSION["login"]))
         <div class="gameSpacerSide"></div>
             <div class = "gameContainer">
                 <?PHP foreach($gameArray as $game){ ?>
-                    <a class="gameBoxDesign">
+                    <a class="gameBoxDesign" style="background-image:url('<?PHP echo $game['game_Img_Path'] ?>')">
+
                         <?PHP echo $game['game_Name'];
                         echo $game['game_Price'];
                         ?>
