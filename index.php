@@ -4,7 +4,7 @@ session_start ();
 if(!isset($_SESSION["login"]))
 
     header("location:login.php");
-    include_once "php/classes/Game.php";
+
 ?>
 <html lang="en">
 <head>
@@ -16,8 +16,6 @@ if(!isset($_SESSION["login"]))
 
     <?php
     require 'php/Layout/Header.php';
-    $gamers = new Game();
-    $gameArray = $gamers->getGameArray();
     ?>
         <div class="imageIndex">
             <img src="img/logo.png" class="imageIndex">
@@ -26,22 +24,11 @@ if(!isset($_SESSION["login"]))
         <div class="indexText">
             <p>Our top picked games</p>
         </div>
-    <div class="mainContainerGame">
-        <div class="gameSpacerSide"></div>
-        <div class="gameContainer">
-            <?PHP foreach ($gameArray as $game) { ?>
-                <a class="gameBoxDesign" style="background-image:url('<?PHP echo $game['game_Img_Path'] ?>' )">
 
-                    <div class="storePageBoxTitle"> <?PHP echo $game['game_Name']; ?> </div>
-                    <div class="storePriceParent">
-                        <p class="storePageBoxPrice"><?PHP echo $game['game_Price']; ?></p>
-                    </div>
-                </a>
-            <?PHP } ?>
+    <div class="gameBoxDesign">
 
-        </div>
-        <div class="gameSpacerSide"></div>
     </div>
+
 
 
         <?php
