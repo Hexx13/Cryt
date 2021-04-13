@@ -11,6 +11,13 @@
 session_start();session_destroy();
 ?>
 
+<div class="container">
+  <div class="bannerGrad">
+    <div class="space">
+    </div>
+    <div class="centerLogo">
+
+    <img src="img/logo.png" class="centerLogo">
     <form action="signup.php" method="post">
 
         <label for="username">Username: </label>
@@ -31,7 +38,9 @@ session_start();session_destroy();
 
         <input type="submit" value="Submit">
     </form>
-
+</div>
+     </div>
+    </div>
         <div>
     <?php
 
