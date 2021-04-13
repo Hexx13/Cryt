@@ -95,8 +95,6 @@ body {
 
 }
 input[type=text], input[type=password] {
-
-    width: 30%;
     color: #111021 ;
     margin: 8px 0;
     background-color: #3b2f9b;
