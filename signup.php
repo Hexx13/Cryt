@@ -4,13 +4,10 @@
 <head>
     <link rel="stylesheet" type="text/css" href="Stylesheets/stylesheet.css"/>
     <meta charset="UTF-8">
+    <?php session_start();session_destroy(); ?>
     <title>Cryt</title>
 </head>
 <body class="backgroundGrad">
-<?php
-session_start();session_destroy();
-?>
-
 <div class="container">
   <div class="bannerGrad">
     <div class="space">
@@ -41,7 +38,7 @@ session_start();session_destroy();
 </div>
      </div>
     </div>
-        <div>
+
     <?php
 
     include "php/classes/Customer.php";
