@@ -11,7 +11,7 @@ html{min-height: 100%;
 body {
     height: 100%;
     overflow:auto;
-    padding-bottom:10px;
+
     font-family: sans-serif;
 }
 
@@ -93,7 +93,6 @@ body {
 
 /*center stuff */
 .backgroundGrad {
-
     background-color: rgb(27,27,51);
     /*background-image: linear-gradient(to bottom ,rgb(27,27,51), rgb(13,10,31));*/
     color:white;
@@ -154,8 +153,7 @@ body {
 
 footer{
     position:relative;
-    margin-top:30%;
-
+    margin-top:40%;
     clear:both;
     background-color: #111021;
     display: flex;
