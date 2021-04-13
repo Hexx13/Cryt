@@ -221,12 +221,15 @@ footer > a, footer a:visited{
 }
 
 .storePageBoxPrice{
-
+    display: inline-block;
+    background: rgba(29, 23, 74,.9);
 }
 .storePriceParent{
     display: flex;
+    text-align: right;
     flex-direction: column-reverse;
-    height: 240px;
+    height: 242px;
+
 
 }
 .imageIndex{
