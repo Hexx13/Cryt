@@ -30,10 +30,6 @@ if(!isset($_SESSION["login"]))
         <div></div>
     </div>
     <div class="mainSideSpacer"></div>
-
-
-
-
         <?php
         require 'php/Layout/Footer.php';
         ?>
