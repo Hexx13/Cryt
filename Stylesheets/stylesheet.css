@@ -238,3 +238,10 @@ footer > a, footer a:visited{
     margin-right: auto;
     width: 50%;
 }
+.indexText{
+    width: 100%;
+    text-align: center;
+    background-color: #111021;
+    font-size: 26px;
+    padding: 30px;
+}

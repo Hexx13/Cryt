@@ -21,6 +21,10 @@ if(!isset($_SESSION["login"]))
             <img src="img/logo.png" class="imageIndex">
         </div>
 
+        <div class="indexText">
+            <p>Our top picked games</p>
+        </div>
+
 
         <?php
         require 'php/Layout/Footer.php';
