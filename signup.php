@@ -41,7 +41,7 @@ session_start();session_destroy();
 </div>
      </div>
     </div>
-        <div>
+
     <?php
 
     include "php/classes/Customer.php";
