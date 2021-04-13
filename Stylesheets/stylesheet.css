@@ -87,22 +87,34 @@ body {
 
 /*center stuff */
 .backgroundGrad {
-    background-color: black; /* For browsers that do not support gradients */
+    background-color: black;
     background-image: linear-gradient(rgb(27,27,51), rgb(13,10,31));
     color:white;
+
 }
 input[type=text], input[type=password] {
-    width: 10%;
+
+    width: 30%;
     color: #111021 ;
     margin: 8px 0;
     background-color: #3b2f9b;
     border: 0px solid white;
 }
 
+.space{
+    width:25%;
+}
 .bannerGrad{
-    height: 40px;
+    width:50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color: rgb(59,47,155);
-    background-image: linear-gradient(rgb(28,22,67),rgb(15,13,35));
+    background-image: linear-gradient(rgba(28,22,67,10),rgba(15,13,35,10));
+}
+.centerLogo{
+    width:70%;
+
 }
 
 .button{

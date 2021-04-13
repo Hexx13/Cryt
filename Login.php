@@ -7,9 +7,14 @@
     <title>Cryt</title>
 </head>
 <body class="backgroundGrad">
+  <div class="bannerGrad">
+    <div class="space">
+    </div>
+    <div class="centerLogo">
+
+    <img src="img/logo.png" class="centerLogo">
 
 
-    <div class="backgroundGrad">
     <form action="Login.php" method="POST">
 
         <label for="username">Username: </label>
@@ -21,7 +26,9 @@
         <input type="submit" value="Login" name="submit">
     </form>
         <a class="" href="signup.php">Sign up here</a>
-    </div>
+        <br><br><br><br><br><br>
+
+
     <?php
     if(isset($_REQUEST["err"]))
         $msg="Invalid username or Password";
@@ -43,5 +50,8 @@
         ?>
 
     </p>
+     </div>
+
+    </div>
 </body>
 </html>
