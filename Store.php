@@ -27,7 +27,9 @@ $gameArray = $gamers->getGameArray();
             <a class="gameBoxDesign" style="background-image:url('<?PHP echo $game['game_Img_Path'] ?>' )">
 
                 <div class="storePageBoxTitle"> <?PHP echo $game['game_Name']; ?> </div>
-                <?PHP echo $game['game_Price']; ?>
+                <div class="storePriceParent">
+                    <div class="storePageBoxPrice"><?PHP echo $game['game_Price']; ?></div>
+                </div>
             </a>
             <!-- add path for images for ez shane slideshow -->
         <?PHP } ?>
