@@ -10,6 +10,8 @@ body {
     margin: 0;
     font-family: sans-serif;
 }
+
+/*Header shite*/
 .header-right{
     display: flex;
     flex: 0.8;
@@ -105,6 +107,21 @@ input[type=text], input[type=password] {
     background-image: linear-gradient(rgb(28,22,67),rgb(15,13,35));
 }
 
+.bannerGrad{
+    width:50%;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    flex-wrap: wrap;
+
+    background-color: rgb(59,47,155);
+    background-image: linear-gradient(rgba(28,22,67,10),rgba(15,13,35,10));
+}
+
+
+
+
 .button{
     text-align: center;
     padding :15px;
@@ -123,9 +140,6 @@ input[type=text], input[type=password] {
     width:50px;
     font-size: 20px;
 }
-
-
-
 
 footer{
 
@@ -152,7 +166,7 @@ footer > a, footer a:visited{
 
 
 }
-
+/*Store page shite*/
 .gameBoxDesign{
    border-style: solid;
     border-color: crimson;
