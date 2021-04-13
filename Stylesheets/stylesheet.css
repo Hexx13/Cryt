@@ -110,14 +110,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 }
-.bannerGrad{
-    width:50%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: rgb(59,47,155);
-    background-image: linear-gradient(rgba(28,22,67,10),rgba(15,13,35,10));
-}
+
 .centerLogo{
     width:70%;
 
