@@ -94,8 +94,8 @@ body {
     color:white;
 
 }
-input[type=text], input[type=password] {
-    color: #111021 ;
+.loginForms {
+    color: #111021;
     margin: 8px 0;
     background-color: #3b2f9b;
     border: 0px solid white;

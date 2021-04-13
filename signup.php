@@ -21,20 +21,20 @@ session_start();session_destroy();
     <form action="signup.php" method="post">
 
         <label for="username">Username: </label>
-        <input type="text" name="username"><br>
+        <input type="text" class="loginForms" name="username"><br>
 
         <label for="firstName">First name:</label>
-        <input type="text" name="firstName"><br>
+        <input type="text" class="loginForms" name="firstName"><br>
 
         <label for="lastName">Last name:</label>
-        <input type="text" name="lastName"><br>
+        <input type="text" class="loginForms" name="lastName"><br>
 
 
         <label for="email">Email: </label>
-        <input type="text" name="email"><br>
+        <input type="text" class="loginForms" name="email"><br>
 
         <label for="password">Password: </label>
-        <input type="password" name="password"><br>
+        <input type="password" class="loginForms" name="password"><br>
 
         <input type="submit" value="Submit">
     </form>
