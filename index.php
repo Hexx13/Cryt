@@ -16,7 +16,7 @@ if(!isset($_SESSION["login"]))
     <?php
     require 'php/Layout/Header.php';
     $gamers = new Game();
-    $gameArray = $gamers->getGameArray();
+    $gameArray = $gamers->getGame();
     ?>
         <div class="imageIndex">
             <img src="img/logo.png" class="imageIndex">
@@ -26,9 +26,6 @@ if(!isset($_SESSION["login"]))
             <p>Our top picked games</p>
         </div>
 
-    <div class="gameBoxDesign">
-
-    </div>
 
 
 
