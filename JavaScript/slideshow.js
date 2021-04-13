@@ -13,9 +13,9 @@ function slidey(){
         slideIndex = 1;
     }
     for(i = 0; i < dots.length; i++){
-        dots[i].className = dots[i].className.replace(" active2", "");
+        dots[i].className = dots[i].className.replace("active2", "");
     }
     sliding[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active2";
+    dots[slideIndex-1].className += "active2";
     setTimeout(slidey, 5000);
 }
