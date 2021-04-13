@@ -9,7 +9,14 @@
 <body class="backgroundGrad">
 
 
-    <div class="backgroundGrad">
+    <div class="bannerGrad">
+    <div class="space">
+    </div>
+    <div class="centerLogo">
+
+    <img src="img/logo.png" class="centerLogo">
+
+
     <form action="Login.php" method="POST">
 
         <label for="username">Username: </label>
@@ -20,7 +27,8 @@
 
         <input type="submit" value="Login" name="submit">
     </form>
-        <a class="" href="signup.php">Sign up here</a>
+        <a class="" href="signup.php"><br><br><br>Sign up here</a>
+    </div>
     </div>
     <?php
     if(isset($_REQUEST["err"]))
