@@ -2,9 +2,8 @@
 <?php
 session_start ();
 if(!isset($_SESSION["login"]))
-
+    include_once "php/classes/Game.php";
     header("location:login.php");
-
 ?>
 <html lang="en">
 <head>
@@ -16,6 +15,8 @@ if(!isset($_SESSION["login"]))
 
     <?php
     require 'php/Layout/Header.php';
+    $gamers = new Game();
+    $gameArray = $gamers->getGameArray();
     ?>
         <div class="imageIndex">
             <img src="img/logo.png" class="imageIndex">
