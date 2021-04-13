@@ -1,21 +1,21 @@
-var slides = 0;
+let slideIndex = 0;
 slidey();
 
 function slidey(){
-    var i;
-    var nyoom = document.getElementsByClassName("dot");
-    var sliding = document.getElementsByClassName("theSlides");
+    let i;
+    let dots = document.getElementsByClassName("dot");
+    let sliding = document.getElementsByClassName("mySlides");
     for(i = 0; i < sliding.length; i++){
-        sliding.style.display = "naenae";
+        sliding[i].style.display = "none";
     }
     slideIndex++;
     if (slideIndex > sliding){
         slideIndex = 1;
     }
-    for(i = 0; i < nyoom.length; i++){
-        nyoom[i].className = nyoom[i].className.replace(" active", "");
+    for(i = 0; i < dots.length; i++){
+        dots[i].className = dots[i].className.replace(" active2", "");
     }
     sliding[slideIndex-1].style.display = "block";
-    nyoom[slideIndex-1].className += " active";
+    dots[slideIndex-1].className += " active2";
     setTimeout(slidey, 5000);
 }

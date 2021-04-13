@@ -12,34 +12,36 @@ if (!isset($_SESSION["login"]))
 <body class="backgroundGrad">
 
 
-        <?php
-        require 'php/Layout/Header.php';
+<?php
+require 'php/Layout/Header.php';
 
-        $gamers = new Game();
+$gamers = new Game();
 
-        $gameArray = $gamers->getGameArray();
+$gameArray = $gamers->getGameArray();
 
-        ?>
-    <div class="mainContainerGame">
-        <div class="gameSpacerSide"></div>
-            <div class = "gameContainer">
-                <?PHP foreach($gameArray as $game){ ?>
-                    <a class="gameBoxDesign">
-                        <?PHP echo $game['game_Name'];
-                        echo $game['game_Price'];
-                        ?>
-                    </a>
-                    <!-- add path for images for ez shane slideshow -->
-                <?PHP } ?>
+?>
+<div class="mainContainerGame">
+    <div class="gameSpacerSide"></div>
+    <div class="gameContainer">
+        <?PHP foreach ($gameArray as $game) { ?>
+            <a class="gameBoxDesign" style="background-image:url('<?PHP echo $game['game_Img_Path'] ?>' )">
 
-            </div>
-        <div class="gameSpacerSide"></div>
+                <div class="storePageBoxTitle"> <?PHP echo $game['game_Name']; ?> </div>
+                <div class="storePriceParent">
+                    <div class="storePageBoxPrice"><?PHP echo $game['game_Price']; ?></div>
+                </div>
+            </a>
+            <!-- add path for images for ez shane slideshow -->
+        <?PHP } ?>
+
     </div>
+    <div class="gameSpacerSide"></div>
+</div>
 
 
-        <?php
-        require 'php/Layout/Footer.php';
-        ?>
+<?php
+require 'php/Layout/Footer.php';
+?>
 
 </body>
 
