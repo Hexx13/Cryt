@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     border: none;
+    box-sizing: border-box;
 }
 
 html{min-height: 100%;
@@ -135,7 +136,7 @@ body {
     flex-wrap: wrap;
 
     background-color: rgb(59,47,155);
-    background-image: linear-gradient(rgba(28,22,67,10),rgba(15,13,35,10));
+    background-image: linear-gradient(rgba(28,22,67,10), rgb(15, 13, 35));
 }
 
 
@@ -188,11 +189,12 @@ footer > a, footer a:visited{
 /*Store page shite*/
 .gameBoxDesign{
     box-shadow: 0px 0px 10px #111021;
+    background-size: 100%;
     flex-wrap: wrap;
     margin: 10px;
-    height: 300px;
-    width: 30%;
-    min-width: 250px;
+    height: 270px;
+    width: 480px;
+
 
 }
 .gameContainer{
@@ -244,4 +246,9 @@ img{
 @keyframes fade {
     from{opacity: .4}
     to{opacity: 1}
+}
+
+.storePageBoxTitle{
+    background: rgba(29, 23, 74,.9);
+    padding: 5px;
 }
