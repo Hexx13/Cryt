@@ -66,6 +66,6 @@ class Customer
         mysqli_close($link);
     }
 
-    
+
 
 }
