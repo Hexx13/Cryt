@@ -34,8 +34,8 @@ if(!isset($_SESSION["login"]))
         </div>
 
         <div class="rowBox">
-            <div class="indexBox"><a href ="Store.php">Game here</a></div>
-            <div class="indexBox"><a href ="Store.php">Game here</a></div>
+            <div class="indexBox indexBigBox"><a href ="Store.php">Game here</a></div>
+            <div class="indexBox indexBigBox"><a href ="Store.php">Game here</a></div>
         </div>
 
         <div class="indexText">
