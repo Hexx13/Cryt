@@ -295,10 +295,10 @@ width: 20%;
 }
 
 .indexBox{
-    width:250px;
+    width:31%;
     float:left;
     background: #111021;
-    height: 150px;
+    height: 250px;
 }
 .rowBox2{
     width: 100%;
@@ -309,13 +309,13 @@ width: 20%;
 }
 
 .indexBox2{
-    width:125px;
+    width:23%;
     float:left;
     background: #111021;
     height: 50px;
     text-align: center;
 }
 .indexBigBox{
-    width:400px;
-    height: 250px;
+    width:48.5%;
+    height: 300px;
 }
