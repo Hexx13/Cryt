@@ -35,7 +35,7 @@ $gameArray = $gamers->getGameArray();
                 <div class="storePageBoxTitle"> <?PHP echo $game['game_Name']; ?> </div>
 
                 <div class="storePriceParent">
-                    <div class="storePageBoxPrice"><div class="storePagePrice2">   <?PHP echo $game['game_Price']; ?> </div></div>
+                    <div class="storePageBoxPrice"><div class="storePagePrice2">   <?PHP echo $game['game_Price']; ?></div></div>
                 </div>
             </a>
 
