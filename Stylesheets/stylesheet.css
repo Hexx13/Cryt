@@ -190,7 +190,7 @@ body {
 
 footer{
     position:relative;
-    margin-top:40%;
+    margin-top:10%;
     clear:both;
     background-color: #111021;
     display: flex;
@@ -260,7 +260,8 @@ footer > a, footer a:visited{
    display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 80%;
+    margin-top: 25px;
 }
 .indexText{
     width: 100%;
@@ -299,6 +300,7 @@ width: 20%;
     float:left;
     background: #111021;
     height: 250px;
+    text-align: center;
 }
 .rowBox2{
     width: 100%;
@@ -306,16 +308,21 @@ width: 20%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    text-align: center;
 }
 
 .indexBox2{
     width:23%;
     float:left;
-    background: #111021;
+    background: #3b2f9b;
     height: 50px;
     text-align: center;
 }
 .indexBigBox{
     width:48.5%;
     height: 300px;
+}
+.imageBox{
+    height:100%;
+    width:100%
 }

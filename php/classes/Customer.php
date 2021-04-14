@@ -23,6 +23,24 @@ class Customer
         $this->lastName = $lastName;
     }
 
+
+    public function changeDetails($column,$userID,$value )
+    {
+        //make connection
+        include_once "php/classes/Database.php";
+        $db = new Database();
+        $link = $db->getLink();
+
+        $sql = "UPDATE account set $column = $value where user_ID = $userID ";
+
+        if ($res = mysqli_query($link, $sql)) {
+            header("location:profile.php");
+
+        } else {
+            echo "ERROR: OH JOD OH NO WHY XAXAXAXAXXAXAXA $sql ." . mysqli_error($link);
+        }
+    }
+
     public function createAccountDB()
     {
         $manager = new IDManager();
@@ -34,7 +52,7 @@ class Customer
 
         //make connection
         $database = new Database();
-        $link = $database ->getLink();
+        $link = $database->getLink();
 
         //Insert queries
         $query = "Insert into wallet Values($walletID, 0.00);";
@@ -65,7 +83,6 @@ class Customer
         //close connection
         mysqli_close($link);
     }
-
 
 
 }

@@ -19,7 +19,7 @@ if(!isset($_SESSION["login"]))
     <div class="indexSpacer"></div>
     <div class="indexCenter">
         <div class="imageIndex">
-            <img src="img/logo.png" class="imageIndex">
+            <img src="img/artist.png" class="imageIndex">
         </div>
         <div class="rowBox2">
             <div class="indexBox2"><a href ="Store.php">Strategy</a></div>
@@ -34,8 +34,8 @@ if(!isset($_SESSION["login"]))
         </div>
 
         <div class="rowBox">
-            <div class="indexBox indexBigBox"><a href ="Store.php">Game here</a></div>
-            <div class="indexBox indexBigBox"><a href ="Store.php">Game here</a></div>
+            <div class="indexBox indexBigBox"><a href ="Store.php">Game here<img src="img/GameBanners/gamer3.png" class="imageBox"></a></div>
+            <div class="indexBox indexBigBox"><a href ="Store.php">Game here<img src="img/GameBanners/gamer3.png" class="imageBox"></a></div>
         </div>
 
         <div class="indexText">
@@ -43,14 +43,14 @@ if(!isset($_SESSION["login"]))
         </div>
 
         <div class="rowBox">
-                <div class="indexBox"><a href ="Store.php">Game here</a></div>
-                <div class="indexBox"><a href ="Store.php">Game here</a></div>
-                <div class="indexBox"><a href ="Store.php">Game here</a></div>
+                <div class="indexBox"><a href ="Store.php">Game here<img src="img/GameBanners/gamer2.png" class="imageBox"></a></div>
+                <div class="indexBox"><a href ="Store.php">Game here<img src="img/GameBanners/gamer3.png" class="imageBox"></a></div>
+                <div class="indexBox"><a href ="Store.php">Game here<img src="img/GameBanners/gamer4.png" class="imageBox"></a></div>
         </div>
         <div class="rowBox">
-            <div class="indexBox"><a href ="Store.php">Game here</a></div>
-            <div class="indexBox"><a href ="Store.php">Game here</a></div>
-            <div class="indexBox"><a href ="Store.php">Game here</a></div>
+            <div class="indexBox"><a href ="Store.php">Game here<img src="img/GameBanners/gamer5.png" class="imageBox"></a></div>
+            <div class="indexBox"><a href ="Store.php">Game here<img src="img/GameBanners/gamer6.png" class="imageBox"></a></div>
+            <div class="indexBox"><a href ="Store.php">Game here<img src="img/GameBanners/spaceGame.png" class="imageBox"></a></div>
         </div>
     </div>
     <div class="indexSpacer">
