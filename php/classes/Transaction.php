@@ -5,7 +5,7 @@ class Transaction
 {
 
 
-    public function transact($amount, $account){
+    public function transact($amount, $accountID){
 
     }
 }
