@@ -3,6 +3,7 @@
     padding: 0;
     border: none;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 html{min-height: 100%;
@@ -12,7 +13,12 @@ body {
     height: 100%;
     overflow:auto;
 
-    font-family: sans-serif;
+
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #0F0D23;
+    opacity: 0.5;
 }
 
 /*Header shite*/
@@ -100,18 +106,20 @@ body {
 
 }
 .loginForms {
+    padding: 5px;
     color: #3b2f9b;
     width: 650px;
     height:50px;
     background-color: rgb(28,22,67);
-    font-size:40px;
+    font-size:35px;
 }
 .loginSubmit {
+    padding: 5px;
     color: #3b2f9b;
     width: 650px;
     height:50px;
     background-color: rgb(168,255,213);
-    font-size:40px;
+    font-size:35px;
     text-align: left;
 }
 .topUpForm{
@@ -168,7 +176,7 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     background-color: rgb(59,47,155);
-    background-image: linear-gradient(rgba(28,22,67,10),rgba(15,13,35,10));
+    background-image: linear-gradient(rgba(28,22,67,10), rgb(15, 13, 35));
 }
 .centerLogo{
     height:25vw;
@@ -183,7 +191,7 @@ body {
 
 
 .button{
-    background-image: linear-gradient(rgba(28,22,67,10),rgba(15,13,35,10));
+    background-image: linear-gradient(rgb(28, 22, 67),rgba(15,13,35,10));
     height:100%;
     color: #a8ffd5;
     width:100%;
