@@ -27,11 +27,9 @@
         <input type="password" id="password" class="loginForms" placeholder="Password:" name="password"><br><br>
 
         <input type="submit" value="Login" class="loginSubmit" name="submit">
+        <div class="space">    <a class="" href="signup.php">Sign up here</a></div>
     </form>
-      <div class="space">    <a class="" href="signup.php">Sign up here</a></div>
-
-
-    </div>
+      </div>
 
 
 
