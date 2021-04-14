@@ -2,9 +2,7 @@
 <?php
 session_start ();
 if(!isset($_SESSION["login"]))
-
     header("location:login.php");
-
 ?>
 <html lang="en">
 <head>
@@ -20,6 +18,13 @@ if(!isset($_SESSION["login"]))
         <div class="imageIndex">
             <img src="img/logo.png" class="imageIndex">
         </div>
+
+        <div class="indexText">
+            <p>Our top picked games</p>
+        </div>
+
+
+
 
 
         <?php
