@@ -73,7 +73,7 @@ class Customer
         $db = new Database();
         $link = $db->getLink();
 
-        $sql = "UPDATE account set $column = $value where user_ID = $userID ";
+        $sql = "UPDATE account set $column = '$value' where account_ID = $userID";
 
         if ($res = mysqli_query($link, $sql)) {
             header("location:profile.php");
