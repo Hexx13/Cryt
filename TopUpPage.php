@@ -7,9 +7,7 @@ if(!isset($_SESSION["login"]))
 ?>
 <html lang="en">
 <head>
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
-    <meta charset="UTF-8">
+    <?php require 'php/Layout/headLinks.php';?>
     <title>Cryt - Top Up</title>
 </head>
 
