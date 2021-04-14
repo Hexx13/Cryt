@@ -7,8 +7,9 @@ if(!isset($_SESSION["login"]))
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="Stylesheets/stylesheet.css"/>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
     <meta charset="UTF-8">
-    <title>Cryt</title>
+    <title>Cryt - Library</title>
 </head>
 <body class="backgroundGrad">
 

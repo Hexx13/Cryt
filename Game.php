@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <?php session_start(); ?>
+<?php
+require 'php/Layout/Header.php';
+include_once "php/classes/Game.php";
+$gamers = new Game();
+$gameArray = $gamers->getGame($_REQUEST['id']);
+?>
 <head>
     <link rel="stylesheet" type="text/css" href="Stylesheets/stylesheet.css"/>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
     <meta charset="UTF-8">
-    <title>Cryt</title>
+    <title>Cryt - <?php echo $gameArray['game_Name']; ?></title>
 </head>
 <body class="backgroundGrad">
-    <?php
-    require 'php/Layout/Header.php';
-    include_once "php/classes/Game.php";
-    $gamers = new Game();
-    $gameArray = $gamers->getGame($_REQUEST['id']);
-    ?>
+
 
     <div>
         <div>

@@ -3,8 +3,9 @@
 <?php session_start(); ?>
 <head>
     <link rel="stylesheet" type="text/css" href="Stylesheets/stylesheet.css"/>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
     <meta charset="UTF-8">
-    <title>Cryt</title>
+    <title>Cryt - Login</title>
 </head>
 <body class="backgroundGrad">
 <div class="container">
