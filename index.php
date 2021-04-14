@@ -21,10 +21,10 @@ if(!isset($_SESSION["login"]))
             <img src="img/artist.png" class="imageIndex">
         </div>
         <div class="rowBox2">
-            <div class="indexBox2">Strategy</a></div>
-            <div class="indexBox2">Adventure</a></div>
-            <div class="indexBox2">Shooter</a></div>
-            <div class="indexBox2">RPG</a></div>
+            <div class="indexBox2"><br>Strategy</a></div>
+            <div class="indexBox2"><br>Adventure</a></div>
+            <div class="indexBox2"><br>Shooter</a></div>
+            <div class="indexBox2"><br>RPG</a></div>
         </div>
 
 
