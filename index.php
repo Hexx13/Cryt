@@ -15,6 +15,9 @@ if(!isset($_SESSION["login"]))
     <?php
     require 'php/Layout/Header.php';
     ?>
+    <main class="indexMain">
+    <div class="indexSpacer"></div>
+    <div class="indexCenter">
         <div class="imageIndex">
             <img src="img/logo.png" class="imageIndex">
         </div>
@@ -24,23 +27,14 @@ if(!isset($_SESSION["login"]))
         </div>
 
         <div class="rowBox">
-            <div class="boxes">
                 <div class="indexBox">Box 1</div>
                 <div class="indexBox">Box 2</div>
                 <div class="indexBox">Box 3</div>
-            </div>
-        </div>
-    <div class="rowBox">
-        <div class="boxes">
-            <div class="indexBox">Box 1</div>
-            <div class="indexBox">Box 2</div>
-            <div class="indexBox">Box 3</div>
         </div>
     </div>
-
-
-
-
+    <div class="indexSpacer">
+    </div>
+    </main>
 
         <?php
         require 'php/Layout/Footer.php';

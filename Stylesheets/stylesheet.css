@@ -248,7 +248,24 @@ footer > a, footer a:visited{
     padding: 30px;
 }
 /*Index page boxeessssss*/
-.boxes{
+.indexMain{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+.indexCenter{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.indexSpacer{
+width: 20%;
+}
+
+.rowBox{
+    width: 100%;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -259,5 +276,4 @@ footer > a, footer a:visited{
     float:left;
     background: #111021;
     height: 150px;
-    margin: 50px
 }
