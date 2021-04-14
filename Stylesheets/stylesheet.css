@@ -374,4 +374,23 @@ width: 20%;
     height: 50px;
     text-align: center;
     font-size: 26px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.gameSubmit{
+    background-color:#a8ffd5;
+    width: 100px;
+    height:50px;
+    color: black;
+    font-size:26px;
+}
+.gameDescription{
+    margin-top: 15px;
+    width:100%;
+    background: rgba(17, 16, 33, 0.5);
+    height: 50px;
+    text-align: center;
+    font-size: 15px;
+    flex-direction: row;
+    justify-content: space-between;
 }
