@@ -57,9 +57,7 @@ if(!isset($_SESSION["login"]))
     </div>
     </main>
 
-        <?php
-        require 'php/Layout/Footer.php';
-        ?>
+        <?php require 'php/Layout/Footer.php'; ?>
 
 
 </body>
