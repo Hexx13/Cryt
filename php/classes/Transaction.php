@@ -3,11 +3,9 @@
 
 class Transaction
 {
-    private $transactionID;
-    private $gameList = array();
-    private $total;
 
-    public function addToList(){
 
+    public function transact($amount){
+        
     }
 }

@@ -32,7 +32,6 @@ $beans = new Wallet();
     </div>
     <div class="profile">
         <a class = "profile_link" href="profile.php"><img src="" class="profilePicture"></a>
-
     </div>
 
 </div>
