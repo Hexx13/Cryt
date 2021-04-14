@@ -2,8 +2,7 @@
 <?php session_start(); ?>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="Stylesheets/stylesheet.css"/>
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <?php require 'php/Layout/headLinks.php';?>
     <meta charset="UTF-8">
     <title>Cryt - Profile</title>
 </head>

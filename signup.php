@@ -2,9 +2,7 @@
 
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="Stylesheets/stylesheet.css"/>
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
-    <meta charset="UTF-8">
+    <?php require 'php/Layout/headLinks.php';?>
     <?php session_start();session_destroy(); ?>
     <title>Cryt - Sign Up</title>
 </head>
