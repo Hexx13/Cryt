@@ -18,13 +18,13 @@ class Transaction
         $manager = new IDManager();
         $id = $manager->generateID('transaction_ID', 'transaction');
 
-        $transactArray = Array("walletId"=>$custArray['wallet_Id'], "date"=>$currentDate, "amount"=>$amount);
+        $transactArray = Array($custArray['wallet_Id'], $currentDate, $amount);
 
 
 
     }
     public function transaction($transactionData,$amount, $accountID){
         $dataArray = $transactionData($amount, $accountID);
-        $sql="insert into transaction (transaction_ID, dateTime, transaction_Amount, Wallet_wallet_ID) values ()";
+        $sql="insert into transaction (transaction_ID, dateTime, transaction_Amount, Wallet_wallet_ID) values ($dataArray[0], $dataArray[1], $dataArray[2])";
     }
 }
