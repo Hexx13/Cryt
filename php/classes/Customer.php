@@ -82,6 +82,21 @@ class Customer
             echo "ERROR: OH JOD OH NO WHY XAXAXAXAXXAXAXA $sql ." . mysqli_error($link);
         }
     }
+    public function changePic($picPath, $userID){
+        //make connection
+        include_once "php/classes/Database.php";
+        $db = new Database();
+        $link = $db->getLink();
+
+        $sql = "update account set profile_Picture_Path = '$picPath' where account_ID = $userID ";
+
+        if ($res = mysqli_query($link, $sql)) {
+            header("location:profile.php");
+
+        } else {
+            echo "ERROR: OH JOD OH NO WHY XAXAXAXAXXAXAXA $sql ." . mysqli_error($link);
+        }
+    }
 
     public function createAccountDB()
     {
