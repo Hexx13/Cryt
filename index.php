@@ -31,6 +31,11 @@ if(!isset($_SESSION["login"]))
                 <div class="indexBox">Box 2</div>
                 <div class="indexBox">Box 3</div>
         </div>
+        <div class="rowBox">
+            <div class="indexBox">Box 1</div>
+            <div class="indexBox">Box 2</div>
+            <div class="indexBox">Box 3</div>
+        </div>
     </div>
     <div class="indexSpacer">
     </div>
