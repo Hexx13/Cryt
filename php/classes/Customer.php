@@ -83,6 +83,21 @@ class Customer
         }
     }
 
+    public function checkNull($userID){
+        include_once "php/classes/Database.php";
+        $db = new Database();
+        $link = $db->getLink();
+
+        $sql = "select ISNULL(select profile_Picture_path from account where account_ID = $userID) ";
+
+        if ($res = mysqli_query($link, $sql)) {
+            echo $res;
+
+        } else {
+            echo "ERROR: OH JOD OH NO WHY XAXAXAXAXXAXAXA $sql ." . mysqli_error($link);
+        }
+    }
+
     public function changePic($picPath, $userID){
         //make connection
         include_once "php/classes/Database.php";
@@ -98,6 +113,8 @@ class Customer
             echo "ERROR: OH JOD OH NO WHY XAXAXAXAXXAXAXA $sql ." . mysqli_error($link);
         }
     }
+
+
 
     public function createAccountDB()
     {

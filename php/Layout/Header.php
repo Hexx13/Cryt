@@ -1,7 +1,9 @@
 <html>
 <?php
 include "php/classes/Wallet.php";
+include_once "../classes/Customer.php";
 $beans = new Wallet();
+$customerStuff = new Customer();
 ?>
 
 <style>@import "../../Stylesheets/stylesheet.css";</style>
@@ -29,7 +31,8 @@ $beans = new Wallet();
             ?> €  Top Up</a>
     </div>
     <div class="profile">
-        <a class = "profile_link" href="profile.php"><img src="<?PHP if(beans){} ?>" class="profilePicture"></a>
+        <a class = "profile_link" href="profile.php"><img src="<?PHP if($customerStuff->checkNull($account->getAccountID($_SESSION["username"]))){
+            } ?>" class="profilePicture"></a>
 
     </div>
 
