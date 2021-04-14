@@ -92,9 +92,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $customer->changeDetails($_REQUEST["formType"], $account->getAccountID($_SESSION["username"]), $_REQUEST["column"]);
     } else {
+
         if (isset($_FILES['profilePic'])) {
+
+            $picName = $_FILES['profilePic']['name'];
+            $picDirectory = "img/GameBanners/";
+            $picPath = $picDirectory.$picName;
+
+
             move_uploaded_file($_FILES['profilePic']['tmp_name'], 'img/GameBanners/' . $_FILES['profilePic']['name']);
+            $customer->changePic($picPath,  $account->getAccountID($_SESSION["username"]));
         }
+
     }
 
 
