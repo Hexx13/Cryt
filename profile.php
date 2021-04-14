@@ -11,53 +11,62 @@
 
 <?php
 require 'php/Layout/Header.php';
+
+
 ?>
+
 <div class="backgroundGrad">
 
 
-    <form action="profile.php" method="POST">
+    <!-- <form action="profile.php" method="POST">
 
         <label for="username">Change Username: </label>
         <input type="text" class="" name="username">
+        <input type="hidden" value="account_Username" name="formType">
         <input type="submit" value="Submit" name="submit">
-        <br>  <br>
+        <br> <br>
 
     </form>
 
     <form action="profile.php" method="POST">
 
         <label for="password">Change Password: </label>
-        <input type="text" class="" name="password">
+        <input type="password" class="" name="column">
+        <input type="hidden" value="account_Password" name="formType">
         <input type="submit" value="Submit" name="submit">
-        <br>  <br>
+        <br> <br>
     </form>
 
     <form action="profile.php" method="POST">
         <label for="profilePic">Upload Profile Pic : </label>
         <input type="file" class="" name="profilePic">
+
         <input type="submit" value="Submit" name="submit">
-        <br>  <br>
+        <br> <br>
     </form>
 
     <form action="profile.php" method="POST">
         <label for="email">Change E-mail </label>
-        <input type="text" class="" name="email">
+        <input type="email" class="" name="column">
+        <input type="hidden" value="email_Address" name="formType">
         <input type="submit" value="Submit" name="submit">
-        <br>  <br>
+        <br> <br>
     </form>
 
     <form action="profile.php" method="POST">
         <label for="firstName">Change First Name </label>
-        <input type="text" class="" name="firstName">
+        <input type="text" class="" name="column">
+        <input type="hidden" value="firstName" name="formType">
         <input type="submit" value="Submit" name="submit">
-        <br>  <br>
-    </form>
+        <br> <br>
+    </form> -->
 
     <form action="profile.php" method="POST">
         <label for="lastName">Change Last Name </label>
-        <input type="text" class="" name="lastName">
+        <input type="text" class="" name="column">
+        <input type="hidden" value="lastName" name="formType">
         <input type="submit" value="Submit" name="submit">
-        <br>  <br>
+        <br> <br>
     </form>
 
 
@@ -68,6 +77,20 @@ require 'php/Layout/Header.php';
 require 'php/Layout/Footer.php';
 ?>
 
+<?php
+
+include "php/classes/Customer.php";
+include_once "php/classes/Account.php";
+
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $account = new Account();
+    $customer = new Customer();
+    $customer->changeDetails($_REQUEST["formType"], $account->getAccountID($_SESSION["username"]), $_REQUEST["column"]);
+
+}
+?>
 
 </body>
 </html>
