@@ -31,10 +31,11 @@ if(!isset($_SESSION["login"]))
 
 
         <input type="submit" class="topUpSubmit"value=Submit>
-    </form>
+        </form>
             <br>
             Temporibus et mollitia odio sint error quas. Cum aut officiis quisquam harum perspiciatis qui. Quos neque dolorem velit et aut neque. Dolor quae quo dolorem sunt quia vero est aut. Sapiente quibusdam voluptates adipisci consequatur sed aspernatur.
-    </div>
+
+        </div>
         </div>
         <div class="topUpBox">
             <h2>Receipt</h2>
