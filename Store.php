@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php
-include_once "php/classes/Game.php";
+
 session_start();
 if (!isset($_SESSION["login"]))
 
@@ -14,9 +14,8 @@ if (!isset($_SESSION["login"]))
 
 <?php
 require 'php/Layout/Header.php';
-
+include_once "php/classes/Game.php";
 $gamers = new Game();
-
 $gameArray = $gamers->getGameArray();
 
 ?>
@@ -24,7 +23,7 @@ $gameArray = $gamers->getGameArray();
     <div class="gameSpacerSide"></div>
     <div class="gameContainer">
         <?PHP foreach ($gameArray as $game) { ?>
-            <a class="gameBoxDesign" style="background-image:url('<?PHP echo $game['game_Img_Path'] ?>' )">
+            <a class="gameBoxDesign" href="Game.php?id=<?PHP echo $game['game_ID']?>" style="background-image:url('<?PHP echo $game['game_Img_Path'] ?>' )">
 
                 <div class="storePageBoxTitle"> <?PHP echo $game['game_Name']; ?> </div>
                 <div class="storePriceParent">

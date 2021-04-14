@@ -265,7 +265,57 @@ footer > a, footer a:visited{
 .indexText{
     width: 100%;
     text-align: center;
-    background-color: #111021;
+    background-color: #3b2f9b ;
     font-size: 26px;
     padding: 30px;
+    margin-top: 50px;
+}
+/*Index page boxeessssss*/
+.indexMain{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+.indexCenter{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.indexSpacer{
+width: 20%;
+}
+
+.rowBox{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.indexBox{
+    width:250px;
+    float:left;
+    background: #111021;
+    height: 150px;
+}
+.rowBox2{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.indexBox2{
+    width:125px;
+    float:left;
+    background: #111021;
+    height: 50px;
+    text-align: center;
+}
+.indexBigBox{
+    width:400px;
+    height: 250px;
 }
