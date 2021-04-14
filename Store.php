@@ -26,6 +26,9 @@ $gameArray = $gamers->getGameArray();
 <div class="mainContainerGame">
     <div class="gameSpacerSide"></div>
     <div class="gameContainer">
+        <div class="indexText">
+            <h1>Our Games</h1>
+        </div>
         <?PHP foreach ($gameArray as $game) { ?>
             <a class="gameBoxDesign" href="Game.php?id=<?PHP echo $game['game_ID']?>" style="background-image:url('<?PHP echo $game['game_Img_Path'] ?>' )">
 
