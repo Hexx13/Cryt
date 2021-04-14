@@ -5,7 +5,7 @@ class Transaction
 {
 
 
-    public function transact($amount, $accountID){
+    public function transactData($amount, $accountID){
         $currentDate = new date();
         $datetime = $currentDate->format('Y-m-d H:i:s');
 
@@ -21,5 +21,9 @@ class Transaction
         $transactArray = Array("walletId"=>$custArray['wallet_Id'], "date"=>$currentDate, "amount"=>$amount);
 
 
+
+    }
+    public function transaction($transactionData){
+        $dataArr
     }
 }
