@@ -80,8 +80,8 @@ body {
     align-items: center;
 }
 .profile .profilePicture{
-    width: 4vw;
-    height: 4vw;
+    width: 3vw;
+    height: 3vw;
     border-radius: 100%;
     padding: 5px;
 }
@@ -325,4 +325,17 @@ width: 20%;
 .imageBox{
     height:100%;
     width:100%
+}
+/*---------------------------------Scrollbar-------------------------------*/
+::-webkit-scrollbar { /* Changes Appearance of scrollbar*/
+    width: 0.3vw;
+    background: rgba(34, 34, 34, 0.94);
+}
+
+::-webkit-scrollbar-thumb { /* changes colour of thumb*/
+    background: #363636;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3c3c3c;
 }
