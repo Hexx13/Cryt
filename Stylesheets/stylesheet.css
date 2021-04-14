@@ -299,6 +299,7 @@ width: 20%;
     float:left;
     background: #111021;
     height: 250px;
+    text-align: center;
 }
 .rowBox2{
     width: 100%;
@@ -306,6 +307,7 @@ width: 20%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    text-align: center;
 }
 
 .indexBox2{
@@ -318,4 +320,8 @@ width: 20%;
 .indexBigBox{
     width:48.5%;
     height: 300px;
+}
+.imageBox{
+    height:100%;
+    width:100%
 }
