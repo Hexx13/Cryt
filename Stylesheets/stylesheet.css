@@ -276,7 +276,7 @@ footer > a, footer a:visited{
     text-align: center;
     padding:1%;
     width:12%;
-    font-color: rgb(29, 23, 74);
+    color: rgb(29, 23, 74);
 }
 .storePriceParent{
     display: flex;
