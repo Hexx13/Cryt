@@ -8,14 +8,11 @@ $gamers = new Game();
 $gameArray = $gamers->getGame($_REQUEST['id']);
 ?>
 <head>
-    <link rel="stylesheet" type="text/css" href="Stylesheets/stylesheet.css"/>
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
-    <meta charset="UTF-8">
+    <?php require 'php/Layout/headLinks.php';?>
     <title>Cryt - <?php echo $gameArray['game_Name']; ?></title>
 </head>
 <body class="backgroundGrad">
-
-
+    <?php require 'php/Layout/Header.php';?>
     <div>
         <div>
             <form action="Game.php?id='<?php echo $_REQUEST['id']?>'" method="post">

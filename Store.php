@@ -7,9 +7,7 @@ if (!isset($_SESSION["login"]))
     header("location:login.php");
 ?>
 <head>
-    <link rel="stylesheet" type="text/css" href="Stylesheets/stylesheet.css"/>
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
-    <meta charset="UTF-8">
+    <?php require 'php/Layout/headLinks.php';?>
     <title>Cryt - Store</title>
 </head>
 <html lang="en">

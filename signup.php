@@ -2,39 +2,37 @@
 
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="Stylesheets/stylesheet.css"/>
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
-    <meta charset="UTF-8">
+    <?php require 'php/Layout/headLinks.php';?>
     <?php session_start();session_destroy(); ?>
     <title>Cryt - Sign Up</title>
 </head>
 <body class="backgroundGrad">
 <div class="container">
     <div class="bannerGrad">
-        <div class="space">
-        </div>
+
         <div class="centerLogo">
 
             <img src="img/logo.png" class="centerLogo">
+        </div>
             <form action="signup.php" method="post">
 
-                <label for="username">Username: </label>
-                <input type="text" class="loginForms" name="username"><br>
+                <label for="username"></label>
+                <input type="text" class="loginForms" placeholder="Username: " name="username"><br><br>
 
-                <label for="firstName">First name:</label>
-                <input type="text" class="loginForms" name="firstName"><br>
+                <label for="firstName"></label>
+                <input type="text" class="loginForms" placeholder="First name:" name="firstName"><br><br>
 
-                <label for="lastName">Last name:</label>
-                <input type="text" class="loginForms" name="lastName"><br>
+                <label for="lastName"></label>
+                <input type="text" class="loginForms" placeholder="Last name:" name="lastName"><br><br>
 
 
-                <label for="email">Email: </label>
-                <input type="text" class="loginForms" name="email"><br>
+                <label for="email"> </label>
+                <input type="text" class="loginForms" placeholder="Email:" name="email"><br><br>
 
-                <label for="password">Password: </label>
-                <input type="password" class="loginForms" name="password"><br>
+                <label for="password"></label>
+                <input type="password" class="loginForms" placeholder="Password:" name="password"><br><br>
 
-                <input type="submit" value="Submit">
+                <input type="submit" class="loginSubmit" value="Submit"><br>
             </form>
             <a href ="Login.php">Already have an account? Click here to login</a>
         </div>
