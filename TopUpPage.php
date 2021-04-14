@@ -7,6 +7,7 @@ if(!isset($_SESSION["login"]))
 ?>
 <html lang="en">
 <head>
+</head>
 
 
 <body class="backgroundGrad">
@@ -14,28 +15,32 @@ if(!isset($_SESSION["login"]))
     <?php
     require 'php/Layout/Header.php';
     ?>
+
     <div class="container">
         <div class="topUpBox">
             <br>
         <h1>Top Up</h1>
 
-        <br><br><br><br>
+        <div class="innerBox">
     <form action="TopUpPage.php" method="post">
 
-        <label for="amount"><h2>Enter Amount:</h2> </label>
-        <input type="text" class="topUpForm" name="amount"><br>
+        <label for="amount"></label>
+        <input type="text" class="topUpForm" placeholder="Enter Amount:" name="amount">
 
 
-        <input type="submit" value="Submit">
+        <input type="submit" class="topUpSubmit"value=Submit>
     </form>
+            <br>
+            Temporibus et mollitia odio sint error quas. Cum aut officiis quisquam harum perspiciatis qui. Quos neque dolorem velit et aut neque. Dolor quae quo dolorem sunt quia vero est aut. Sapiente quibusdam voluptates adipisci consequatur sed aspernatur.
     </div>
+        </div>
 
     <?php
     require 'php/Layout/Footer.php';
     ?>
     </div>
 
-</body>
+
 
 
     <?php
@@ -54,6 +59,6 @@ if(!isset($_SESSION["login"]))
             header('Location: /index.php');
         }
     ?>
-</body>>
+</body>
 </html>
 
