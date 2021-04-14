@@ -13,6 +13,8 @@ class Transaction
         $customer = new Customer();
         $custArray = $customer->getAccountDetails();
 
+        $transactArray = Array("walletId"=>$custArray['wallet_Id'], )
+
 
     }
 }
