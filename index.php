@@ -21,16 +21,18 @@ if(!isset($_SESSION["login"]))
             <img src="img/artist.png" class="imageIndex">
         </div>
         <div class="rowBox2">
-            <div class="indexBox2"><a href ="Store.php">Strategy</a></div>
-            <div class="indexBox2"><a href ="Store.php">Adventure</a></div>
-            <div class="indexBox2"><a href ="Store.php">Shooter</a></div>
-            <div class="indexBox2"><a href ="Store.php">RPG</a></div>
+
+            <div class="indexBox2"><div class="button"><br> <a href ="Store.php">Strategy</a></div></div>
+            <div class="indexBox2"><div class="button"><br><a href ="Store.php">Adventure</a></div></div>
+            <div class="indexBox2"><div class="button"><br><a href ="Store.php">Shooter</a></div></div>
+            <div class="indexBox2"><div class="button"><br><a href ="Store.php">RPG</a></div></div>
+
         </div>
 
 
         <div class="indexText">
             <p>Sale Showcase</p>
-        </div>
+            </div>
 
         <div class="rowBox">
             <div class="indexBox indexBigBox"><a href ="Store.php">Game here<img src="img/GameBanners/gamer3.png" class="imageBox"></a></div>

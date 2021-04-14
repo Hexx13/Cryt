@@ -184,13 +184,10 @@ body {
 
 
 .button{
-    text-align: center;
-    padding :15px;
-    height: 30px;
-    color: rgb(168,255,213) ;
-    background-color: rgb(56,49,157);
-    font-size:25px;
-    width: 180px;
+    background-image: linear-gradient(rgba(28,22,67,10),rgba(15,13,35,10));
+    height:100%;
+    color: #a8ffd5;
+    width:100%;
 }
 .discount{
     text-align:center;
@@ -283,6 +280,8 @@ footer > a, footer a:visited{
     background-color: #3b2f9b ;
     font-size: 26px;
     padding: 30px;
+    color: #a8ffd5;
+    background-image: linear-gradient(rgba(28,22,67,10),rgba(15,13,35,10));
     margin-top: 50px;
 }
 /*Index page boxeessssss*/
@@ -314,6 +313,7 @@ width: 20%;
     float:left;
     background: #111021;
     height: 250px;
+    color: #a8ffd5;
     text-align: center;
 }
 .rowBox2{
@@ -330,6 +330,7 @@ width: 20%;
     float:left;
     background: #3b2f9b;
     height: 50px;
+   
     text-align: center;
 }
 .indexBigBox{
