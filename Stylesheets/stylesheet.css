@@ -171,12 +171,11 @@ body {
     background-image: linear-gradient(rgba(28,22,67,10),rgba(15,13,35,10));
 }
 .centerLogo{
-    height:1vw;
-    width:1vw;
+    height:25vw;
+    width:25vw;
     display:flex;
     align-items:center;
     justify-content: center;
-
 
 }
 
@@ -354,4 +353,17 @@ width: 20%;
 
 ::-webkit-scrollbar-thumb:hover {
     background: #3c3c3c;
+}
+/* game page */
+.gameImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 25px;
+}
+.gamePageText{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 3vw;
 }

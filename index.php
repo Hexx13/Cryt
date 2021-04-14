@@ -34,7 +34,7 @@ if(!isset($_SESSION["login"]))
 
         <div class="rowBox">
             <div class="indexBox indexBigBox">Game here<img src="img/GameBanners/gamer3.png" class="imageBox"></a></div>
-            <div class="indexBox indexBigBox">Game here<img src="img/GameBanners/gamer3.png" class="imageBox"></a></div>
+            <div class="indexBox indexBigBox">Game here<img src="img/GameBanners/gamer7.png" class="imageBox"></a></div>
         </div>
 
         <div class="indexText">

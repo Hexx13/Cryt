@@ -44,9 +44,32 @@ class Wallet
         }
     }
 
-    public function setBalance($balance)
-    {
-        $this->balance = $balance;
+
+    public function setBalance($amount, $walletId){
+        //make connection
+        $databasetop = new Database();
+        $link = $databasetop ->getLink();
+
+        $query = "UPDATE Wallet SET wallet_Balance=$amount WHERE wallet_ID=$walletId";
+
+        if (mysqli_query($link, $query)) {
+            ;
+            //if the second doesnt work this happens
+        } else {
+            echo "ERROR: OH GOD OH NO WHY aaaaaaaaaaaaaaaaaaaaa $query. "
+                . mysqli_error($link);
+        }
+    }
+
+    public function chargeWallet($amount, $walletId){
+        $balance = $this->getBalance($walletId);
+        if($balance>=$amount){
+            $newBal = $balance - $amount;
+            $this->setBalance($newBal);
+        }
+        else{
+            return false;
+        }
     }
 
 }

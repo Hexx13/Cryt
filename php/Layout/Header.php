@@ -1,7 +1,9 @@
 <html>
 <?php
 include "php/classes/Wallet.php";
+
 $beans = new Wallet();
+
 ?>
 
 <style>@import "../../Stylesheets/stylesheet.css";</style>
@@ -29,7 +31,7 @@ $beans = new Wallet();
             ?> €  Top Up</a>
     </div>
     <div class="profile">
-        <a class = "profile_link" href="profile.php"><img src="<?PHP if(beans){} ?>" class="profilePicture"></a>
+        <a class = "profile_link" href="profile.php"><img src="" class="profilePicture"></a>
 
     </div>
 

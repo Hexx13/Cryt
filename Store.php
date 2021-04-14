@@ -7,7 +7,7 @@ if (!isset($_SESSION["login"]))
     header("location:login.php");
 ?>
 <head>
-    <?php require 'php/Layout/headLinks.php';?>
+    <?php include_once 'php/Layout/headLinks.php';?>
     <title>Cryt - Store</title>
 </head>
 <html lang="en">
@@ -17,7 +17,7 @@ if (!isset($_SESSION["login"]))
 
 
 <?php
-require 'php/Layout/Header.php';
+include_once 'php/Layout/Header.php';
 include_once "php/classes/Game.php";
 $gamers = new Game();
 $gameArray = $gamers->getGameArray();
@@ -33,11 +33,12 @@ $gameArray = $gamers->getGameArray();
             <a class="gameBoxDesign" href="Game.php?id=<?PHP echo $game['game_ID']?>" style="background-image:url('<?PHP echo $game['game_Img_Path'] ?>' )">
 
                 <div class="storePageBoxTitle"> <?PHP echo $game['game_Name']; ?> </div>
+
                 <div class="storePriceParent">
                     <p class="storePageBoxPrice"><?PHP echo $game['game_Price']; ?></p>
                 </div>
             </a>
-            <!-- add path for images for ez shane slideshow -->
+
         <?PHP } ?>
 
     </div>
@@ -46,7 +47,7 @@ $gameArray = $gamers->getGameArray();
 
 
 <?php
-require 'php/Layout/Footer.php';
+include_once 'php/Layout/Footer.php';
 ?>
 
 </body>
