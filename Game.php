@@ -16,11 +16,7 @@ $gameArray = $gamers->getGame($_REQUEST['id']);
     <div>
         <div>
             <form action="Game.php?id='<?php echo $_REQUEST['id']?>'" method="post">
-            <h1>
-                <?Php
-                echo $gameArray['game_Name'];
-                ?>
-            </h1>
+                <p class="gamePageText"><?Php echo $gameArray['game_Name']; ?></p>
             <img src="<?php echo $gameArray['game_Img_Path']?>" class="gameImage">
             <h3>
                 <?php
@@ -30,7 +26,7 @@ $gameArray = $gamers->getGame($_REQUEST['id']);
             <h2>
 
             </h2>
-            <h2>Purhcase game €<?php echo trim($gameArray['game_Price']);?>
+            <h2>Purchase game €<?php echo trim($gameArray['game_Price']);?>
                 <input type="submit" name="submit"></h2>
 
         </div>
