@@ -247,3 +247,17 @@ footer > a, footer a:visited{
     font-size: 26px;
     padding: 30px;
 }
+/*Index page boxeessssss*/
+.rowBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.indexBox{
+    width:300px;
+    float:left;
+    background: #111021;
+    height: 150px;
+    margin: 50px
+}

@@ -23,6 +23,14 @@ if(!isset($_SESSION["login"]))
             <p>Our top picked games</p>
         </div>
 
+        <div class="rowBox">
+            <div class="boxes">
+                <div class="indexBox">Box 1</div>
+                <div class="indexBox">Box 2</div>
+                <div class="indexBox">Box 3</div>
+            </div>
+        </div>
+
 
 
 
