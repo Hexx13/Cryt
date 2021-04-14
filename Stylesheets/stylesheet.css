@@ -383,7 +383,6 @@ width: 20%;
     text-align: center;
     font-size: 26px;
     flex-direction: row;
-    justify-content: space-between;
 }
 .gameSubmit{
     background-color:#a8ffd5;
@@ -394,11 +393,13 @@ width: 20%;
 }
 .gameDescription{
     margin-top: 15px;
+    margin-bottom: 15px;
     width:100%;
     background: rgba(17, 16, 33, 0.5);
     height: 50px;
-    text-align: center;
     font-size: 15px;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    vertical-align: center;
+    text-align: center;
 }

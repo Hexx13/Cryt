@@ -30,6 +30,7 @@ $gameArray = $gamers->getGame($_REQUEST['id']);
 
 
         <div class="gameDescription"><?php echo $gameArray['game_Desc']; ?></div>
+        <div class="gamePurchase">Review</div>
     </div>
     <div class="indexSpacer">
     </div>
