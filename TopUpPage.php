@@ -14,18 +14,28 @@ if(!isset($_SESSION["login"]))
     <?php
     require 'php/Layout/Header.php';
     ?>
+    <div class="container">
+        <div class="topUpBox">
+            <br>
+        <h1>Top Up</h1>
+
+        <br><br><br><br>
     <form action="TopUpPage.php" method="post">
 
-        <label for="amount">Enter Amount: </label>
-        <input type="text" name="amount"><br>
+        <label for="amount"><h2>Enter Amount:</h2> </label>
+        <input type="text" class="topUpForm" name="amount"><br>
 
 
         <input type="submit" value="Submit">
     </form>
+    </div>
+
     <?php
     require 'php/Layout/Footer.php';
     ?>
+    </div>
 
+</body>
 
 
     <?php
