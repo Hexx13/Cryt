@@ -2,7 +2,8 @@
 <?php session_start(); ?>
 <html lang="en">
 <head>
-    <?php require 'php/Layout/headLinks.php';?>
+    <link rel="stylesheet" type="text/css" href="Stylesheets/stylesheet.css"/>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon"/>
     <meta charset="UTF-8">
     <title>Cryt - Profile</title>
 </head>
@@ -11,8 +12,6 @@
 
 <?php
 require 'php/Layout/Header.php';
-
-
 ?>
 
 <div class="backgroundGrad">
@@ -37,15 +36,11 @@ require 'php/Layout/Header.php';
         <br> <br>
     </form>
 
-   <?PHP  if(isset($_FILES['profilePic'])){
-        move_uploaded_file($_FILES['profilePic']['tmp_name'],'img/GameBanners/'.$_FILES['profilePic']['name'] );
-    }
-
-        ?>
 
     <form action="profile.php" method="POST" enctype="multipart/form-data">
         <label for="profilePic">Upload Profile Pic : </label>
         <input type="file" accept="image/*" name="profilePic">
+        <input type="hidden" value="profilePic" name="formType">
 
         <input type="submit" value="Submit" name="submit">
         <br> <br>
@@ -93,13 +88,23 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $account = new Account();
     $customer = new Customer();
-    if(!$_REQUEST["profilePic"]){
+    if (!$_REQUEST['formType'] = 'profilePic') {
+
         $customer->changeDetails($_REQUEST["formType"], $account->getAccountID($_SESSION["username"]), $_REQUEST["column"]);
-    }
-    else{
+    } else {
+
+        if (isset($_FILES['profilePic'])) {
+
+            $picName = $_FILES['profilePic']['name'];
+            $picDirectory = "img/profilePics/";
+            $picPath = $picDirectory.$picName;
+
+
+            move_uploaded_file($_FILES['profilePic']['tmp_name'], 'img/profilePics/' . $_FILES['profilePic']['name']);
+            $customer->changePic($picPath,  $account->getAccountID($_SESSION["username"]));
+        }
 
     }
-
 
 
 }
