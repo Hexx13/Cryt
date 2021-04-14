@@ -61,6 +61,15 @@ class Wallet
         }
     }
 
-
+    public function chargeWallet($amount, $walletId){
+        $balance = $this->getBalance($walletId);
+        if($balance>=$amount){
+            $newBal = $balance - $amount;
+            $this->setBalance($newBal);
+        }
+        else{
+            return false;
+        }
+    }
 
 }
