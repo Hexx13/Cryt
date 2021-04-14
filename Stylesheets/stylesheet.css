@@ -246,6 +246,7 @@ footer > a, footer a:visited{
     background-color: #111021;
     font-size: 26px;
     padding: 30px;
+    margin-top: 50px;
 }
 /*Index page boxeessssss*/
 .indexMain{
@@ -272,7 +273,7 @@ width: 20%;
 }
 
 .indexBox{
-    width:300px;
+    width:250px;
     float:left;
     background: #111021;
     height: 150px;
