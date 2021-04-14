@@ -260,7 +260,7 @@ footer > a, footer a:visited{
     flex: .5;
 }
 .storePageBoxTitle{
-    background: rgb(29, 23, 74);
+    background: rgba(29, 23, 74, 0.7);
     padding: 10px;
 }
 
