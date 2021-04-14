@@ -105,14 +105,14 @@ body {
     width: 650px;
     height:50px;
     background-color: rgb(28,22,67);
-    font-size:20px;
+    font-size:40px;
 }
 .loginSubmit {
     color: #3b2f9b;
     width: 650px;
     height:50px;
     background-color: rgb(168,255,213);
-    font-size:20px;
+    font-size:40px;
     text-align: left;
 }
 .topUpForm{
@@ -120,14 +120,14 @@ body {
     width: 350px;
     height:50px;
     background-color: rgb(28,22,67);
-    font-size:20px;
+    font-size:40px;
 }
 .topUpSubmit{
     background-color:#a8ffd5;
     width: 100px;
     height:50px;
     color: #3b2f9b;
-    font-size:20px;
+    font-size:40px;
 }
 .space{
     width:25%;
@@ -367,4 +367,12 @@ width: 20%;
     margin-top: 25px;
     text-align: center;
     font-size: 3vw;
+    margin-bottom: 25px;
+}
+.gamePurchase{
+    width:100%;
+    background: #111021;
+    height: 50px;
+    text-align: center;
+    font-size: 26px;
 }

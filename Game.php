@@ -13,26 +13,15 @@ $gameArray = $gamers->getGame($_REQUEST['id']);
 </head>
 <body class="backgroundGrad">
     <?php include_once 'php/Layout/Header.php';?>
-    <div>
         <div>
             <form action="Game.php?id='<?php echo $_REQUEST['id']?>'" method="post">
-                <p class="gamePageText"><?Php echo $gameArray['game_Name']; ?></p>
             <img src="<?php echo $gameArray['game_Img_Path']?>" class="gameImage">
-            <h3>
-                <?php
-                    echo $gameArray['game_Desc'];
-                ?>
-            </h3>
-            <h2>
-
-            </h2>
-            <h2>Purchase game €<?php echo trim($gameArray['game_Price']);?>
-                <input type="submit" name="submit"></h2>
-
-        </div>
     </div>
 
+    <p class="gamePageText"><?Php echo $gameArray['game_Name']; ?></p>
+    <div class="gamePurchase">Purchase game €<?php echo trim($gameArray['game_Price']);?><input type="submit" class="topUpSubmit" name="submit"></div>
 
+    <h3><?php echo $gameArray['game_Desc']; ?></h3>
     <?php
     include_once 'php/Layout/Footer.php';
     ?>
