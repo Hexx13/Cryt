@@ -22,10 +22,10 @@ if(!isset($_SESSION["login"]))
             <img src="img/logo.png" class="imageIndex">
         </div>
         <div class="rowBox2">
-            <div class="indexBox2">Box 1</div>
-            <div class="indexBox2">Box 2</div>
-            <div class="indexBox2">Box 3</div>
-            <div class="indexBox2">Box 3</div>
+            <div class="indexBox2"><a href ="Store.php">Strategy</a></div>
+            <div class="indexBox2"><a href ="Store.php">Adventure</a></div>
+            <div class="indexBox2"><a href ="Store.php">Shooter</a></div>
+            <div class="indexBox2"><a href ="Store.php">RPG</a></div>
         </div>
 
 
@@ -34,8 +34,8 @@ if(!isset($_SESSION["login"]))
         </div>
 
         <div class="rowBox">
-            <div class="indexBox">Box 1</div>
-            <div class="indexBox">Box 2</div>
+            <div class="indexBox"><a href ="Store.php">Game here</a></div>
+            <div class="indexBox"><a href ="Store.php">Game here</a></div>
         </div>
 
         <div class="indexText">
@@ -43,14 +43,14 @@ if(!isset($_SESSION["login"]))
         </div>
 
         <div class="rowBox">
-                <div class="indexBox">Box 1</div>
-                <div class="indexBox">Box 2</div>
-                <div class="indexBox">Box 3</div>
+                <div class="indexBox"><a href ="Store.php">Game here</a></div>
+                <div class="indexBox"><a href ="Store.php">Game here</a></div>
+                <div class="indexBox"><a href ="Store.php">Game here</a></div>
         </div>
         <div class="rowBox">
-            <div class="indexBox">Box 1</div>
-            <div class="indexBox">Box 2</div>
-            <div class="indexBox">Box 3</div>
+            <div class="indexBox"><a href ="Store.php">Game here</a></div>
+            <div class="indexBox"><a href ="Store.php">Game here</a></div>
+            <div class="indexBox"><a href ="Store.php">Game here</a></div>
         </div>
     </div>
     <div class="indexSpacer">
