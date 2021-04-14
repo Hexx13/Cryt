@@ -36,7 +36,9 @@
 
                 <input type="submit" value="Submit">
             </form>
+            <a href ="Login.php">Already have an account? Click here to login</a>
         </div>
+
 
 </div>
 
