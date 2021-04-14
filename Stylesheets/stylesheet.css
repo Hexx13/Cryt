@@ -80,8 +80,8 @@ body {
     align-items: center;
 }
 .profile .profilePicture{
-    width: 2vw;
-    height: 2vw;
+    width: 4vw;
+    height: 4vw;
     border-radius: 100%;
     padding: 5px;
 }
