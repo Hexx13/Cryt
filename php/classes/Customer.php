@@ -5,22 +5,82 @@ include_once "Database.php";
 
 class Customer
 {
-    private $profilePicturePath;
-    private $emailAddress;
-    private $firstName;
-    private $lastName;
+    private $username;
 
-    // figure out user session "session_start();"
-    //https://www.tutorialrepublic.com/php-tutorial/php-sessions.php
-    //https://www.php.net/manual/en/reserved.variables.session.php
-
-    public function __construct($password, $username, $emailAddress, $firstName, $lastName)
+    /**
+     * @param mixed $username
+     */
+    public function setUsername($username)
     {
+        $this->username = $username;
+    }
+
+    /**
+     * @param mixed $password
+     */
+    public function setPassword($password)
+    {
+        $this->password = $password;
+    }
+
+    /**
+     * @param mixed $emailAddress
+     */
+    public function setEmailAddress($emailAddress)
+    {
+        $this->emailAddress = $emailAddress;
+    }
+
+    /**
+     * @param mixed $firstName
+     */
+    public function setFirstName($firstName)
+    {
+        $this->firstName = $firstName;
+    }
+
+    /**
+     * @param mixed $lastName
+     */
+    public function setLastName($lastName)
+    {
+        $this->lastName = $lastName;
+    }
+
+    public function setAll($password,$username, $emailAddress,$firstName,$lastName){
         $this->username = $username;
         $this->password = $password;
         $this->emailAddress = $emailAddress;
         $this->firstName = $firstName;
         $this->lastName = $lastName;
+    }
+    private $password;
+    private $emailAddress;
+    private $firstName;
+    private $lastName;
+
+
+    public function __construct()
+    {
+
+    }
+
+
+    public function changeDetails($column,$userID,$value )
+    {
+        //make connection
+        include_once "php/classes/Database.php";
+        $db = new Database();
+        $link = $db->getLink();
+
+        $sql = "UPDATE account set $column = $value where user_ID = $userID ";
+
+        if ($res = mysqli_query($link, $sql)) {
+            header("location:profile.php");
+
+        } else {
+            echo "ERROR: OH JOD OH NO WHY XAXAXAXAXXAXAXA $sql ." . mysqli_error($link);
+        }
     }
 
     public function createAccountDB()
@@ -34,7 +94,7 @@ class Customer
 
         //make connection
         $database = new Database();
-        $link = $database ->getLink();
+        $link = $database->getLink();
 
         //Insert queries
         $query = "Insert into wallet Values($walletID, 0.00);";
@@ -65,7 +125,6 @@ class Customer
         //close connection
         mysqli_close($link);
     }
-
 
 
 }

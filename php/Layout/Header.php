@@ -3,6 +3,7 @@
 include "php/classes/Wallet.php";
 $beans = new Wallet();
 ?>
+
 <style>@import "../../Stylesheets/stylesheet.css";</style>
 <div class="header" style="padding: 0;">
 
