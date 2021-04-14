@@ -281,7 +281,8 @@ footer > a, footer a:visited{
     font-size: 26px;
     padding: 30px;
     color: #a8ffd5;
-    background-image: linear-gradient(rgba(28,22,67,10),rgba(15,13,35,10));
+    background-image: linear-gradient(#3b2f9b,
+    #271f69);
     margin-top: 50px;
 }
 /*Index page boxeessssss*/
@@ -330,7 +331,7 @@ width: 20%;
     float:left;
     background: #3b2f9b;
     height: 50px;
-   
+
     text-align: center;
 }
 .indexBigBox{
