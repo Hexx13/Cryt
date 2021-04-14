@@ -3,6 +3,7 @@
     padding: 0;
     border: none;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 html{min-height: 100%;
@@ -12,7 +13,7 @@ body {
     height: 100%;
     overflow:auto;
 
-    font-family: sans-serif;
+
 }
 
 /*Header shite*/
