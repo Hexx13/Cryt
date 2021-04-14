@@ -113,6 +113,21 @@ class Customer
         }
     }
 
+    public function getAccountDetails($accountID){
+        //make connection
+        include_once "php/classes/Database.php";
+        $db = new Database();
+        $link = $db->getLink();
+
+        $sql = "select * from account where account_ID = $accountID";
+
+        if ($res = mysqli_query($link, $sql)) {
+            return mysqli_fetch_assoc($res);
+
+        } else {
+            echo "ERROR: OH JOD OH NO WHY XAXAXAXAXXAXAXA $sql ." . mysqli_error($link);
+        }
+    }
 
 
     public function createAccountDB()
