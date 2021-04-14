@@ -2,17 +2,17 @@
 <html lang="en">
 <?php session_start(); ?>
 <?php
-require 'php/Layout/Header.php';
+include_once 'php/Layout/Header.php';
 include_once "php/classes/Game.php";
 $gamers = new Game();
 $gameArray = $gamers->getGame($_REQUEST['id']);
 ?>
 <head>
-    <?php require 'php/Layout/headLinks.php';?>
+    <?php include_once 'php/Layout/headLinks.php';?>
     <title>Cryt - <?php echo $gameArray['game_Name']; ?></title>
 </head>
 <body class="backgroundGrad">
-    <?php require 'php/Layout/Header.php';?>
+    <?php include_once 'php/Layout/Header.php';?>
     <div>
         <div>
             <form action="Game.php?id='<?php echo $_REQUEST['id']?>'" method="post">
@@ -38,7 +38,7 @@ $gameArray = $gamers->getGame($_REQUEST['id']);
 
 
     <?php
-    require 'php/Layout/Footer.php';
+    include_once 'php/Layout/Footer.php';
     ?>
 </body>
 

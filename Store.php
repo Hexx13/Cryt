@@ -7,7 +7,7 @@ if (!isset($_SESSION["login"]))
     header("location:login.php");
 ?>
 <head>
-    <?php require 'php/Layout/headLinks.php';?>
+    <?php include_once 'php/Layout/headLinks.php';?>
     <title>Cryt - Store</title>
 </head>
 <html lang="en">
@@ -17,7 +17,7 @@ if (!isset($_SESSION["login"]))
 
 
 <?php
-require 'php/Layout/Header.php';
+include_once 'php/Layout/Header.php';
 include_once "php/classes/Game.php";
 $gamers = new Game();
 $gameArray = $gamers->getGameArray();
@@ -43,7 +43,7 @@ $gameArray = $gamers->getGameArray();
 
 
 <?php
-require 'php/Layout/Footer.php';
+include_once 'php/Layout/Footer.php';
 ?>
 
 </body>
