@@ -6,6 +6,6 @@ class Transaction
 
 
     public function transact($amount){
-
+        
     }
 }
