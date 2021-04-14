@@ -3,9 +3,10 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="Stylesheets/stylesheet.css"/>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
     <meta charset="UTF-8">
     <?php session_start();session_destroy(); ?>
-    <title>Cryt</title>
+    <title>Cryt - Sign Up</title>
 </head>
 <body class="backgroundGrad">
 <div class="container">
@@ -35,7 +36,9 @@
 
                 <input type="submit" value="Submit">
             </form>
+            <a href ="Login.php">Already have an account? Click here to login</a>
         </div>
+
 
 </div>
 

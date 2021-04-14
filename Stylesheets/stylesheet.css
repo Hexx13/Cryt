@@ -80,8 +80,8 @@ body {
     align-items: center;
 }
 .profile .profilePicture{
-    width: 2vw;
-    height: 2vw;
+    width: 3vw;
+    height: 3vw;
     border-radius: 100%;
     padding: 5px;
 }
@@ -100,10 +100,19 @@ body {
 
 }
 .loginForms {
-    color: #111021;
-    margin: 8px 0;
-    background-color: #3b2f9b;
-    border: 0px solid white;
+    color: #3b2f9b;
+    width: 650px;
+    height:50px;
+    background-color: rgb(28,22,67);
+    font-size:20px;
+}
+.loginSubmit {
+    color: #3b2f9b;
+    width: 650px;
+    height:50px;
+    background-color: rgb(168,255,213);
+    font-size:20px;
+    text-align: left;
 }
 .topUpForm{
     color: #3b2f9b;
@@ -162,7 +171,12 @@ body {
     background-image: linear-gradient(rgba(28,22,67,10),rgba(15,13,35,10));
 }
 .centerLogo{
-    width:70%;
+    height:50%;
+    width:50%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+
 
 }
 
@@ -325,4 +339,17 @@ width: 20%;
 .imageBox{
     height:100%;
     width:100%
+}
+/*---------------------------------Scrollbar-------------------------------*/
+::-webkit-scrollbar { /* Changes Appearance of scrollbar*/
+    width: 0.5vw;
+    background: rgba(34, 34, 34, 0.94);
+}
+
+::-webkit-scrollbar-thumb { /* changes colour of thumb*/
+    background: #363636;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #3c3c3c;
 }

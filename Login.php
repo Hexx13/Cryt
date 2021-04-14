@@ -3,31 +3,38 @@
 <?php session_start(); ?>
 <head>
     <link rel="stylesheet" type="text/css" href="Stylesheets/stylesheet.css"/>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
     <meta charset="UTF-8">
-    <title>Cryt</title>
+    <title>Cryt - Login</title>
 </head>
 <body class="backgroundGrad">
 <div class="container">
   <div class="bannerGrad">
-    <div class="space">
-    </div>
+
+
+
+
+
     <div class="centerLogo">
 
     <img src="img/logo.png" class="centerLogo">
 
-
+    </div>
     <form action="Login.php" method="POST">
 
-        <label for="username">Username: </label>
-        <input type="text" class="loginForms" name="username"><br>
+        <label for="username"></label>
+        <input type="text" class="loginForms" placeholder="Username:" name="username"><br><br>
 
-        <label for="password">Password: </label>
-        <input type="password" id="password" class="loginForms" name="password"><br>
+        <label for="password"></label>
+        <input type="password" id="password" class="loginForms" placeholder="Password:" name="password"><br><br>
 
-        <input type="submit" value="Login" name="submit">
+        <input type="submit" value="Login" class="loginSubmit" placeholder="Password:" name="submit">
     </form>
-        <a class="" href="signup.php">Sign up here</a>
-        <br><br><br><br><br><br>
+      <div class="space">    <a class="" href="signup.php">Sign up here</a></div>
+
+
+    </div>
+
 
 
     <?php
