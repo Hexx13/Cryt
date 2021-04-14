@@ -50,7 +50,8 @@
         $firstName = $_REQUEST['firstName'];
         $lastName = $_REQUEST['lastName'];
 
-        $customer = new Customer($password,$username, $emailAddress,$firstName,$lastName);
+        $customer = new Customer();
+        $customer->setAll($password,$username, $emailAddress,$firstName,$lastName);
         $customer->createAccountDB();
         header("location:login.php");
     }

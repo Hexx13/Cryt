@@ -5,22 +5,64 @@ include_once "Database.php";
 
 class Customer
 {
-    private $profilePicturePath;
-    private $emailAddress;
-    private $firstName;
-    private $lastName;
+    private $username;
 
-    // figure out user session "session_start();"
-    //https://www.tutorialrepublic.com/php-tutorial/php-sessions.php
-    //https://www.php.net/manual/en/reserved.variables.session.php
-
-    public function __construct($password, $username, $emailAddress, $firstName, $lastName)
+    /**
+     * @param mixed $username
+     */
+    public function setUsername($username)
     {
+        $this->username = $username;
+    }
+
+    /**
+     * @param mixed $password
+     */
+    public function setPassword($password)
+    {
+        $this->password = $password;
+    }
+
+    /**
+     * @param mixed $emailAddress
+     */
+    public function setEmailAddress($emailAddress)
+    {
+        $this->emailAddress = $emailAddress;
+    }
+
+    /**
+     * @param mixed $firstName
+     */
+    public function setFirstName($firstName)
+    {
+        $this->firstName = $firstName;
+    }
+
+    /**
+     * @param mixed $lastName
+     */
+    public function setLastName($lastName)
+    {
+        $this->lastName = $lastName;
+    }
+
+    public function setAll($password,$username, $emailAddress,$firstName,$lastName){
         $this->username = $username;
         $this->password = $password;
         $this->emailAddress = $emailAddress;
         $this->firstName = $firstName;
         $this->lastName = $lastName;
+    }
+    private $password;
+    private $emailAddress;
+    private $firstName;
+    private $lastName;
+
+
+    public function __construct()
+    {
+
     }
 
 
