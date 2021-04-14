@@ -255,14 +255,24 @@ footer > a, footer a:visited{
 }
 
 .storePageBoxPrice{
-    display: inline-block;
-    background: rgba(29, 23, 74,.9);
+    display:flex;
+    justify-content:right;
+
+
+
+}
+.storePagePrice2{
+    background: rgba(168,255,213,.9);
+    text-align: center;
+    padding:1%;
+    width:12%;
+    font-color:rgb(29, 23, 74);
 }
 .storePriceParent{
     display: flex;
     text-align: right;
     flex-direction: column-reverse;
-    height: 242px;
+    height: 233px;
 
 
 }
