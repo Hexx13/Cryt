@@ -18,7 +18,7 @@ require 'php/Layout/Header.php';
 <div class="backgroundGrad">
 
 
-    <!-- <form action="profile.php" method="POST">
+    <form action="profile.php" method="POST">
 
         <label for="username">Change Username: </label>
         <input type="text" class="" name="username">
@@ -37,9 +37,15 @@ require 'php/Layout/Header.php';
         <br> <br>
     </form>
 
-    <form action="profile.php" method="POST">
+   <?PHP  if(isset($_FILES['profilePic'])){
+        move_uploaded_file($_FILES['profilePic']['tmp_name'],'img/GameBanners/'.$_FILES['profilePic']['name'] );
+    }
+
+        ?>
+
+    <form action="profile.php" method="POST" enctype="multipart/form-data">
         <label for="profilePic">Upload Profile Pic : </label>
-        <input type="file" class="" name="profilePic">
+        <input type="file" accept="image/*" name="profilePic">
 
         <input type="submit" value="Submit" name="submit">
         <br> <br>
@@ -59,7 +65,7 @@ require 'php/Layout/Header.php';
         <input type="hidden" value="firstName" name="formType">
         <input type="submit" value="Submit" name="submit">
         <br> <br>
-    </form> -->
+    </form>
 
     <form action="profile.php" method="POST">
         <label for="lastName">Change Last Name </label>
@@ -87,7 +93,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $account = new Account();
     $customer = new Customer();
-    $customer->changeDetails($_REQUEST["formType"], $account->getAccountID($_SESSION["username"]), $_REQUEST["column"]);
+    if(!$_REQUEST["profilePic"]){
+        $customer->changeDetails($_REQUEST["formType"], $account->getAccountID($_SESSION["username"]), $_REQUEST["column"]);
+    }
+    else{
+
+    }
+
+
 
 }
 ?>
