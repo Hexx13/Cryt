@@ -11,9 +11,14 @@ class Transaction
 
         include_once ("Customer.php");
         $customer = new Customer();
-        $custArray = $customer->getAccountDetails();
+        $custArray = $customer->getAccountDetails($accountID);
 
-        $transactArray = Array("walletId"=>$custArray['wallet_Id'], )
+        //generate ids
+        include_once ("IDManager.php");
+        $manager = new IDManager();
+        $id = $manager->generateID('transaction_ID', 'transaction');
+
+        $transactArray = Array("walletId"=>$custArray['wallet_Id'], "date"=>$currentDate, "amount"=>$amount);
 
 
     }
