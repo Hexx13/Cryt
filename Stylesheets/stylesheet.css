@@ -231,7 +231,7 @@ footer > a, footer a:visited{
     box-shadow: 0px 0px 10px #111021;
     background-size: 100%;
     flex-wrap: wrap;
-    margin: 10px;
+    margin: 20px;
     height: 270px;
     width: 480px;
 }
@@ -248,11 +248,11 @@ footer > a, footer a:visited{
     flex-direction: row;
 }
 .gameSpacerSide{
-    flex: 1;
+    flex: .5;
 }
 .storePageBoxTitle{
     background: rgba(29, 23, 74,.9);
-    padding: 5px;
+    padding: 10px;
 }
 
 .storePageBoxPrice{
