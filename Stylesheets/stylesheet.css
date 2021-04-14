@@ -328,7 +328,7 @@ width: 20%;
 }
 /*---------------------------------Scrollbar-------------------------------*/
 ::-webkit-scrollbar { /* Changes Appearance of scrollbar*/
-    width: 0.3vw;
+    width: 0.5vw;
     background: rgba(34, 34, 34, 0.94);
 }
 
