@@ -362,3 +362,8 @@ width: 20%;
     width: 80%;
     margin-top: 25px;
 }
+.gamePageText{
+    margin-top: 25px;
+    text-align: center;
+    font-size: 3vw;
+}
