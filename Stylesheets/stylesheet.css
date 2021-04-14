@@ -354,3 +354,11 @@ width: 20%;
 ::-webkit-scrollbar-thumb:hover {
     background: #3c3c3c;
 }
+/* game page */
+.gameImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    margin-top: 25px;
+}
