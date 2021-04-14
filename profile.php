@@ -96,11 +96,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         if (isset($_FILES['profilePic'])) {
 
             $picName = $_FILES['profilePic']['name'];
-            $picDirectory = "img/GameBanners/";
+            $picDirectory = "img/profilePics/";
             $picPath = $picDirectory.$picName;
 
 
-            move_uploaded_file($_FILES['profilePic']['tmp_name'], 'img/GameBanners/' . $_FILES['profilePic']['name']);
+            move_uploaded_file($_FILES['profilePic']['tmp_name'], 'img/profilePics/' . $_FILES['profilePic']['name']);
             $customer->changePic($picPath,  $account->getAccountID($_SESSION["username"]));
         }
 
