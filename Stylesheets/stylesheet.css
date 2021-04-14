@@ -366,4 +366,12 @@ width: 20%;
     margin-top: 25px;
     text-align: center;
     font-size: 3vw;
+    margin-bottom: 25px;
+}
+.gamePurchase{
+    width:100%;
+    background: #111021;
+    height: 50px;
+    text-align: center;
+    font-size: 26px;
 }
