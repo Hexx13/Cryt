@@ -248,10 +248,10 @@ footer > a, footer a:visited{
     padding: 30px;
 }
 /*Index page boxeessssss*/
-.rowBox{
+.boxes{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .indexBox{
