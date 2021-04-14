@@ -21,7 +21,7 @@ $gameArray = $gamers->getGame($_REQUEST['id']);
                 echo $gameArray['game_Name'];
                 ?>
             </h1>
-            <img src="<?php echo $gameArray['game_Img_Path']?>">
+            <img src="<?php echo $gameArray['game_Img_Path']?>" class="gameImage">
             <h3>
                 <?php
                     echo $gameArray['game_Desc'];
