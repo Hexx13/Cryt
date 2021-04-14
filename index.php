@@ -21,6 +21,13 @@ if(!isset($_SESSION["login"]))
         <div class="imageIndex">
             <img src="img/logo.png" class="imageIndex">
         </div>
+        <div class="rowBox2">
+            <div class="indexBox2">Box 1</div>
+            <div class="indexBox2">Box 2</div>
+            <div class="indexBox2">Box 3</div>
+            <div class="indexBox2">Box 3</div>
+        </div>
+
 
         <div class="indexText">
             <p>Sale Showcase</p>

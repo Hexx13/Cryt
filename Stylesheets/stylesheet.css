@@ -278,3 +278,17 @@ width: 20%;
     background: #111021;
     height: 150px;
 }
+.rowBox2{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.indexBox2{
+    width:125px;
+    float:left;
+    background: #111021;
+    height: 50px;
+}
