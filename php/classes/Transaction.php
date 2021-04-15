@@ -32,5 +32,12 @@ class Transaction
         $db = new Database();
         $link = $db->getLink();
 
+        if ($res = mysqli_query($link, $sql)){
+            // this bad figure out  how get the actual id value from the  result
+
+        }else{
+            echo "ERROR: OH GOD OH NO WHY aaaaaaaaaaaaaaaaaaaaa $sql. "
+                . mysqli_error($link);
+        }
     }
 }
