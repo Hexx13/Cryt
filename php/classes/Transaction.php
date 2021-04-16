@@ -39,8 +39,8 @@ class Transaction
             $accountID = $account->getAccountID($_SESSION["username"]);
             $walletID = $wallet->getWalletID($accountID);
             $wallet->chargeWallet($amount, $walletID);
-            header('Location: /index.php');
-            header();
+            header('Location: /Library.php');
+
         }else{
             echo "ERROR: OH GOD OH NO WHY aaaaaaaaaaaaaaaaaaaaa $sql. "
                 . mysqli_error($link);
