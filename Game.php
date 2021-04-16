@@ -39,6 +39,10 @@ $gameArray = $gamers->getGame($_REQUEST['id']);
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $amount = $_REQUEST['amount'];
         include_once "php/classes/Transaction.php";
+        $account = new Account();
+        $accountID = $account->getAccountID($_SESSION["username"]);
+        $transaction = new Transaction();
+        $transaction->transaction($amount, $accountID);
     }
     include_once 'php/Layout/Footer.php';
     ?>

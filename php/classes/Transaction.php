@@ -23,8 +23,8 @@ class Transaction
 
 
     }
-    public function transaction($transactionData,$amount, $accountID){
-        $dataArray = $transactionData($amount, $accountID);
+    public function transaction($amount, $accountID){
+        $dataArray =$this->transactData($amount,$accountID);
         $sql="insert into transaction (transaction_ID, dateTime, transaction_Amount, Wallet_wallet_ID) values ($dataArray[0], $dataArray[1], $dataArray[2],$dataArray[3])";
 
         //make connection
@@ -34,9 +34,8 @@ class Transaction
 
         if ($res = mysqli_query($link, $sql)){
 
-            $account = new Account();
+
             $wallet = new Wallet();
-            $accountID = $account->getAccountID($_SESSION["username"]);
             $walletID = $wallet->getWalletID($accountID);
             $wallet->chargeWallet($amount, $walletID);
             header('Location: /Library.php');
