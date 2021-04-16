@@ -35,7 +35,8 @@ class Transaction
         if ($res = mysqli_query($link, $sql)){
             $wallet = new Wallet();
             $walletID = $wallet->getWalletID($accountID);
-            if($wallet->chargeWallet($amount, $walletID)){
+            if($wallet->checkBalanceMoreAmount($amount, $walletID)){
+                $wallet->chargeWallet($amount, $walletID);
                 header('Location: /Library.php');
             }
             else{
