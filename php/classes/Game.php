@@ -18,6 +18,7 @@ class Game
     }
 
 
+
     public function getGameArray()
     {
         //make connection

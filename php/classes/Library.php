@@ -3,8 +3,7 @@
 
 class Library
 {
-    private $games = array();
-    public function enableGame($gameID){
+    public function addGametoLib($userId, $gameId){
 
     }
 }
