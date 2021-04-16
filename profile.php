@@ -15,14 +15,15 @@ require 'php/Layout/Header.php';
 ?>
 
 <div class="backgroundGrad">
-
+<div class="container">
+    <div class="profileBox">
 
     <form action="profile.php" method="POST">
 
         <label for="username">Change Username: </label>
-        <input type="text" class="" name="username">
+        <input type="text" class="profileForms" name="username">
         <input type="hidden" value="account_Username" name="formType">
-        <input type="submit" value="Submit" name="submit">
+        <input type="submit" value="Submit" class="profileSubmit" name="submit">
         <br> <br>
 
     </form>
@@ -30,9 +31,9 @@ require 'php/Layout/Header.php';
     <form action="profile.php" method="POST">
 
         <label for="password">Change Password: </label>
-        <input type="password" class="" name="column">
+        <input type="password" class="profileForms" name="column">
         <input type="hidden" value="account_Password" name="formType">
-        <input type="submit" value="Submit" name="submit">
+        <input type="submit" value="Submit" class="profileSubmit" name="submit">
         <br> <br>
     </form>
 
@@ -42,37 +43,39 @@ require 'php/Layout/Header.php';
         <input type="file" accept="image/*" name="profilePic">
         <input type="hidden" value="profilePic" name="formType">
 
-        <input type="submit" value="Submit" name="submit">
+        <input type="submit" value="Submit" class="profileSubmit" name="submit">
         <br> <br>
     </form>
 
     <form action="profile.php" method="POST">
         <label for="email">Change E-mail </label>
-        <input type="email" class="" name="column">
+        <input type="email" class="profileForms" name="column">
         <input type="hidden" value="email_Address" name="formType">
-        <input type="submit" value="Submit" name="submit">
+        <input type="submit" value="Submit" class="profileSubmit" name="submit">
         <br> <br>
     </form>
 
     <form action="profile.php" method="POST">
         <label for="firstName">Change First Name </label>
-        <input type="text" class="" name="column">
+        <input type="text" class="profileForms" name="column">
         <input type="hidden" value="firstName" name="formType">
-        <input type="submit" value="Submit" name="submit">
+        <input type="submit" value="Submit" class="profileSubmit" name="submit">
         <br> <br>
     </form>
 
     <form action="profile.php" method="POST">
         <label for="lastName">Change Last Name </label>
-        <input type="text" class="" name="column">
+        <input type="text" class="profileForms" name="column">
         <input type="hidden" value="lastName" name="formType">
-        <input type="submit" value="Submit" name="submit">
+        <input type="submit" value="Submit" class="profileSubmit" name="submit">
         <br> <br>
     </form>
 
 
     <a href="Logout.php"><h2><font color="white"><font size="2">Logout</font></font></h2>
 
+</div>
+</div>
 </div>
 <?php
 require 'php/Layout/Footer.php';

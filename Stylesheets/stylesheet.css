@@ -113,10 +113,31 @@ body {
     background-color: rgb(28,22,67);
     font-size:35px;
 }
+.profileForms {
+    padding: 5px;
+    color: #3b2f9b;
+    width: 350px;
+    height:50px;
+    background-color: rgb(28,22,67);
+    font-size:35px;
+}
 .loginSubmit {
     padding: 5px;
     color: #3b2f9b;
     width: 650px;
+    height:50px;
+    background-color: rgb(168,255,213);
+    font-size:35px;
+    text-align: left;
+}
+.profileBox{
+    width:49%;
+    height:100%
+}
+.profileSubmit {
+    padding: 5px;
+    color: #3b2f9b;
+    width: 150px;
     height:50px;
     background-color: rgb(168,255,213);
     font-size:35px;
