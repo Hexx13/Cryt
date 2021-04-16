@@ -80,7 +80,7 @@ require 'php/Layout/Footer.php';
 
 <?php
 
-include "php/classes/Customer.php";
+include_once "php/classes/Customer.php";
 include_once "php/classes/Account.php";
 $account = new Account();
 $customer = new Customer();

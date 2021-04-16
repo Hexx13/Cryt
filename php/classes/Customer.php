@@ -47,13 +47,15 @@ class Customer
         $this->lastName = $lastName;
     }
 
-    public function setAll($password,$username, $emailAddress,$firstName,$lastName){
+    public function setAll($password, $username, $emailAddress, $firstName, $lastName)
+    {
         $this->username = $username;
         $this->password = $password;
         $this->emailAddress = $emailAddress;
         $this->firstName = $firstName;
         $this->lastName = $lastName;
     }
+
     private $password;
     private $emailAddress;
     private $firstName;
@@ -66,7 +68,7 @@ class Customer
     }
 
 
-    public function changeDetails($column,$userID,$value )
+    public function changeDetails($column, $userID, $value)
     {
         //make connection
         include_once "php/classes/Database.php";
@@ -83,20 +85,50 @@ class Customer
         }
     }
 
-    public function checkNull($userID){
+    public function checkNull($userID)
+    {
         include_once "php/classes/Database.php";
         $db = new Database();
         $link = $db->getLink();
 
-        $sql = "select isnull(profile_Picture_Path ) from account where account_ID = $userID) ";
+        $sql = "select isnull(profile_Picture_Path ) from account where account_ID = $userID ";
+
         if ($res = mysqli_query($link, $sql)) {
-            echo "$res";
+            $picArray = mysqli_fetch_assoc($res);
+            if ($picArray['profile_Picture_Path'] = 0) {
+                return true;
+            } else {
+                return false;
+            }
+
         } else {
             echo "ERROR: OH JOD OH NO WHY XAXAXAXAXXAXAXA $sql ." . mysqli_error($link);
         }
     }
 
-    public function changePic($picPath, $userID){
+    public function getPicPath($userID)
+    {
+
+        if ($this->checkNull($userID)) {
+            echo "img/default_pfp.png";
+        } else {
+            include_once "php/classes/Database.php";
+            $db = new Database();
+            $link = $db->getLink();
+
+            $sql = "select profile_Picture_Path from account where account_ID = $userID";
+            if ($res = mysqli_query($link, $sql)) {
+                $picArray = mysqli_fetch_assoc($res);
+                echo $picArray['profile_Picture_Path'];
+
+            } else {
+                echo "ERROR: OH JOD OH NO WHY XAXAXAXAXXAXAXA $sql ." . mysqli_error($link);
+            }
+        }
+    }
+
+    public function changePic($picPath, $userID)
+    {
         //make connection
         include_once "php/classes/Database.php";
         $db = new Database();
@@ -112,7 +144,8 @@ class Customer
         }
     }
 
-    public function getAccountDetails($accountID){
+    public function getAccountDetails($accountID)
+    {
         //make connection
         include_once "php/classes/Database.php";
         $db = new Database();

@@ -37,9 +37,14 @@ $beans = new Wallet();
         $customer = new Customer();
         $account = new Account();
 
-        $customer-> checkNull($account->getAccountID($_SESSION["username"]));
+        $pic_Bool= $customer-> checkNull($account->getAccountID($_SESSION["username"]));
+
+
+
+
+
         ?>
-        <a class = "profile_link" href="profile.php"><img src="" class="profilePicture"></a>
+        <a class = "profile_link" href="profile.php"><img src="<?PHP $customer->getPicPath($account->getAccountID($_SESSION["username"])); ?>" class="profilePicture"></a>
     </div>
 
 </div>
