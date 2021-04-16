@@ -88,10 +88,9 @@ class Customer
         $db = new Database();
         $link = $db->getLink();
 
-        $sql = "select ISNULL(select profile_Picture_path from account where account_ID = $userID) ";
-        $sql2 = "select profile_Picture_Path from account where account_ID = $userID";
+        $sql = "select isnull(profile_Picture_Path ) from account where account_ID = $userID) ";
         if ($res = mysqli_query($link, $sql)) {
-            echo $res;
+            echo "$res";
         } else {
             echo "ERROR: OH JOD OH NO WHY XAXAXAXAXXAXAXA $sql ." . mysqli_error($link);
         }

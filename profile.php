@@ -82,12 +82,12 @@ require 'php/Layout/Footer.php';
 
 include "php/classes/Customer.php";
 include_once "php/classes/Account.php";
-
-
+$account = new Account();
+$customer = new Customer();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $account = new Account();
-    $customer = new Customer();
+
+
     if (!$_REQUEST['formType'] = 'profilePic') {
 
         $customer->changeDetails($_REQUEST["formType"], $account->getAccountID($_SESSION["username"]), $_REQUEST["column"]);
@@ -108,6 +108,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 }
+
 ?>
 
 </body>

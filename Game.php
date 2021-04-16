@@ -19,19 +19,25 @@ $gameArray = $gamers->getGame($_REQUEST['id']);
         <div>
             <img src="<?php echo $gameArray['game_Img_Path']?>" class="gameImage">
         </div>
-        <p class="gamePageText"><?Php echo $gameArray['game_Name']; ?></p>
+        <div>
+        <div class="gamePageText"><?Php echo $gameArray['game_Name']; ?></div>
         <form action="Game.php?id='<?php echo $_REQUEST['id']?>'" method="post">
             <div class="gamePurchase">Purchase game €
                 <?php echo trim($gameArray['game_Price']);?>
                 <input type="hidden" value="<?php echo $gameArray['game_Price']?>" name="amount">
                 <input type="submit" value="Purchase" class="gameSubmit" name="submit">
             </div>
+        </div>
         </form>
         <div class="gameDescription">
             <?php echo $gameArray['game_Desc']; ?>
         </div>
         <div class="gamePurchase">
             <p>Review</p>
+        </div>
+        <div class="rowBox">
+            <div class="indexBox reviewBigBox">Game here</div>
+            <div class="indexBox reviewBigBox">Game here</div>
         </div>
     </div>
     <div class="indexSpacer"></div>
