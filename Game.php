@@ -39,12 +39,7 @@ $gameArray = $gamers->getGame($_REQUEST['id']);
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $amount = $_REQUEST['amount'];
-        $account = new Account();
-        $wallet = new Wallet();
-        $accountID = $account->getAccountID($_SESSION["username"]);
-        $walletID = $wallet->getWalletID($accountID);
-        $wallet->chargeWallet($gameArray['game_Price'], $walletID);
-        header('Location: /index.php');
+
     }
     include_once 'php/Layout/Footer.php';
     ?>

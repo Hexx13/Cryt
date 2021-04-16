@@ -34,6 +34,13 @@ class Transaction
 
         if ($res = mysqli_query($link, $sql)){
 
+            $account = new Account();
+            $wallet = new Wallet();
+            $accountID = $account->getAccountID($_SESSION["username"]);
+            $walletID = $wallet->getWalletID($accountID);
+            $wallet->chargeWallet($gameArray['game_Price'], $walletID);
+            header('Location: /index.php');
+            header();
         }else{
             echo "ERROR: OH GOD OH NO WHY aaaaaaaaaaaaaaaaaaaaa $sql. "
                 . mysqli_error($link);
