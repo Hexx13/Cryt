@@ -21,7 +21,10 @@ $gameArray = $gamers->getGame($_REQUEST['id']);
         </div>
         <p class="gamePageText"><?Php echo $gameArray['game_Name']; ?></p>
         <form action="Game.php?id='<?php echo $_REQUEST['id']?>'" method="post">
-            <div class="gamePurchase">Purchase game € <?php echo trim($gameArray['game_Price']);?>  <input type="submit" value="Purchase" class="gameSubmit" name="submit">  </div>
+            <div class="gamePurchase">Purchase game €
+                <?php echo trim($gameArray['game_Price']);?>
+                <input type="submit" value="Purchase" class="gameSubmit" name="submit">
+            </div>
         </form>
         <div class="gameDescription">
             <?php echo $gameArray['game_Desc']; ?>
