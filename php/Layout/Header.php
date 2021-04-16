@@ -19,6 +19,7 @@ $beans = new Wallet();
     <div class="header-right">
         <a class="pagebutton"  id="topupBut" " href="../../TopUpPage.php">  Balance:
             <?php
+            include_once "php/classes/Customer.php";
             include_once "php/classes/Account.php";
             include_once "php/classes/Wallet.php";
             $account = new Account();
@@ -28,9 +29,16 @@ $beans = new Wallet();
             $walletID = $wallet->getWalletID($accountID);
             echo $beans ->getBalance($walletID);
 
+
             ?> €  Top Up</a>
     </div>
     <div class="profile">
+        <?PHP
+        $customer = new Customer();
+        $account = new Account();
+
+        $customer-> checkNull($account->getAccountID($_SESSION["username"]));
+        ?>
         <a class = "profile_link" href="profile.php"><img src="" class="profilePicture"></a>
     </div>
 

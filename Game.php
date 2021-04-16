@@ -24,6 +24,7 @@ $gameArray = $gamers->getGame($_REQUEST['id']);
         <form action="Game.php?id='<?php echo $_REQUEST['id']?>'" method="post">
             <div class="gamePurchase">Purchase game €
                 <?php echo trim($gameArray['game_Price']);?>
+                <input type="hidden" value="$gameArray['game_Price']" name="amount">
                 <input type="submit" value="Purchase" class="gameSubmit" name="submit">
             </div>
         </div>
@@ -43,7 +44,11 @@ $gameArray = $gamers->getGame($_REQUEST['id']);
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $amount = $_REQUEST['amount'];
-
+        include_once "php/classes/Transaction.php";
+        $account = new Account();
+        $accountID = $account->getAccountID($_SESSION["username"]);
+        $transaction = new Transaction();
+        $transaction->transact($amount, $accountID);
     }
     include_once 'php/Layout/Footer.php';
     ?>
