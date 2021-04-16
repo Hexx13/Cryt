@@ -441,3 +441,11 @@ width: 20%;
     background: #111021;
     height: 250px;
 }
+.signOut{
+    width:23%;
+    float:left;
+    background: #3b2f9b;
+    height: 50px;
+
+    text-align: center;
+}
