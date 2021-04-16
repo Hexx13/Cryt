@@ -19,6 +19,18 @@ class Database
         }
     }
 
+    public function fetchFromDb($table, $column, $userID){
+        $link = $this->getLink();
+        $sql = "select * from $column where account_ID = $userID";
+
+        if ($res = mysqli_query($link, $sql)) {
+            header("location:profile.php");
+
+        } else {
+            echo "ERROR: OH JOD OH NO WHY XAXAXAXAXXAXAXA $sql ." . mysqli_error($link);
+        }
+    }
+
     public function getLink(){
         $this->createLink();
         return $this->link;

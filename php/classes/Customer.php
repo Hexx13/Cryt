@@ -109,9 +109,7 @@ class Customer
     public function getPicPath($userID)
     {
 
-        if ($this->checkNull($userID)) {
-            echo "img/default_pfp.png";
-        } else {
+        if (!$this->checkNull($userID)) {
             include_once "php/classes/Database.php";
             $db = new Database();
             $link = $db->getLink();
@@ -124,6 +122,9 @@ class Customer
             } else {
                 echo "ERROR: OH JOD OH NO WHY XAXAXAXAXXAXAXA $sql ." . mysqli_error($link);
             }
+        }
+        else{
+            echo "img/default_pfp.png";
         }
     }
 
