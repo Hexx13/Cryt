@@ -333,7 +333,6 @@ width: 20%;
     float:left;
     background: #111021;
     height: 250px;
-    color: #a8ffd5;
     text-align: center;
 }
 .rowBox2{
@@ -415,11 +414,10 @@ width: 20%;
     align-items: center;
     text-align: center;
 }
-.reviewBigBox{
+.reviewBigBox {
     width:48%;
     float:left;
     background: #111021;
     height: 250px;
-    color: #a8ffd5;
     text-align: center;
 }
