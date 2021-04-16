@@ -43,7 +43,6 @@ class Account
         $sql = "select account_ID from account where account_username='$username'";
 
         if ($res = mysqli_query($link, $sql)){
-            // this bad figure out  how get the actual id value from the  result
             $arr = mysqli_fetch_array($res);
             return $arr["account_ID"];
         }else{
