@@ -33,7 +33,7 @@ if(!isset($_SESSION["login"]))
         </div>
 
         <div class="rowBox">
-            <div class="indexBox indexBigBox">Game here<img src="img/GameBanners/gamer3.png" class="imageBox"></a></div>
+            <div class="indexBox indexBigBox">Game here<img src="img/GameBanners/obamaindahood.png" class="imageBox"></a></div>
             <div class="indexBox indexBigBox">Game here<img src="img/GameBanners/gamer7.png" class="imageBox"></a></div>
         </div>
 
@@ -42,14 +42,14 @@ if(!isset($_SESSION["login"]))
         </div>
 
         <div class="rowBox">
-                <div class="indexBox">Game here<img src="img/GameBanners/gamer2.png" class="imageBox"></a></div>
-                <div class="indexBox">Game here<img src="img/GameBanners/gamer3.png" class="imageBox"></a></div>
-                <div class="indexBox">Game here<img src="img/GameBanners/gamer4.png" class="imageBox"></a></div>
+                <div class="indexBox">Game here<img src="img/GameBanners/rudolphsflight.png" class="imageBox"></a></div>
+                <div class="indexBox">Game here<img src="img/GameBanners/operationraven.png" class="imageBox"></a></div>
+                <div class="indexBox">Game here<img src="img/GameBanners/gridlocked.png" class="imageBox"></a></div>
         </div>
         <div class="rowBox">
-            <div class="indexBox">Game here<img src="img/GameBanners/gamer5.png" class="imageBox"></a></div>
-            <div class="indexBox">Game here<img src="img/GameBanners/gamer6.png" class="imageBox"></a></div>
-            <div class="indexBox">Game here<img src="img/GameBanners/spaceGame.png" class="imageBox"></a></div>
+            <div class="indexBox">Game here<img src="img/GameBanners/gamer7.png" class="imageBox"></a></div>
+            <div class="indexBox">Game here<img src="img/GameBanners/bullethellbill.png" class="imageBox"></a></div>
+            <div class="indexBox">Game here<img src="img/GameBanners/spacewar.png" class="imageBox"></a></div>
         </div>
     </div>
     <div class="indexSpacer">
