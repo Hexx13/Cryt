@@ -38,7 +38,7 @@ $gameArray = $gamers->getGame($_REQUEST['id']);
     <?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $amount = $_REQUEST['amount'];
-
+        include_once "";
     }
     include_once 'php/Layout/Footer.php';
     ?>

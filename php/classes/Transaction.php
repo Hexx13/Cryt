@@ -38,7 +38,7 @@ class Transaction
             $wallet = new Wallet();
             $accountID = $account->getAccountID($_SESSION["username"]);
             $walletID = $wallet->getWalletID($accountID);
-            $wallet->chargeWallet($gameArray['game_Price'], $walletID);
+            $wallet->chargeWallet($amount, $walletID);
             header('Location: /index.php');
             header();
         }else{
