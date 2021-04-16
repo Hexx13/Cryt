@@ -35,8 +35,9 @@ $gameArray = $gamers->getGame($_REQUEST['id']);
         <div class="gamePurchase">
             <p>Review</p>
         </div>
-        <div class="reviewBox">
-
+        <div class="rowBox">
+            <div class="indexBox reviewBigBox">Game here</div>
+            <div class="indexBox reviewBigBox">Game here</div>
         </div>
     </div>
     <div class="indexSpacer"></div>
