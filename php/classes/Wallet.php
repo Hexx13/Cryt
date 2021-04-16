@@ -65,7 +65,7 @@ class Wallet
         $balance = $this->getBalance($walletId);
         if($balance>=$amount){
             $newBal = $balance - $amount;
-            $this->setBalance($newBal);
+            $this->setBalance($newBal, $walletId);
         }
         else{
             return false;
