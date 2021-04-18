@@ -90,15 +90,8 @@ $account = new Account();
 $customer = new Customer();
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-
-
-    if (!$_REQUEST['formType'] = 'profilePic') {
-
-        $customer->changeDetails($_REQUEST["formType"], $account->getAccountID($_SESSION["username"]), $_REQUEST["column"]);
-    } else {
-
+    if ($_REQUEST['formType'] == 'profilePic') {
         if (isset($_FILES['profilePic'])) {
-
             $picName = $_FILES['profilePic']['name'];
             $picDirectory = "img/profilePics/";
             $picPath = $picDirectory.$picName;
@@ -107,7 +100,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             move_uploaded_file($_FILES['profilePic']['tmp_name'], 'img/profilePics/' . $_FILES['profilePic']['name']);
             $customer->changePic($picPath,  $account->getAccountID($_SESSION["username"]));
         }
-
+    } else {
+        $customer->changeDetails($_REQUEST["formType"], $account->getAccountID($_SESSION["username"]), $_REQUEST["column"]);
     }
 
 
