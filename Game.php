@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en">
 <?php session_start(); ?>
 <?php
 include_once 'php/Layout/Header.php';

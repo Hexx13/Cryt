@@ -9,6 +9,7 @@ class Account
 
     public function loginQuery($username, $password){
         //make connection
+
         include_once "php/classes/Database.php";
         $db = new Database();
         $link = $db->getLink();

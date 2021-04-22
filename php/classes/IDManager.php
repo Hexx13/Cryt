@@ -11,7 +11,7 @@ class IDManager
         $db = new Database();
         $link = $db->getLink();
 
-        //echo"<mydb>";
+
         $LastID = $link->query("SELECT $primaryKey FROM $table ORDER BY $primaryKey DESC LIMIT 1");
         while ($ID = $LastID->fetch_assoc()) {
             $id = $ID[$primaryKey];
